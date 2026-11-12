@@ -1,0 +1,42 @@
+default:
+  score: 1.00
+  visibilityTier: HARD
+  easyEligible: false
+  regionGroup: OTHER
+countries:
+  AE:
+    iso3: ARE
+    name: 'United Arab Emirates'
+    score: 0.55
+    visibilityTier: MEDIUM
+    easyEligible: true
+    regionGroup: ASIA
+    region: 'Asia'
+    subregion: null
+  US:
+    iso3: USA
+    name: 'United States'
+    score: 0.20
+    visibilityTier: EASY
+    easyEligible: true
+    regionGroup: AMERICAS
+    region: 'Americas'
+    subregion: null
+  VC:
+    iso3: VCT
+    name: 'Saint Vincent and the Grenadines'
+    score: 1.25
+    visibilityTier: EXPERT
+    easyEligible: false
+    regionGroup: AMERICAS
+    region: 'Americas'
+    subregion: null
+  ZW:
+    iso3: ZWE
+    name: 'Zimbabwe'
+    score: 0.85
+    visibilityTier: HARD
+    easyEligible: false
+    regionGroup: AFRICA
+    region: 'Africa'
+    subregion: null

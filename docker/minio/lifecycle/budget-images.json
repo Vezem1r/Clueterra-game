@@ -1,0 +1,14 @@
+{
+  "Rules": [
+    {
+      "Expiration": {
+        "ExpiredObjectDeleteMarker": true
+      },
+      "ID": "budget-images-noncurrent-retention",
+      "NoncurrentVersionExpiration": {
+        "NoncurrentDays": 7
+      },
+      "Status": "Enabled"
+    }
+  ]
+}

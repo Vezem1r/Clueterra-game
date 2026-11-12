@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Major river network clue">
+  <defs>
+    <linearGradient id="river" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="focus-clip">
+      <rect x="306" y="52" width="188" height="416"/>
+    </clipPath>
+    <g id="context-river-network" fill="none" stroke="url(#river)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M408.4 0 L408.4 7.3 L397.2 23.8 L391.6 23.8 L380.4 40.2 L380.4 48.5 L374.8 56.7 L374.8 73.2 L363.6 89.7 L363.6 97.9 L341.2 130.9 L341.2 147.3 L330 163.8 L330 172 L324.4 180.3 L324.4 196.8 L318.8 205 L318.8 213.2 L324.4 221.5 L324.4 246.2 L335.6 262.7 L335.6 270.9 L352.4 295.6 L352.4 312.1 L358 320.3 L358 336.8 L363.6 345.1 L363.6 386.2 L341.2 419.2 L335.6 419.2 L330 427.4 L324.4 427.4 L318.8 435.7 L307.6 435.7 L302 443.9 L302 460.4 L307.6 468.6 L307.6 476.9 L336.9 520" stroke-width="2.12"/>
+      <path d="M330 122.6 L335.6 114.4 L352.4 114.4 M425.2 0 L425.2 7.3 L430.8 15.5 L430.8 23.8 L436.5 32 L436.5 40.2 L447.7 56.7 L447.7 65 L453.3 73.2 L453.3 81.4 L458.9 89.7 L458.9 97.9 L464.5 106.1 L470.1 106.1 L481.3 122.6 L526.1 122.6 L531.7 130.9 L542.9 130.9 L570.9 172 L598.9 172 L604.5 180.3 L615.7 180.3 L632.5 205 L638.1 205 L643.7 213.2 L654.9 213.2" stroke-width="1.67"/>
+    </g>
+    <g id="focus-river-network" fill="none" stroke="url(#river)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M380.4 40.2 L380.4 48.5 L374.8 56.7 L374.8 73.2 L363.6 89.7 L363.6 97.9 L341.2 130.9 L341.2 147.3 L330 163.8 L330 172 L324.4 180.3 L324.4 196.8 L318.8 205 L318.8 213.2 L324.4 221.5 L324.4 246.2 L335.6 262.7 L335.6 270.9 L352.4 295.6 L352.4 312.1 L358 320.3 L358 336.8 L363.6 345.1 L363.6 386.2 L341.2 419.2 L335.6 419.2 L330 427.4 L324.4 427.4 L318.8 435.7 L307.6 435.7 L302 443.9" stroke-width="2.12"/>
+      <path d="M330 122.6 L335.6 114.4 L352.4 114.4" stroke-width="1.31"/>
+    </g>
+  </defs>
+  <rect width="800" height="520" rx="26" fill="#071018"/>
+  <use href="#context-river-network" opacity="0.18"/>
+  <rect x="306" y="52" width="188" height="416" fill="#0b1b27" fill-opacity="0.72"/>
+  <g clip-path="url(#focus-clip)">
+    <use href="#focus-river-network" opacity="0.94" filter="url(#glow)"/>
+  </g>
+  <rect x="306" y="52" width="188" height="416" fill="none" stroke="#b7f5f4" stroke-opacity="0.15"/>
+  <g fill="#ecfeff" stroke="#071018" stroke-width="5" paint-order="stroke" text-anchor="middle" dominant-baseline="middle" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="750">
+
+  </g>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Major river network clue">
+  <defs>
+    <linearGradient id="river" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="focus-clip">
+      <rect x="80" y="152.4" width="640" height="215.3"/>
+    </clipPath>
+    <g id="context-river-network" fill="none" stroke="url(#river)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M536.4 321.6 L537.7 321.8 L540.1 318.7 L544.3 319.4 L547.5 318.1 L548 316.8 L551.7 318.1 L553.2 317.1 L556.2 319.7 L557.4 318.9 L558.4 322.4 L562.6 321 L564 321.8 L564 320 L565 320.8 L566 319.2 L566.5 321 L569.2 320 L571.7 321 L576.1 319.7 L576.6 318.7 L577.6 320.5 L580.6 321.6 L588.4 321.8 L592.1 323.7" stroke-width="2.06"/>
+      <path d="M553.9 317.6 L559.1 314.9 L563.1 314.9 L566.8 316.5 L576.6 314.4 L582.5 315.2 L587 318.4 L588 317.6 M596.8 334.8 L595.1 327.9 L593.4 326.9 L592.1 323.7 L594.6 324 L597.1 326.3 L603.5 325.8 L606.2 329.3 L609.2 328.7 L609.2 330.3 L613.1 333.2 L613.6 337.2" stroke-width="1.7"/>
+      <path d="M406.8 220.1 L410.5 227.2 L410 229.6 L412.4 231.5 L412.7 235.7 L408.5 238.9 L410.7 244.2 L408.2 244.7 L407.2 248.4 L399.9 250.3 L400.8 252.4" stroke-width="1.68"/>
+      <path d="M492.1 276.8 L484.4 285 L476.5 285 L469.6 280 L461.7 283.7" stroke-width="1.51"/>
+      <path d="M279.1 185.4 L277.3 187.5 L277.8 190.4 L276.1 192.2 L276.3 195.2 L278.3 196.5 L280.5 196 L286.4 190.9 L291.1 189.9 L296.8 191.7" stroke-width="1.59"/>
+      <path d="M387.3 220.9 L387.8 224.6 L387 225.6 L385.1 225.1 L384.1 228 L385.6 231.7 L384.3 237.3 L382.6 239.4 L383.3 249.5" stroke-width="1.6"/>
+      <path d="M486.4 224.3 L486.6 227.8 L481.5 231.5 L476.5 232.8 L476 234.1 L482.4 241 L485.2 245.8" stroke-width="1.55"/>
+      <path d="M632.6 310.7 L630.1 311.2 L629.9 314.4 L627.9 316 L630.4 317.9 L629.6 319.7 L630.6 321.3 L629.4 322.9 L631.1 325.3 L630.1 327.4 L631.3 330.6" stroke-width="1.55"/>
+      <path d="M495.5 289 L493 294.3 L494.3 295.1 L494.5 298.5 L491.3 305.9 L493.3 309.4 L492.5 312" stroke-width="1.49"/>
+      <path d="M515.7 290 L516.5 291.6 L515.7 294.5 L517.2 298.2 L516.2 300.6 L518.2 302.5 L522.9 313.4" stroke-width="1.43"/>
+      <path d="M393.7 181.9 L393.4 183.8 L390.7 185.4 L389.7 188.3 L383.3 193.6 L382.8 197.3 L384.8 201.3" stroke-width="1.46"/>
+      <path d="M339.9 208.4 L340.9 210.8 L339.2 212.9 L339.5 215 L341.2 218.7 L344.9 222.7 L345.6 225.9" stroke-width="1.58"/>
+      <path d="M455.8 215.8 L457 216.6 L460 214.8 L459 221.4 L462.2 225.1 L460.5 227.5" stroke-width="1.58"/>
+      <path d="M372.5 171.3 L368.8 176.1 L367.8 181.4 L361.4 184 L360.9 185.4" stroke-width="1.55"/>
+      <path d="M534 260.1 L532.2 261.1 L531.7 263.5 L527.6 263.8 L524.1 266.2 L521.1 265.7 L518.2 267.8" stroke-width="1.52"/>
+      <path d="M549 475 L553.4 484.3 L555.2 484.5 L556.9 481.9 L559.4 484.3" stroke-width="1.47"/>
+      <path d="M361.1 219.5 L355.2 221.9 L353 227 L349.8 226.4 L348.8 227.5" stroke-width="1.5"/>
+      <path d="M254.4 172.6 L254.2 178.7 L249.7 183.5 L249.7 187.5" stroke-width="1.48"/>
+      <path d="M130.9 214 L132.1 216.4 L131.1 218.2 L132.4 221.7 L137.8 224" stroke-width="1.43"/>
+      <path d="M507.8 477.7 L501.9 479 L500.4 482.4" stroke-width="1.53"/>
+      <path d="M535.9 314.4 L535.9 313.1 L540.1 314.7 L542.1 314.1 L543.1 315.5" stroke-width="1.54"/>
+      <path d="M311.1 210.8 L308.6 214 L305.4 215.6" stroke-width="1.53"/>
+      <path d="M536.7 338.5 L535.9 339.6 L538.4 341.2" stroke-width="1.4"/>
+      <path d="M529.8 490.9 L528.8 494.1" stroke-width="1.39"/>
+      <path d="M460 214.8 L461.5 212.9" stroke-width="1.85"/>
+      <path d="M553.4 263.8 L551.5 266.4" stroke-width="1.32"/>
+      <path d="M512 453 L512 455.4" stroke-width="1.45"/>
+      <path d="M267.7 185.6 L267 187.7" stroke-width="1.39"/>
+      <path d="M210.5 182.7 L210.8 184.6" stroke-width="1.35"/>
+      <path d="M661.2 356.8 L660.4 358.4" stroke-width="1.3"/>
+      <path d="M577.8 276.5 L577.8 278.1" stroke-width="1.25"/>
+      <path d="M276.3 195.2 L275.8 195.2" stroke-width="1.83"/>
+    </g>
+    <g id="focus-river-network" fill="none" stroke="url(#river)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M536.4 321.6 L537.7 321.8 L540.1 318.7 L544.3 319.4 L547.5 318.1 L548 316.8 L551.7 318.1 L553.2 317.1 L556.2 319.7 L557.4 318.9 L558.4 322.4 L562.6 321 L564 321.8 L564 320 L565 320.8 L566 319.2 L566.5 321 L569.2 320 L571.7 321 L576.1 319.7 L576.6 318.7 L577.6 320.5 L580.6 321.6 L588.4 321.8 L592.1 323.7" stroke-width="2.06"/>
+      <path d="M553.9 317.6 L559.1 314.9 L563.1 314.9 L566.8 316.5 L576.6 314.4 L582.5 315.2 L587 318.4 L588 317.6 M596.8 334.8 L595.1 327.9 L593.4 326.9 L592.1 323.7 L594.6 324 L597.1 326.3 L603.5 325.8 L606.2 329.3 L609.2 328.7 L609.2 330.3 L613.1 333.2 L613.6 337.2" stroke-width="1.7"/>
+      <path d="M406.8 220.1 L410.5 227.2 L410 229.6 L412.4 231.5 L412.7 235.7 L408.5 238.9 L410.7 244.2 L408.2 244.7 L407.2 248.4 L399.9 250.3 L400.8 252.4" stroke-width="1.68"/>
+      <path d="M492.1 276.8 L484.4 285 L476.5 285 L469.6 280 L461.7 283.7" stroke-width="1.51"/>
+      <path d="M279.1 185.4 L277.3 187.5 L277.8 190.4 L276.1 192.2 L276.3 195.2 L278.3 196.5 L280.5 196 L286.4 190.9 L291.1 189.9 L296.8 191.7" stroke-width="1.59"/>
+      <path d="M387.3 220.9 L387.8 224.6 L387 225.6 L385.1 225.1 L384.1 228 L385.6 231.7 L384.3 237.3 L382.6 239.4 L383.3 249.5" stroke-width="1.6"/>
+      <path d="M486.4 224.3 L486.6 227.8 L481.5 231.5 L476.5 232.8 L476 234.1 L482.4 241 L485.2 245.8" stroke-width="1.55"/>
+      <path d="M632.6 310.7 L630.1 311.2 L629.9 314.4 L627.9 316 L630.4 317.9 L629.6 319.7 L630.6 321.3 L629.4 322.9 L631.1 325.3 L630.1 327.4 L631.3 330.6" stroke-width="1.55"/>
+      <path d="M495.5 289 L493 294.3 L494.3 295.1 L494.5 298.5 L491.3 305.9 L493.3 309.4 L492.5 312" stroke-width="1.49"/>
+      <path d="M515.7 290 L516.5 291.6 L515.7 294.5 L517.2 298.2 L516.2 300.6 L518.2 302.5 L522.9 313.4" stroke-width="1.43"/>
+      <path d="M393.7 181.9 L393.4 183.8 L390.7 185.4 L389.7 188.3 L383.3 193.6 L382.8 197.3 L384.8 201.3" stroke-width="1.46"/>
+      <path d="M455.8 215.8 L457 216.6 L460 214.8 L459 221.4 L462.2 225.1 L460.5 227.5" stroke-width="1.58"/>
+      <path d="M372.5 171.3 L368.8 176.1 L367.8 181.4 L361.4 184 L360.9 185.4" stroke-width="1.55"/>
+      <path d="M534 260.1 L532.2 261.1 L531.7 263.5 L527.6 263.8 L524.1 266.2 L521.1 265.7 L518.2 267.8" stroke-width="1.52"/>
+      <path d="M361.1 219.5 L355.2 221.9 L353 227 L349.8 226.4 L348.8 227.5" stroke-width="1.5"/>
+      <path d="M254.4 172.6 L254.2 178.7 L249.7 183.5 L249.7 187.5" stroke-width="1.48"/>
+      <path d="M130.9 214 L132.1 216.4 L131.1 218.2 L132.4 221.7 L137.8 224" stroke-width="1.43"/>
+      <path d="M339.9 208.4 L340.9 210.8 L339.2 213.7 L341.2 218.5" stroke-width="1.45"/>
+      <path d="M535.9 314.4 L535.9 313.1 L540.1 314.7 L542.1 314.1 L543.1 315.5" stroke-width="1.54"/>
+      <path d="M311.1 210.8 L308.6 214 L305.4 215.6" stroke-width="1.53"/>
+      <path d="M536.7 338.5 L535.9 339.6 L538.4 341.2" stroke-width="1.4"/>
+      <path d="M460 214.8 L461.5 212.9" stroke-width="1.85"/>
+      <path d="M553.4 263.8 L551.5 266.4" stroke-width="1.32"/>
+      <path d="M267.7 185.6 L267 187.7" stroke-width="1.39"/>
+      <path d="M210.5 182.7 L210.8 184.6" stroke-width="1.35"/>
+      <path d="M276.3 195.2 L275.8 195.2" stroke-width="1.83"/>
+    </g>
+  </defs>
+  <rect width="800" height="520" rx="26" fill="#071018"/>
+  <use href="#context-river-network" opacity="0.18"/>
+  <rect x="80" y="152.4" width="640" height="215.3" fill="#0b1b27" fill-opacity="0.72"/>
+  <g clip-path="url(#focus-clip)">
+    <use href="#focus-river-network" opacity="0.94" filter="url(#glow)"/>
+  </g>
+  <rect x="80" y="152.4" width="640" height="215.3" fill="none" stroke="#b7f5f4" stroke-opacity="0.15"/>
+  <g fill="#ecfeff" stroke="#071018" stroke-width="5" paint-order="stroke" text-anchor="middle" dominant-baseline="middle" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="750">
+
+  </g>
+</svg>

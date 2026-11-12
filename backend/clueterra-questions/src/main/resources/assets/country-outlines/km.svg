@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+  <defs>
+    <radialGradient id="background" cx="50%" cy="45%" r="70%">
+      <stop offset="0" stop-color="#152238"/>
+      <stop offset="1" stop-color="#070a12"/>
+    </radialGradient>
+    <linearGradient id="land" x1="12%" y1="8%" x2="88%" y2="92%">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="28" fill="url(#background)"/>
+  <ellipse cx="400" cy="260" rx="310" ry="196" fill="none" stroke="#fff" stroke-opacity=".035"/>
+  <ellipse cx="400" cy="260" rx="224" ry="142" fill="none" stroke="#fff" stroke-opacity=".03"/>
+  <path d="M366.5 441.9L369.8 443.4L391.4 457.8L396.1 465L394.7 468.3L378.9 469.2L351.3 463.5L322.8 462.8L316.2 460.4L314.4 457.3L314.8 450.1L313.6 446.2L310.1 442.8L303.5 439L302.3 433.5L301.8 418.5L304.2 412.3L316.7 417.8L333.7 421.1L341.4 423.4L362.6 437.6L366.5 441.9ZM667.8 410.6L667.5 461.4L665.3 468.9L660.6 472L657 470.5L649.5 462.7L647.3 453.9L645.1 451L615.1 430.3L611.7 424.9L609.2 418.5L603.1 415.4L587 412.1L561.7 399.1L541.9 386.6L536.4 380.6L543 380.4L548.4 381.7L558.9 386.3L579.1 390L583.9 392L592.2 386.3L604.5 388.8L615.3 378.9L621.5 363.4L620 349.4L636 342.8L639.7 340.5L642.5 340.6L644.9 342.3L649.5 349.4L666.7 404.8L667.8 410.6ZM235.3 239.6L236.4 243.7L238.9 248.5L248.5 261.2L248.3 264.7L243.7 272.1L240.8 281.6L237.8 283.8L234 285L228.4 285.8L223.6 285.3L218.8 277L196 255.8L190 253.3L172.5 252.2L168.3 251.2L163.6 248.6L155.8 242.3L152.4 238.1L150.8 230.7L148.9 226.7L138.6 216.5L134.1 209.9L132.2 199.7L133.4 195.6L144.8 177.7L144.9 173.2L143.4 163.9L149 90.4L148.1 85.5L145.9 81L158 55.6L162.8 55.4L180.1 49.6L190.2 48L197.7 51L202.6 57.5L206.2 64.2L208 71.8L198.9 149.4L202.6 166.3L220.7 192.3L227.2 209.4L227.2 226.7L234.2 235.4L235.3 239.6Z" fill="url(#land)" fill-rule="evenodd" stroke="#fff" stroke-opacity=".42" stroke-width="2" stroke-linejoin="round" filter="url(#glow)"/>
+</svg>

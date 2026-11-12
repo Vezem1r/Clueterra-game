@@ -1,0 +1,63 @@
+# Real POI coordinates from Detourmap Places (CC0), pinned source revision:
+# https://raw.githubusercontent.com/Flightmussy/detourmap-places/38aff348595f5e671f4812a4dab3b43f02893a68/data/places.csv
+# Generated with: node scripts/build-mapillary-landmarks.mjs [downloaded-places.csv]
+# Only coordinates and Wikidata IDs are used; images always come from Mapillary.
+# Handpicked coordinates appear first where the source catalogue misses iconic places.
+landmarks:
+  CZ:
+    - [50.09, 14.4] # Q193369 Prague Castle (castle)
+    - [49.93955, 14.18793] # Q266698 Karlštejn Castle (castle)
+    - [50.08699, 14.4207] # Q729370 Prague Astronomical Clock (tower)
+    - [49.59402, 17.25049] # Q742362 Holy Trinity Column in Olomouc (monument)
+    - [50.06443, 14.41764] # Q616334 Vyšehrad (ancient)
+    - [49.58, 15.94194] # Q752318 Pilgrimage Church of Saint John of Nepomuk (sacred)
+    - [49.30028, 17.39306] # Q200693 Kroměříž Castle (castle)
+    - [49.77944, 14.65667] # Q744016 Konopiště Castle (castle)
+    - [48.8125, 14.31528] # Q2164919 Český Krumlov Castle (castle)
+    - [50.08083, 14.45139] # Q1413217 Žižkov Television Tower (tower)
+    - [49.94493, 15.26363] # Q913185 St. Barbara's Church, Kutná Hora (sacred)
+    - [49.19097, 16.60736] # Q45033 cathedral of St. Peter and Paul (sacred)
+    - [49.87344, 16.31265] # Q2164885 Litomyšl Chateau (castle)
+    - [49.05083, 14.44194] # Q2142483 Hluboká Castle (castle)
+    - [49.21695, 15.87364] # Q776727 St. Procopius Basilica in Třebíč (sacred)
+    - [50.11694, 14.40611] # Q220086 Prague Zoo (leisure)
+    - [50.08444, 14.35694] # Q959499 Břevnov Monastery (sacred)
+    - [49.80889, 14.92639] # Q1014747 Český Šternberk Castle (castle)
+  FR:
+    - [48.8584, 2.2945] # Handpicked: Eiffel Tower, Paris
+    - [48.8606, 2.3376] # Handpicked: Louvre Pyramid, Paris
+    - [48.8738, 2.295] # Handpicked: Arc de Triomphe, Paris
+    - [48.80472, 2.12028] # Q2946 Palace of Versailles (castle)
+    - [47.2156, 0.0622] # Q1143049 Château de Montsoreau (castle)
+    - [48.85333, 2.36917] # Q1865480 Bastille (castle)
+    - [44.08028, 3.0225] # Q99236 Millau Viaduct (structure)
+    - [43.9473, 4.5355] # Q189764 Pont du Gard (structure)
+    - [48.40222, 2.70056] # Q201428 Palace of Fontainebleau (castle)
+    - [47.61611, 1.51722] # Q205367 Château de Chambord (castle)
+    - [48.44778, 1.48778] # Q180274 Notre-Dame de Chartres (sacred)
+    - [48.8928, 2.23583] # Q216357 Grande Arche (monument)
+    - [48.8462, 2.34611] # Q188856 Panthéon (sacred)
+    - [48.93556, 2.35972] # Q184407 Basilica of Saint-Denis (sacred)
+    - [49.25389, 4.03417] # Q206823 Reims Cathedral (sacred)
+    - [48.88665, 2.34295] # Q28785 Sacré-Cœur (sacred)
+    - [49.89457, 2.3021] # Q106934 Notre-Dame d'Amiens (sacred)
+    - [47.325, 1.0706] # Q193215 Château de Chenonceau (castle)
+  US:
+    - [40.758, -73.9855] # Handpicked: Times Square, New York
+    - [40.7484, -73.9857] # Handpicked: Empire State Building, New York
+    - [40.7027, -73.9959] # Handpicked: Brooklyn Bridge Park, New York
+    - [40.7758, -73.9709] # Handpicked: Bethesda Terrace, New York
+    - [40.7115, -74.0134] # Handpicked: 9/11 Memorial, New York
+    - [37.8078, -122.475] # Handpicked: Golden Gate Bridge, San Francisco
+    - [37.8087, -122.4098] # Handpicked: Pier 39, San Francisco
+    - [38.8893, -77.0502] # Handpicked: Lincoln Memorial, Washington
+    - [41.8827, -87.6233] # Handpicked: Cloud Gate, Chicago
+    - [36.1127, -115.174] # Handpicked: Bellagio fountains, Las Vegas
+    - [34.1015, -118.34] # Handpicked: Hollywood Boulevard, Los Angeles
+    - [25.7828, -80.1305] # Handpicked: Ocean Drive, Miami
+    - [29.9574, -90.062] # Handpicked: Jackson Square, New Orleans
+    - [40.68921, -74.04443] # Q9202 Statue of Liberty (monument)
+    - [36.01583, -114.73778] # Q172822 Hoover Dam (structure)
+    - [40.60639, -74.04556] # Q125673 Verrazzano-Narrows Bridge (structure)
+    - [37.26038, -108.49444] # Q237128 Mesa Verde National Park (ancient)
+    - [39.90639, -79.46806] # Q463179 Fallingwater (ancient)

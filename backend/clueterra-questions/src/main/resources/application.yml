@@ -1,0 +1,140 @@
+spring:
+  config:
+    import:
+      - "optional:classpath:clients-sources.yml"
+      - "optional:classpath:schedulers.yml"
+      - "optional:classpath:ai.yml"
+  application:
+    name: clueterra-questions
+  lifecycle:
+    timeout-per-shutdown-phase: 30s
+  profiles:
+    active: "dev"
+
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:}
+      timeout: 10s
+
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:clueterra}?currentSchema=cl_schema
+    username: ${DB_USER:clueterra}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 20
+      idle-timeout: 300000
+      pool-name: ClueterraPool
+      max-lifetime: 1800000
+      connection-timeout: 20000
+      connection-init-sql: "SET search_path TO cl_schema, cl_ai_schema, cl_api_schema, cl_staging"
+
+  flyway:
+    enabled: false
+    baseline-on-migrate: true
+    locations: classpath:db/migration
+    schemas: cl_schema, cl_ai_schema, cl_sch_schema, cl_staging
+    create-schemas: true
+    table: flyway_schema_history
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    deserialization:
+      fail-on-unknown-properties: false
+
+server:
+  port: ${SERVER_PORT:8081}
+  shutdown: graceful
+  tomcat:
+    mbeanregistry:
+      enabled: true
+  compression:
+    enabled: true
+    mime-types: application/json,text/html,text/plain
+
+management:
+  metrics:
+    distribution:
+      percentiles-histogram:
+        http.server.requests: true
+      minimum-expected-value:
+        http.server.requests: 1ms
+      maximum-expected-value:
+        http.server.requests: 10s
+      slo:
+        "[http.server.requests]": 50ms,100ms,250ms,500ms,1s,2s,5s
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      group:
+        readiness:
+          include: "readinessState,database,redis"
+      show-details: when_authorized
+  info:
+    env:
+      enabled: true
+
+org:
+  jobrunr:
+    background-job-server:
+      enabled: true
+    dashboard:
+      enabled: false
+      port: 8000
+    database:
+      table-prefix: "cl_sch_schema."
+      skip-create: false
+
+clueterra:
+  health:
+    hour-ttl: 3
+  internal:
+    secret: ${QUESTIONS_SERVICE_SECRET:}
+  storage:
+    enabled: ${MINIO_ENABLED:true}
+    endpoint: ${MINIO_ENDPOINT:http://localhost:9000}
+    public-endpoint: ${MINIO_PUBLIC_ENDPOINT:${clueterra.storage.endpoint}}
+    access-key: clueterra-questions
+    secret-key: ${MINIO_QUESTIONS_SECRET_KEY}
+    compress-raster-images: ${MINIO_COMPRESS_RASTER_IMAGES:true}
+    max-width: ${MINIO_IMAGE_MAX_WIDTH:1024}
+    max-height: ${MINIO_IMAGE_MAX_HEIGHT:1024}
+    jpeg-quality: ${MINIO_IMAGE_JPEG_QUALITY:0.82}
+    orphan-grace-hours: 24
+    managed-buckets:
+      - hint-images
+      - budget-images
+    maintenance-cron: "0 30 3 * * *"
+  hints:
+    reuse-cooldown-days: 30
+  sync:
+    chunk-size: 50
+  challenge:
+    reuse-cooldown-days: 30
+    upcoming-days-to-generate: 7
+    old-challenges-retention-days: 30
+    cron:
+      daily-generation: "0 0 0 * * *"
+      weekly-pre-generation: "0 0 7 * * SUN"
+      old-challenges-cleanup: "0 0 3 * * *"
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+    import:
+      - "optional:file:../../.env[.properties]"
+
+clueterra:
+  storage:
+    maintenance-scheduler-enabled: false

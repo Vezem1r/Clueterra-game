@@ -1,0 +1,106 @@
+clueterra:
+  ai:
+    enabled: true
+    provider: gemini
+    api-key: ${CLUETERRA_AI_API_KEY}
+    prompt-version: v1
+    max-tool-roundtrips-per-request: 24
+    recovery:
+      auto-cancel-stale-pending-runs: true
+      stale-pending-run-minutes: 180
+    provider-retry:
+      backoff-millis:
+        - 30000
+        - 60000
+        - 120000
+        - 300000
+    embedding:
+      enabled: true
+      provider: local-tei
+      base-url: ${LOCAL_EMBEDDING_BASE_URL:http://localhost:18080}
+      model: BAAI/bge-small-en-v1.5@5c38ec7
+      output-dimensionality: 384
+      batch-size: 32
+      timeout-seconds: 30
+      health-timeout-seconds: 3
+      cron: "0 */5 * * * *"
+      backfill-contents-per-run: 10000
+      backfill-countries-per-run: 300
+      # Calibrated locally on 4,000 active production hints with the pinned BGE revision.
+      candidate-threshold: 0.65
+      duplicate-threshold: 0.88
+      related-threshold: 0.72
+    review:
+      enabled: true
+      scheduler-enabled: true
+      cron: "0 15 * * * *"
+      prompt-version: review-v2
+      model: ${CLUETERRA_AI_REVIEW_MODEL:gemini-3.1-flash-lite}
+      temperature: 1.0
+      timeout-seconds: 180
+      max-retries: 0
+      max-output-tokens-per-request: 28000
+      thinking-level: MEDIUM
+      allow-google-search: false
+      max-requests-per-run: 10
+      default-batch-size-soft-cap: 20
+      count-failed-requests-after-dispatch: true
+      count-grounded-prompts-per-request: true
+      quota:
+        requests-per-minute: 15
+        input-tokens-per-minute: 250000
+        requests-per-day: 500
+        grounded-prompts-per-day: 1500
+        day-reset-time-zone: America/Los_Angeles
+      tokenization:
+        max-input-tokens-per-request: 250000
+        target-input-utilization: 0.75
+        allow-images: true
+        estimated-image-tokens: 1200
+        base-request-overhead-tokens: 6000
+    generation:
+      enabled: true
+      scheduler-enabled: true
+      cron: "0 0 * * * *"
+      model: ${CLUETERRA_AI_GENERATION_MODEL:gemini-3.5-flash-lite}
+      temperature: 1.0
+      timeout-seconds: 600
+      max-retries: 0
+      max-output-tokens-per-request: 24000
+      thinking-level: MEDIUM
+      allow-google-search: false
+      function-calling-mode: AUTO
+      max-requests-per-run: 3
+      country-batch-size-soft-cap: 1
+      min-active-hints-threshold: 40
+      requested-proposals-per-country: 10
+      max-proposals-per-country: 40
+      max-embedding-repair-passes: 3
+      target-image-share: 0.3
+      specialized-image-search-attempts: 4
+      target-landmark-image-hints-per-country: 3
+      target-currency-image-hints-per-country: 2
+      specialized-image-retry-cooldown-days: 30
+      count-failed-requests-after-dispatch: true
+      quota:
+        requests-per-minute: 15
+        input-tokens-per-minute: 250000
+        requests-per-day: 500
+        day-reset-time-zone: America/Los_Angeles
+      tokenization:
+        max-input-tokens-per-request: 250000
+        target-input-utilization: 0.75
+        base-request-overhead-tokens: 10500
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+clueterra:
+  ai:
+    review:
+      scheduler-enabled: false
+    generation:
+      scheduler-enabled: false

@@ -1,0 +1,92 @@
+.catalog-construction-art,
+.catalog-river-aerial-art {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.catalog-construction-scene,
+.catalog-river-aerial-scene {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.catalog-construction-cable {
+  transform-box: fill-box;
+  transform-origin: center top;
+  animation: catalog-construction-cable 8s ease-in-out infinite;
+}
+
+.catalog-construction-load {
+  transform-box: fill-box;
+  transform-origin: center top;
+  animation: catalog-construction-load 8s ease-in-out infinite;
+}
+
+.catalog-construction-warning {
+  animation: catalog-construction-warning 2.4s ease-in-out infinite;
+}
+
+.catalog-construction-window {
+  animation: catalog-construction-window 5s ease-in-out infinite;
+}
+
+.catalog-construction-price {
+  animation: catalog-construction-price 6s ease-in-out infinite;
+}
+
+.catalog-river-waterline {
+  animation: catalog-river-waterline 4s linear infinite;
+}
+
+@keyframes catalog-construction-cable {
+  0%, 16%, 84%, 100% { transform: scaleY(1); }
+  42%, 58% { transform: scaleY(.4); }
+}
+
+@keyframes catalog-construction-load {
+  0%, 16%, 84%, 100% { transform: translateY(0) rotate(0deg); }
+  42%, 58% { transform: translateY(-70px) rotate(1deg); }
+  70% { transform: translateY(-35px) rotate(-1deg); }
+}
+
+@keyframes catalog-construction-warning {
+  0%, 100% { opacity: .25; }
+  50% { opacity: .8; }
+}
+
+@keyframes catalog-construction-window {
+  0%, 23%, 100% { opacity: .5; }
+  39%, 71% { opacity: 1; }
+}
+
+@keyframes catalog-construction-price {
+  0%, 67%, 100% { opacity: .86; }
+  78% { opacity: 1; }
+}
+
+@keyframes catalog-river-waterline {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -58; }
+}
+
+@media (max-width: 380px) {
+  .catalog-construction-price {
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: translate(20px, 168px) scale(.72);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .catalog-construction-cable,
+  .catalog-construction-load,
+  .catalog-construction-warning,
+  .catalog-construction-window,
+  .catalog-construction-price,
+  .catalog-river-waterline {
+    animation: none;
+  }
+}

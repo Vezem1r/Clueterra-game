@@ -1,0 +1,6423 @@
+{
+  "naturalEarthVersion": "v5.1.2",
+  "naturalEarthCommit": "f1890d9f152c896d250a77557a5751a93d494776",
+  "hydroRiversVersion": "1.0",
+  "hydroRiversMinimumStrahlerOrder": 4,
+  "countries": {
+    "ae": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 24,
+      "candidateFocusRiverSystems": 24,
+      "candidateFocusPaths": 184,
+      "retainedFocusRiverSystems": 24,
+      "retainedFocusPaths": 184,
+      "namedRiverSystems": 0,
+      "renderedLength": 1226.4,
+      "renderedSpan": 451.7,
+      "countryRiverLength": 1182.1,
+      "focusRectangles": [
+        {
+          "x": 135.9,
+          "y": 52,
+          "width": 528.3,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "af": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 51,
+      "candidateFocusRiverSystems": 51,
+      "candidateFocusPaths": 4722,
+      "retainedFocusRiverSystems": 51,
+      "retainedFocusPaths": 4722,
+      "namedRiverSystems": 5,
+      "renderedLength": 6590.2,
+      "renderedSpan": 514.4,
+      "countryRiverLength": 6559.3,
+      "focusRectangles": [
+        {
+          "x": 126.4,
+          "y": 52,
+          "width": 547.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Helmand",
+          "nameRu": "Гильменд",
+          "naturalEarthId": 1159116765,
+          "wikidataId": "Q8510"
+        },
+        {
+          "name": "Hari",
+          "nameRu": "Теджен",
+          "naturalEarthId": 1159128313,
+          "wikidataId": "Q8505"
+        },
+        {
+          "name": "Panj",
+          "nameRu": "Пяндж",
+          "naturalEarthId": 1159113607,
+          "wikidataId": "Q8542"
+        }
+      ]
+    },
+    "al": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 15,
+      "candidateFocusRiverSystems": 15,
+      "candidateFocusPaths": 339,
+      "retainedFocusRiverSystems": 15,
+      "retainedFocusPaths": 339,
+      "namedRiverSystems": 2,
+      "renderedLength": 1222.6,
+      "renderedSpan": 374.5,
+      "countryRiverLength": 1235.1,
+      "focusRectangles": [
+        {
+          "x": 308.4,
+          "y": 52,
+          "width": 183.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Drin",
+          "nameRu": "Дрин",
+          "naturalEarthId": 1159111635,
+          "wikidataId": "Q213975"
+        },
+        {
+          "name": "Bojana",
+          "nameRu": "Буна",
+          "naturalEarthId": 1159111667,
+          "wikidataId": "Q372490"
+        }
+      ]
+    },
+    "am": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 3,
+      "candidateFocusRiverSystems": 3,
+      "candidateFocusPaths": 169,
+      "retainedFocusRiverSystems": 3,
+      "retainedFocusPaths": 169,
+      "namedRiverSystems": 1,
+      "renderedLength": 1046.6,
+      "renderedSpan": 414.3,
+      "countryRiverLength": 857.5,
+      "focusRectangles": [
+        {
+          "x": 192.3,
+          "y": 52,
+          "width": 415.3,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Aras",
+          "nameRu": "Аракс",
+          "naturalEarthId": 1159128543,
+          "wikidataId": "Q179751"
+        }
+      ]
+    },
+    "ao": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 72,
+      "candidateFocusRiverSystems": 72,
+      "candidateFocusPaths": 8582,
+      "retainedFocusRiverSystems": 72,
+      "retainedFocusPaths": 8582,
+      "namedRiverSystems": 14,
+      "renderedLength": 7823.5,
+      "renderedSpan": 395,
+      "countryRiverLength": 7999.1,
+      "focusRectangles": [
+        {
+          "x": 215.6,
+          "y": 52,
+          "width": 368.8,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Cuanza",
+          "nameRu": "река Кванза",
+          "naturalEarthId": 1159120639,
+          "wikidataId": "Q21429219"
+        },
+        {
+          "name": "Okavango",
+          "nameRu": "Окаванго",
+          "naturalEarthId": 1159114105,
+          "wikidataId": "Q188773"
+        },
+        {
+          "name": "Kwango",
+          "nameRu": "Кванго",
+          "naturalEarthId": 1159116191,
+          "wikidataId": "Q732790"
+        }
+      ]
+    },
+    "ar": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 307,
+      "candidateFocusRiverSystems": 307,
+      "candidateFocusPaths": 15728,
+      "retainedFocusRiverSystems": 307,
+      "retainedFocusPaths": 15728,
+      "namedRiverSystems": 24,
+      "renderedLength": 6370.8,
+      "renderedSpan": 415.4,
+      "countryRiverLength": 6720,
+      "focusRectangles": [
+        {
+          "x": 302.5,
+          "y": 52,
+          "width": 195.1,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Paraná River",
+          "nameRu": "река Парана",
+          "naturalEarthId": 1159118169,
+          "wikidataId": "Q21847787"
+        },
+        {
+          "name": "Salado",
+          "nameRu": "Рио-Саладо",
+          "naturalEarthId": 1159116289,
+          "wikidataId": "Q1162365"
+        },
+        {
+          "name": "Colorado",
+          "nameRu": "Рио-Колорадо",
+          "naturalEarthId": 1159113559,
+          "wikidataId": "Q270627"
+        }
+      ]
+    },
+    "at": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 6,
+      "candidateFocusRiverSystems": 6,
+      "candidateFocusPaths": 830,
+      "retainedFocusRiverSystems": 6,
+      "retainedFocusPaths": 830,
+      "namedRiverSystems": 6,
+      "renderedLength": 2975,
+      "renderedSpan": 637,
+      "countryRiverLength": 2879.3,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 96,
+          "width": 640,
+          "height": 328
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Danube",
+          "nameRu": "Дунай",
+          "naturalEarthId": 1159118769,
+          "wikidataId": "Q1653"
+        },
+        {
+          "name": "Mur",
+          "nameRu": "Мура",
+          "naturalEarthId": 1159113895,
+          "wikidataId": "Q204040"
+        },
+        {
+          "name": "Drava",
+          "nameRu": "Драва",
+          "naturalEarthId": 1159129685,
+          "wikidataId": "Q171009"
+        }
+      ]
+    },
+    "au": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 1168,
+      "candidateFocusRiverSystems": 1168,
+      "candidateFocusPaths": 38643,
+      "retainedFocusRiverSystems": 1168,
+      "retainedFocusPaths": 38643,
+      "namedRiverSystems": 24,
+      "renderedLength": 16526.9,
+      "renderedSpan": 449.4,
+      "countryRiverLength": 17766.7,
+      "focusRectangles": [
+        {
+          "x": 172.7,
+          "y": 52,
+          "width": 454.6,
+          "height": 359.2
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Murray",
+          "nameRu": "Муррей",
+          "naturalEarthId": 1159128979,
+          "wikidataId": "Q183078"
+        },
+        {
+          "name": "Darling",
+          "nameRu": "Дарлинг",
+          "naturalEarthId": 1159128253,
+          "wikidataId": "Q181482"
+        },
+        {
+          "name": "Burdekin",
+          "nameRu": "Бердекин",
+          "naturalEarthId": 1159126791,
+          "wikidataId": "Q1010448"
+        }
+      ]
+    },
+    "az": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 12,
+      "candidateFocusRiverSystems": 12,
+      "candidateFocusPaths": 544,
+      "retainedFocusRiverSystems": 12,
+      "retainedFocusPaths": 544,
+      "namedRiverSystems": 2,
+      "renderedLength": 2553.5,
+      "renderedSpan": 447.4,
+      "countryRiverLength": 2474.8,
+      "focusRectangles": [
+        {
+          "x": 144.7,
+          "y": 52,
+          "width": 510.6,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Kura",
+          "nameRu": "Кура",
+          "naturalEarthId": 1159126807,
+          "wikidataId": "Q156557"
+        },
+        {
+          "name": "Aras",
+          "nameRu": "Аракс",
+          "naturalEarthId": 1159128543,
+          "wikidataId": "Q179751"
+        }
+      ]
+    },
+    "ba": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 10,
+      "candidateFocusRiverSystems": 10,
+      "candidateFocusPaths": 569,
+      "retainedFocusRiverSystems": 10,
+      "retainedFocusPaths": 569,
+      "namedRiverSystems": 2,
+      "renderedLength": 2700.3,
+      "renderedSpan": 416.9,
+      "countryRiverLength": 2439.3,
+      "focusRectangles": [
+        {
+          "x": 185.4,
+          "y": 52,
+          "width": 429.1,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Drina",
+          "nameRu": "Дрина",
+          "naturalEarthId": 1159128273,
+          "wikidataId": "Q186901"
+        },
+        {
+          "name": "Sava",
+          "nameRu": "Сава",
+          "naturalEarthId": 1159121461,
+          "wikidataId": "Q14383"
+        }
+      ]
+    },
+    "bd": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 39,
+      "candidateFocusRiverSystems": 39,
+      "candidateFocusPaths": 3438,
+      "retainedFocusRiverSystems": 39,
+      "retainedFocusPaths": 3438,
+      "namedRiverSystems": 5,
+      "renderedLength": 4208.2,
+      "renderedSpan": 393.8,
+      "countryRiverLength": 4269.7,
+      "focusRectangles": [
+        {
+          "x": 250.4,
+          "y": 52,
+          "width": 299.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Ganges",
+          "nameRu": "Ганг",
+          "naturalEarthId": 1159122643,
+          "wikidataId": "Q5089"
+        },
+        {
+          "name": "Brahmaputra",
+          "nameRu": "Брахмапутра",
+          "naturalEarthId": 1159121927,
+          "wikidataId": "Q45403"
+        },
+        {
+          "name": "Balak",
+          "nameRu": "Балак",
+          "naturalEarthId": 1159111733,
+          "wikidataId": null
+        }
+      ]
+    },
+    "be": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 7,
+      "candidateFocusRiverSystems": 7,
+      "candidateFocusPaths": 279,
+      "retainedFocusRiverSystems": 7,
+      "retainedFocusPaths": 279,
+      "namedRiverSystems": 2,
+      "renderedLength": 1940.6,
+      "renderedSpan": 417.1,
+      "countryRiverLength": 1902.1,
+      "focusRectangles": [
+        {
+          "x": 145.2,
+          "y": 52,
+          "width": 509.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Meuse",
+          "nameRu": "Маас",
+          "naturalEarthId": 1159129229,
+          "wikidataId": "Q41986"
+        },
+        {
+          "name": "Scheldt",
+          "nameRu": "Шельда",
+          "naturalEarthId": 1159127887,
+          "wikidataId": "Q37620"
+        }
+      ]
+    },
+    "bf": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 10,
+      "candidateFocusRiverSystems": 10,
+      "candidateFocusPaths": 1797,
+      "retainedFocusRiverSystems": 10,
+      "retainedFocusPaths": 1797,
+      "namedRiverSystems": 4,
+      "renderedLength": 4133.4,
+      "renderedSpan": 563.5,
+      "countryRiverLength": 3936.3,
+      "focusRectangles": [
+        {
+          "x": 117.2,
+          "y": 52,
+          "width": 565.6,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Black Volta",
+          "nameRu": "Чёрная Вольта",
+          "naturalEarthId": 1159113257,
+          "wikidataId": "Q1256528"
+        },
+        {
+          "name": "White Volta",
+          "nameRu": "Белая Вольта",
+          "naturalEarthId": 1159115619,
+          "wikidataId": "Q1259188"
+        },
+        {
+          "name": "Oti",
+          "nameRu": "Оти",
+          "naturalEarthId": 1159126015,
+          "wikidataId": "Q252472"
+        }
+      ]
+    },
+    "bg": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 12,
+      "candidateFocusRiverSystems": 12,
+      "candidateFocusPaths": 768,
+      "retainedFocusRiverSystems": 12,
+      "retainedFocusPaths": 768,
+      "namedRiverSystems": 3,
+      "renderedLength": 3563.9,
+      "renderedSpan": 544.5,
+      "countryRiverLength": 3531,
+      "focusRectangles": [
+        {
+          "x": 80.2,
+          "y": 52,
+          "width": 639.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Maritsa",
+          "nameRu": "Марица",
+          "naturalEarthId": 1159120523,
+          "wikidataId": "Q204347"
+        },
+        {
+          "name": "Danube",
+          "nameRu": "Дунай",
+          "naturalEarthId": 1159115307,
+          "wikidataId": "Q1653"
+        },
+        {
+          "name": "Struma",
+          "nameRu": "Струма",
+          "naturalEarthId": 1159110511,
+          "wikidataId": "Q204127"
+        }
+      ]
+    },
+    "bi": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 4,
+      "candidateFocusRiverSystems": 4,
+      "candidateFocusPaths": 150,
+      "retainedFocusRiverSystems": 4,
+      "retainedFocusPaths": 150,
+      "namedRiverSystems": 2,
+      "renderedLength": 995.8,
+      "renderedSpan": 419.6,
+      "countryRiverLength": 890.4,
+      "focusRectangles": [
+        {
+          "x": 222.5,
+          "y": 52,
+          "width": 355.1,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Kagera",
+          "nameRu": "Кагера",
+          "naturalEarthId": 1159125959,
+          "wikidataId": "Q2750140"
+        },
+        {
+          "name": "Ruzizi",
+          "nameRu": "Рузизи",
+          "naturalEarthId": 1159119229,
+          "wikidataId": "Q748195"
+        }
+      ]
+    },
+    "bj": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 11,
+      "candidateFocusRiverSystems": 11,
+      "candidateFocusPaths": 877,
+      "retainedFocusRiverSystems": 11,
+      "retainedFocusPaths": 877,
+      "namedRiverSystems": 3,
+      "renderedLength": 1800.1,
+      "renderedSpan": 411.4,
+      "countryRiverLength": 1739.4,
+      "focusRectangles": [
+        {
+          "x": 297.9,
+          "y": 52,
+          "width": 204.3,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Ouémé",
+          "nameRu": "Веме",
+          "naturalEarthId": 1159118465,
+          "wikidataId": "Q595037"
+        },
+        {
+          "name": "Niger",
+          "nameRu": "Нигер",
+          "naturalEarthId": 1159123305,
+          "wikidataId": "Q3542"
+        },
+        {
+          "name": "Oti",
+          "nameRu": "Оти",
+          "naturalEarthId": 1159126015,
+          "wikidataId": "Q252472"
+        }
+      ]
+    },
+    "bn": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 7,
+      "candidateFocusRiverSystems": 7,
+      "candidateFocusPaths": 160,
+      "retainedFocusRiverSystems": 7,
+      "retainedFocusPaths": 160,
+      "namedRiverSystems": 1,
+      "renderedLength": 1308.3,
+      "renderedSpan": 460,
+      "countryRiverLength": 1233,
+      "focusRectangles": [
+        {
+          "x": 128.6,
+          "y": 52,
+          "width": 542.8,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Baram",
+          "nameRu": "Барам",
+          "naturalEarthId": 1159110847,
+          "wikidataId": "Q651903"
+        }
+      ]
+    },
+    "bo": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 28,
+      "candidateFocusRiverSystems": 28,
+      "candidateFocusPaths": 9609,
+      "retainedFocusRiverSystems": 28,
+      "retainedFocusPaths": 9609,
+      "namedRiverSystems": 12,
+      "renderedLength": 8871,
+      "renderedSpan": 415.7,
+      "countryRiverLength": 9054.1,
+      "focusRectangles": [
+        {
+          "x": 215.7,
+          "y": 52,
+          "width": 368.6,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Grande",
+          "nameRu": "Рио-Гранде",
+          "naturalEarthId": 1159127321,
+          "wikidataId": "Q1519602"
+        },
+        {
+          "name": "Beni",
+          "nameRu": "Бени",
+          "naturalEarthId": 1159121109,
+          "wikidataId": "Q142604"
+        },
+        {
+          "name": "Guaporé",
+          "nameRu": "Гуапоре",
+          "naturalEarthId": 1159118259,
+          "wikidataId": "Q916349"
+        }
+      ]
+    },
+    "br": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 355,
+      "candidateFocusRiverSystems": 355,
+      "candidateFocusPaths": 105741,
+      "retainedFocusRiverSystems": 355,
+      "retainedFocusPaths": 105741,
+      "namedRiverSystems": 65,
+      "renderedLength": 22823.3,
+      "renderedSpan": 414.1,
+      "countryRiverLength": 25515.2,
+      "focusRectangles": [
+        {
+          "x": 197.3,
+          "y": 52,
+          "width": 405.4,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Amazon",
+          "nameRu": "Амазонка",
+          "naturalEarthId": 1159116629,
+          "wikidataId": "Q3783"
+        },
+        {
+          "name": "Madeira",
+          "nameRu": "Мадейра",
+          "naturalEarthId": 1159128601,
+          "wikidataId": "Q118251"
+        },
+        {
+          "name": "Negro",
+          "nameRu": "Риу-Негру",
+          "naturalEarthId": 1159127465,
+          "wikidataId": "Q118771"
+        }
+      ]
+    },
+    "bt": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 3,
+      "candidateFocusRiverSystems": 3,
+      "candidateFocusPaths": 457,
+      "retainedFocusRiverSystems": 3,
+      "retainedFocusPaths": 457,
+      "namedRiverSystems": 1,
+      "renderedLength": 2198.4,
+      "renderedSpan": 618.5,
+      "countryRiverLength": 2186.2,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 81.4,
+          "width": 640,
+          "height": 357.2
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Manas",
+          "nameRu": "Манас",
+          "naturalEarthId": 1159121303,
+          "wikidataId": "Q2015702"
+        }
+      ]
+    },
+    "bw": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 31,
+      "candidateFocusRiverSystems": 31,
+      "candidateFocusPaths": 3796,
+      "retainedFocusRiverSystems": 31,
+      "retainedFocusPaths": 3796,
+      "namedRiverSystems": 7,
+      "renderedLength": 6140.4,
+      "renderedSpan": 416.9,
+      "countryRiverLength": 6084.4,
+      "focusRectangles": [
+        {
+          "x": 202.1,
+          "y": 52,
+          "width": 395.8,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Okavango",
+          "nameRu": "Окаванго",
+          "naturalEarthId": 1159114093,
+          "wikidataId": "Q188773"
+        },
+        {
+          "name": "Molopo",
+          "nameRu": "Молопо",
+          "naturalEarthId": 1159128187,
+          "wikidataId": "Q546793"
+        },
+        {
+          "name": "Limpopo",
+          "nameRu": "Лимпопо",
+          "naturalEarthId": 1159117383,
+          "wikidataId": "Q173017"
+        }
+      ]
+    },
+    "by": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 13,
+      "candidateFocusRiverSystems": 13,
+      "candidateFocusPaths": 1509,
+      "retainedFocusRiverSystems": 13,
+      "retainedFocusPaths": 1509,
+      "namedRiverSystems": 6,
+      "renderedLength": 4769.4,
+      "renderedSpan": 453.1,
+      "countryRiverLength": 4711.7,
+      "focusRectangles": [
+        {
+          "x": 160.9,
+          "y": 52,
+          "width": 478.1,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Dnieper",
+          "nameRu": "Днепр",
+          "naturalEarthId": 1159112001,
+          "wikidataId": "Q40855"
+        },
+        {
+          "name": "Prypiat",
+          "nameRu": "Припять",
+          "naturalEarthId": 1159120249,
+          "wikidataId": "Q157042"
+        },
+        {
+          "name": "Daugava",
+          "nameRu": "Западная Двина",
+          "naturalEarthId": 1159113381,
+          "wikidataId": "Q8197"
+        }
+      ]
+    },
+    "bz": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 14,
+      "candidateFocusRiverSystems": 14,
+      "candidateFocusPaths": 252,
+      "retainedFocusRiverSystems": 14,
+      "retainedFocusPaths": 252,
+      "namedRiverSystems": 0,
+      "renderedLength": 1039.6,
+      "renderedSpan": 420.9,
+      "countryRiverLength": 998.9,
+      "focusRectangles": [
+        {
+          "x": 289.4,
+          "y": 52,
+          "width": 221.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "ca": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 1004,
+      "candidateFocusRiverSystems": 1004,
+      "candidateFocusPaths": 65257,
+      "retainedFocusRiverSystems": 1004,
+      "retainedFocusPaths": 65257,
+      "namedRiverSystems": 91,
+      "renderedLength": 18116.4,
+      "renderedSpan": 417.7,
+      "countryRiverLength": 19732.7,
+      "focusRectangles": [
+        {
+          "x": 194.4,
+          "y": 52,
+          "width": 411.1,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Mackenzie",
+          "nameRu": "Маккензи",
+          "naturalEarthId": 1159117649,
+          "wikidataId": "Q3411"
+        },
+        {
+          "name": "Peace",
+          "nameRu": "Пис",
+          "naturalEarthId": 1159117447,
+          "wikidataId": "Q2220"
+        },
+        {
+          "name": "Athabasca",
+          "nameRu": "Атабаска",
+          "naturalEarthId": 1159113183,
+          "wikidataId": "Q2216"
+        }
+      ]
+    },
+    "cd": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 10,
+      "candidateFocusRiverSystems": 10,
+      "candidateFocusPaths": 21183,
+      "retainedFocusRiverSystems": 10,
+      "retainedFocusPaths": 21183,
+      "namedRiverSystems": 28,
+      "renderedLength": 11639.4,
+      "renderedSpan": 409.7,
+      "countryRiverLength": 12142.8,
+      "focusRectangles": [
+        {
+          "x": 189.9,
+          "y": 52,
+          "width": 420.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Lualaba",
+          "nameRu": "Луалаба",
+          "naturalEarthId": 1159118441,
+          "wikidataId": "Q836812"
+        },
+        {
+          "name": "Kasai",
+          "nameRu": "Касаи",
+          "naturalEarthId": 1159127863,
+          "wikidataId": "Q186541"
+        },
+        {
+          "name": "Uele",
+          "nameRu": "Уэле",
+          "naturalEarthId": 1159128035,
+          "wikidataId": "Q171436"
+        }
+      ]
+    },
+    "cf": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 10,
+      "candidateFocusRiverSystems": 10,
+      "candidateFocusPaths": 4848,
+      "retainedFocusRiverSystems": 10,
+      "retainedFocusPaths": 4848,
+      "namedRiverSystems": 13,
+      "renderedLength": 6764.7,
+      "renderedSpan": 589.7,
+      "countryRiverLength": 6722.3,
+      "focusRectangles": [
+        {
+          "x": 92.3,
+          "y": 52,
+          "width": 615.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Kotto",
+          "nameRu": "река Котто",
+          "naturalEarthId": 1159121351,
+          "wikidataId": "Q30066076"
+        },
+        {
+          "name": "Uele",
+          "nameRu": "Уэле",
+          "naturalEarthId": 1159128035,
+          "wikidataId": "Q171436"
+        },
+        {
+          "name": "Ouham",
+          "nameRu": "река Уам",
+          "naturalEarthId": 1159116569,
+          "wikidataId": "Q2001150"
+        }
+      ]
+    },
+    "cg": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 19,
+      "candidateFocusRiverSystems": 19,
+      "candidateFocusPaths": 3389,
+      "retainedFocusRiverSystems": 19,
+      "retainedFocusPaths": 3389,
+      "namedRiverSystems": 10,
+      "renderedLength": 4510.9,
+      "renderedSpan": 402,
+      "countryRiverLength": 4471,
+      "focusRectangles": [
+        {
+          "x": 220.6,
+          "y": 52,
+          "width": 358.8,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Ubangi",
+          "nameRu": "Убанги",
+          "naturalEarthId": 1159123505,
+          "wikidataId": "Q171649"
+        },
+        {
+          "name": "Kouilou-Niari",
+          "nameRu": "Куилу",
+          "naturalEarthId": 1159126481,
+          "wikidataId": "Q1637839"
+        },
+        {
+          "name": "Sangha",
+          "nameRu": "Санга",
+          "naturalEarthId": 1159118069,
+          "wikidataId": "Q239883"
+        }
+      ]
+    },
+    "ch": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 9,
+      "candidateFocusRiverSystems": 9,
+      "candidateFocusPaths": 587,
+      "retainedFocusRiverSystems": 9,
+      "retainedFocusPaths": 587,
+      "namedRiverSystems": 5,
+      "renderedLength": 2767.3,
+      "renderedSpan": 640.7,
+      "countryRiverLength": 2696.1,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 54.8,
+          "width": 640,
+          "height": 410.5
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Rhine",
+          "nameRu": "Рейн",
+          "naturalEarthId": 1159110393,
+          "wikidataId": "Q584"
+        },
+        {
+          "name": "Rhône",
+          "nameRu": "Рона",
+          "naturalEarthId": 1159115093,
+          "wikidataId": "Q602"
+        },
+        {
+          "name": "Ticino",
+          "nameRu": "Тичино",
+          "naturalEarthId": 1159124917,
+          "wikidataId": "Q14366"
+        }
+      ]
+    },
+    "ci": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 35,
+      "candidateFocusRiverSystems": 35,
+      "candidateFocusPaths": 2926,
+      "retainedFocusRiverSystems": 35,
+      "retainedFocusPaths": 2926,
+      "namedRiverSystems": 8,
+      "renderedLength": 5220.2,
+      "renderedSpan": 412.3,
+      "countryRiverLength": 5173.4,
+      "focusRectangles": [
+        {
+          "x": 202.5,
+          "y": 52,
+          "width": 395,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Komoé",
+          "nameRu": "Комоэ",
+          "naturalEarthId": 1159118503,
+          "wikidataId": "Q615662"
+        },
+        {
+          "name": "Sassandra",
+          "nameRu": "Сасандра",
+          "naturalEarthId": 1159115853,
+          "wikidataId": "Q1535828"
+        },
+        {
+          "name": "Bandama Blanc",
+          "nameRu": "Бандама-Бланк",
+          "naturalEarthId": 1159120561,
+          "wikidataId": "Q23199585"
+        }
+      ]
+    },
+    "cl": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 201,
+      "candidateFocusRiverSystems": 201,
+      "candidateFocusPaths": 4866,
+      "retainedFocusRiverSystems": 201,
+      "retainedFocusPaths": 4866,
+      "namedRiverSystems": 4,
+      "renderedLength": 1277.7,
+      "renderedSpan": 402.3,
+      "countryRiverLength": 1394.1,
+      "focusRectangles": [
+        {
+          "x": 362,
+          "y": 52,
+          "width": 76,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Bío Bío",
+          "nameRu": "Био-Био",
+          "naturalEarthId": 1159113593,
+          "wikidataId": "Q93360"
+        },
+        {
+          "name": "Copiapó",
+          "nameRu": "Копьяпо",
+          "naturalEarthId": 1159127115,
+          "wikidataId": "Q738357"
+        },
+        {
+          "name": "Rapel",
+          "nameRu": "Рапель",
+          "naturalEarthId": 1159109999,
+          "wikidataId": "Q1032656"
+        }
+      ]
+    },
+    "cm": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 53,
+      "candidateFocusRiverSystems": 53,
+      "candidateFocusPaths": 5009,
+      "retainedFocusRiverSystems": 53,
+      "retainedFocusPaths": 5009,
+      "namedRiverSystems": 11,
+      "renderedLength": 4411.5,
+      "renderedSpan": 415.2,
+      "countryRiverLength": 4473.5,
+      "focusRectangles": [
+        {
+          "x": 260.9,
+          "y": 52,
+          "width": 278.1,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Dja",
+          "nameRu": "Джа",
+          "naturalEarthId": 1159127981,
+          "wikidataId": "Q1231996"
+        },
+        {
+          "name": "Sanaga",
+          "nameRu": "Санага",
+          "naturalEarthId": 1159117935,
+          "wikidataId": "Q1250532"
+        },
+        {
+          "name": "Kadeï",
+          "nameRu": "Кадеи",
+          "naturalEarthId": 1159116671,
+          "wikidataId": "Q2591927"
+        }
+      ]
+    },
+    "cn": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 845,
+      "candidateFocusRiverSystems": 845,
+      "candidateFocusPaths": 72944,
+      "retainedFocusRiverSystems": 845,
+      "retainedFocusPaths": 72944,
+      "namedRiverSystems": 112,
+      "renderedLength": 23005.4,
+      "renderedSpan": 580,
+      "countryRiverLength": 24941.5,
+      "focusRectangles": [
+        {
+          "x": 108.7,
+          "y": 52,
+          "width": 582.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Yellow",
+          "nameRu": "Хуанхэ",
+          "naturalEarthId": 1159124959,
+          "wikidataId": "Q7355"
+        },
+        {
+          "name": "Yangtze",
+          "nameRu": "Янцзы",
+          "naturalEarthId": 1159113707,
+          "wikidataId": "Q5413"
+        },
+        {
+          "name": "Jinsha",
+          "nameRu": "Цзиньша",
+          "naturalEarthId": 1159112733,
+          "wikidataId": "Q1038418"
+        }
+      ]
+    },
+    "co": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 104,
+      "candidateFocusRiverSystems": 104,
+      "candidateFocusPaths": 26378,
+      "retainedFocusRiverSystems": 104,
+      "retainedFocusPaths": 26378,
+      "namedRiverSystems": 12,
+      "renderedLength": 10431.2,
+      "renderedSpan": 414.9,
+      "countryRiverLength": 11284.6,
+      "focusRectangles": [
+        {
+          "x": 249.1,
+          "y": 52,
+          "width": 301.7,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Negro",
+          "nameRu": "Риу-Негру",
+          "naturalEarthId": 1159121959,
+          "wikidataId": "Q118771"
+        },
+        {
+          "name": "Magdalena",
+          "nameRu": "Магдалена",
+          "naturalEarthId": 1159112139,
+          "wikidataId": "Q191829"
+        },
+        {
+          "name": "Japurá",
+          "nameRu": "Жапура",
+          "naturalEarthId": 1159113415,
+          "wikidataId": "Q171840"
+        }
+      ]
+    },
+    "cr": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 39,
+      "candidateFocusRiverSystems": 39,
+      "candidateFocusPaths": 940,
+      "retainedFocusRiverSystems": 39,
+      "retainedFocusPaths": 940,
+      "namedRiverSystems": 2,
+      "renderedLength": 2174.2,
+      "renderedSpan": 391.8,
+      "countryRiverLength": 2165.7,
+      "focusRectangles": [
+        {
+          "x": 181.5,
+          "y": 52,
+          "width": 437.1,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Chirripó Duchi",
+          "nameRu": "река Рио-Чиррипо-Атлантико",
+          "naturalEarthId": 1159127699,
+          "wikidataId": "Q5102010"
+        },
+        {
+          "name": "San Juan",
+          "nameRu": "Сан-Хуан",
+          "naturalEarthId": 1159112711,
+          "wikidataId": "Q1161204"
+        }
+      ]
+    },
+    "cu": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 26,
+      "candidateFocusRiverSystems": 26,
+      "candidateFocusPaths": 261,
+      "retainedFocusRiverSystems": 26,
+      "retainedFocusPaths": 261,
+      "namedRiverSystems": 0,
+      "renderedLength": 581,
+      "renderedSpan": 501.7,
+      "countryRiverLength": 595.8,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 152.4,
+          "width": 640,
+          "height": 215.3
+        }
+      ],
+      "labelledRivers": []
+    },
+    "cz": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 8,
+      "candidateFocusRiverSystems": 8,
+      "candidateFocusPaths": 487,
+      "retainedFocusRiverSystems": 8,
+      "retainedFocusPaths": 487,
+      "namedRiverSystems": 4,
+      "renderedLength": 2501.3,
+      "renderedSpan": 591.2,
+      "countryRiverLength": 2496.4,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 78,
+          "width": 640,
+          "height": 364
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Elbe",
+          "nameRu": "Эльба",
+          "naturalEarthId": 1159112751,
+          "wikidataId": "Q1644"
+        },
+        {
+          "name": "Vltava",
+          "nameRu": "Влтава",
+          "naturalEarthId": 1159110253,
+          "wikidataId": "Q131574"
+        },
+        {
+          "name": "Morava",
+          "nameRu": "Морава",
+          "naturalEarthId": 1159126351,
+          "wikidataId": "Q179251"
+        }
+      ]
+    },
+    "de": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 37,
+      "candidateFocusRiverSystems": 37,
+      "candidateFocusPaths": 2611,
+      "retainedFocusRiverSystems": 37,
+      "retainedFocusPaths": 2611,
+      "namedRiverSystems": 10,
+      "renderedLength": 4636.4,
+      "renderedSpan": 374.6,
+      "countryRiverLength": 4664.4,
+      "focusRectangles": [
+        {
+          "x": 243.1,
+          "y": 52,
+          "width": 313.8,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Rhine",
+          "nameRu": "Рейн",
+          "naturalEarthId": 1159110393,
+          "wikidataId": "Q584"
+        },
+        {
+          "name": "Elbe",
+          "nameRu": "Эльба",
+          "naturalEarthId": 1159112751,
+          "wikidataId": "Q1644"
+        },
+        {
+          "name": "Danube",
+          "nameRu": "Дунай",
+          "naturalEarthId": 1159118769,
+          "wikidataId": "Q1653"
+        }
+      ]
+    },
+    "dj": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 7,
+      "candidateFocusRiverSystems": 7,
+      "candidateFocusPaths": 71,
+      "retainedFocusRiverSystems": 7,
+      "retainedFocusPaths": 71,
+      "namedRiverSystems": 0,
+      "renderedLength": 667.8,
+      "renderedSpan": 395.8,
+      "countryRiverLength": 649.2,
+      "focusRectangles": [
+        {
+          "x": 208.8,
+          "y": 52,
+          "width": 382.3,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "do": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 17,
+      "candidateFocusRiverSystems": 17,
+      "candidateFocusPaths": 214,
+      "retainedFocusRiverSystems": 17,
+      "retainedFocusPaths": 214,
+      "namedRiverSystems": 1,
+      "renderedLength": 1133.3,
+      "renderedSpan": 451.5,
+      "countryRiverLength": 1139.9,
+      "focusRectangles": [
+        {
+          "x": 96.9,
+          "y": 52,
+          "width": 606.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Yaque del Norte",
+          "nameRu": "Яке-дель-Норте",
+          "naturalEarthId": 1159128127,
+          "wikidataId": "Q776071"
+        }
+      ]
+    },
+    "dz": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 384,
+      "candidateFocusRiverSystems": 384,
+      "candidateFocusPaths": 11364,
+      "retainedFocusRiverSystems": 384,
+      "retainedFocusPaths": 11364,
+      "namedRiverSystems": 0,
+      "renderedLength": 10014.6,
+      "renderedSpan": 417.5,
+      "countryRiverLength": 10377.7,
+      "focusRectangles": [
+        {
+          "x": 190.7,
+          "y": 52,
+          "width": 418.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "ec": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 36,
+      "candidateFocusRiverSystems": 36,
+      "candidateFocusPaths": 4924,
+      "retainedFocusRiverSystems": 36,
+      "retainedFocusPaths": 4924,
+      "namedRiverSystems": 5,
+      "renderedLength": 3390,
+      "renderedSpan": 250.5,
+      "countryRiverLength": 3565,
+      "focusRectangles": [
+        {
+          "x": 494.8,
+          "y": 134.5,
+          "width": 225.2,
+          "height": 251
+        },
+        {
+          "x": 80,
+          "y": 184.4,
+          "width": 94.1,
+          "height": 58.5
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Napo",
+          "nameRu": "Напо",
+          "naturalEarthId": 1159120371,
+          "wikidataId": "Q849480"
+        },
+        {
+          "name": "Santiago",
+          "nameRu": "река Сантьяго",
+          "naturalEarthId": 1159109807,
+          "wikidataId": "Q3087412"
+        },
+        {
+          "name": "Tumbes",
+          "nameRu": "река Тумбес",
+          "naturalEarthId": 1159121287,
+          "wikidataId": "Q3236437"
+        }
+      ]
+    },
+    "ee": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 9,
+      "candidateFocusRiverSystems": 9,
+      "candidateFocusPaths": 154,
+      "retainedFocusRiverSystems": 9,
+      "retainedFocusPaths": 154,
+      "namedRiverSystems": 1,
+      "renderedLength": 1100.6,
+      "renderedSpan": 411.6,
+      "countryRiverLength": 1028.5,
+      "focusRectangles": [
+        {
+          "x": 80.4,
+          "y": 52,
+          "width": 639.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Narva",
+          "nameRu": "Нарва",
+          "naturalEarthId": 1159119823,
+          "wikidataId": "Q209031"
+        }
+      ]
+    },
+    "eg": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 204,
+      "candidateFocusRiverSystems": 204,
+      "candidateFocusPaths": 4107,
+      "retainedFocusRiverSystems": 204,
+      "retainedFocusPaths": 4107,
+      "namedRiverSystems": 5,
+      "renderedLength": 6338.6,
+      "renderedSpan": 436.4,
+      "countryRiverLength": 6446.9,
+      "focusRectangles": [
+        {
+          "x": 165.4,
+          "y": 52,
+          "width": 469.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Nile",
+          "nameRu": "Нил",
+          "naturalEarthId": 1159121573,
+          "wikidataId": "Q3392"
+        },
+        {
+          "name": "Rosetta Branch",
+          "nameRu": null,
+          "naturalEarthId": 1159113693,
+          "wikidataId": null
+        }
+      ]
+    },
+    "eh": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 27,
+      "candidateFocusRiverSystems": 27,
+      "candidateFocusPaths": 422,
+      "retainedFocusRiverSystems": 27,
+      "retainedFocusPaths": 422,
+      "namedRiverSystems": 0,
+      "renderedLength": 845.3,
+      "renderedSpan": 455.8,
+      "countryRiverLength": 809.7,
+      "focusRectangles": [
+        {
+          "x": 168.2,
+          "y": 52,
+          "width": 463.6,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "er": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 19,
+      "candidateFocusRiverSystems": 19,
+      "candidateFocusPaths": 548,
+      "retainedFocusRiverSystems": 19,
+      "retainedFocusPaths": 548,
+      "namedRiverSystems": 1,
+      "renderedLength": 1388.3,
+      "renderedSpan": 470.3,
+      "countryRiverLength": 1325.6,
+      "focusRectangles": [
+        {
+          "x": 161.7,
+          "y": 52,
+          "width": 476.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Tekezé",
+          "nameRu": "Тэкэзе",
+          "naturalEarthId": 1159117483,
+          "wikidataId": "Q843308"
+        }
+      ]
+    },
+    "es": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 70,
+      "candidateFocusRiverSystems": 70,
+      "candidateFocusPaths": 3229,
+      "retainedFocusRiverSystems": 70,
+      "retainedFocusPaths": 3229,
+      "namedRiverSystems": 10,
+      "renderedLength": 2427.9,
+      "renderedSpan": 253.2,
+      "countryRiverLength": 2528.3,
+      "focusRectangles": [
+        {
+          "x": 350.3,
+          "y": 52,
+          "width": 285,
+          "height": 200.6
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Ebro",
+          "nameRu": "Эбро",
+          "naturalEarthId": 1159112595,
+          "wikidataId": "Q10965"
+        },
+        {
+          "name": "Tagus",
+          "nameRu": "Тахо",
+          "naturalEarthId": 1159112911,
+          "wikidataId": "Q14294"
+        },
+        {
+          "name": "Douro",
+          "nameRu": "Дуэро",
+          "naturalEarthId": 1159116751,
+          "wikidataId": "Q14299"
+        }
+      ]
+    },
+    "et": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 69,
+      "candidateFocusRiverSystems": 69,
+      "candidateFocusPaths": 6996,
+      "retainedFocusRiverSystems": 69,
+      "retainedFocusPaths": 6996,
+      "namedRiverSystems": 9,
+      "renderedLength": 7718.1,
+      "renderedSpan": 525.5,
+      "countryRiverLength": 7856.1,
+      "focusRectangles": [
+        {
+          "x": 131.8,
+          "y": 52,
+          "width": 536.4,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Blue Nile",
+          "nameRu": "Голубой Нил",
+          "naturalEarthId": 1159125333,
+          "wikidataId": "Q882739"
+        },
+        {
+          "name": "Shebelle",
+          "nameRu": "Уэби-Шабелле",
+          "naturalEarthId": 1159122631,
+          "wikidataId": "Q141915"
+        },
+        {
+          "name": "Omo",
+          "nameRu": "Омо",
+          "naturalEarthId": 1159116533,
+          "wikidataId": "Q273456"
+        }
+      ]
+    },
+    "fi": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 54,
+      "candidateFocusRiverSystems": 54,
+      "candidateFocusPaths": 2037,
+      "retainedFocusRiverSystems": 54,
+      "retainedFocusPaths": 2037,
+      "namedRiverSystems": 10,
+      "renderedLength": 2835.2,
+      "renderedSpan": 400.2,
+      "countryRiverLength": 2809.7,
+      "focusRectangles": [
+        {
+          "x": 306.1,
+          "y": 52,
+          "width": 187.9,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Kemijoki",
+          "nameRu": "Кемийоки",
+          "naturalEarthId": 1159115645,
+          "wikidataId": "Q214779"
+        },
+        {
+          "name": "Muonio",
+          "nameRu": "Муониоэльвен",
+          "naturalEarthId": 1159126741,
+          "wikidataId": "Q837208"
+        },
+        {
+          "name": "Luirojoki",
+          "nameRu": "река Луиройоки",
+          "naturalEarthId": 1159128889,
+          "wikidataId": null
+        }
+      ]
+    },
+    "fr": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 79,
+      "candidateFocusRiverSystems": 79,
+      "candidateFocusPaths": 4279,
+      "retainedFocusRiverSystems": 79,
+      "retainedFocusPaths": 4279,
+      "namedRiverSystems": 18,
+      "renderedLength": 5244.6,
+      "renderedSpan": 409,
+      "countryRiverLength": 5389.6,
+      "focusRectangles": [
+        {
+          "x": 187.7,
+          "y": 52,
+          "width": 424.6,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Loire",
+          "nameRu": "Луара",
+          "naturalEarthId": 1159129677,
+          "wikidataId": "Q1469"
+        },
+        {
+          "name": "Seine",
+          "nameRu": "Сена",
+          "naturalEarthId": 1159112177,
+          "wikidataId": "Q1471"
+        },
+        {
+          "name": "Rhône",
+          "nameRu": "Рона",
+          "naturalEarthId": 1159115107,
+          "wikidataId": "Q602"
+        }
+      ]
+    },
+    "ga": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 35,
+      "candidateFocusRiverSystems": 35,
+      "candidateFocusPaths": 3550,
+      "retainedFocusRiverSystems": 35,
+      "retainedFocusPaths": 3550,
+      "namedRiverSystems": 5,
+      "renderedLength": 5436,
+      "renderedSpan": 404.9,
+      "countryRiverLength": 5489.4,
+      "focusRectangles": [
+        {
+          "x": 207.2,
+          "y": 52,
+          "width": 385.7,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Ogooué",
+          "nameRu": "Огове",
+          "naturalEarthId": 1159124285,
+          "wikidataId": "Q750021"
+        },
+        {
+          "name": "Ngounie",
+          "nameRu": "река Нгуни",
+          "naturalEarthId": 1159127853,
+          "wikidataId": "Q3134829"
+        },
+        {
+          "name": "Ivindo",
+          "nameRu": "Ивиндо",
+          "naturalEarthId": 1159122875,
+          "wikidataId": "Q1650057"
+        }
+      ]
+    },
+    "gb": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 100,
+      "candidateFocusRiverSystems": 100,
+      "candidateFocusPaths": 1601,
+      "retainedFocusRiverSystems": 100,
+      "retainedFocusPaths": 1601,
+      "namedRiverSystems": 6,
+      "renderedLength": 1539.7,
+      "renderedSpan": 297.2,
+      "countryRiverLength": 1594.3,
+      "focusRectangles": [
+        {
+          "x": 292.1,
+          "y": 52,
+          "width": 215.7,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Thames",
+          "nameRu": "Темза",
+          "naturalEarthId": 1159116709,
+          "wikidataId": "Q19686"
+        },
+        {
+          "name": "Severn",
+          "nameRu": "Северн",
+          "naturalEarthId": 1159128259,
+          "wikidataId": "Q19682"
+        },
+        {
+          "name": "Ness",
+          "nameRu": "Несс",
+          "naturalEarthId": 1159125645,
+          "wikidataId": "Q1364584"
+        }
+      ]
+    },
+    "ge": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 21,
+      "candidateFocusRiverSystems": 21,
+      "candidateFocusPaths": 690,
+      "retainedFocusRiverSystems": 21,
+      "retainedFocusPaths": 690,
+      "namedRiverSystems": 1,
+      "renderedLength": 2373,
+      "renderedSpan": 578.7,
+      "countryRiverLength": 2350.3,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 96.7,
+          "width": 640,
+          "height": 326.6
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Kura",
+          "nameRu": "Кура",
+          "naturalEarthId": 1159126817,
+          "wikidataId": "Q156557"
+        }
+      ]
+    },
+    "gf": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 29,
+      "candidateFocusRiverSystems": 29,
+      "candidateFocusPaths": 1707,
+      "retainedFocusRiverSystems": 29,
+      "retainedFocusPaths": 1707,
+      "namedRiverSystems": 2,
+      "renderedLength": 3372.6,
+      "renderedSpan": 395.4,
+      "countryRiverLength": 3305,
+      "focusRectangles": [
+        {
+          "x": 230.6,
+          "y": 52,
+          "width": 338.8,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Litani",
+          "nameRu": "река Литани",
+          "naturalEarthId": 1159121863,
+          "wikidataId": "Q2645279"
+        },
+        {
+          "name": "Maroni",
+          "nameRu": "Марони",
+          "naturalEarthId": 1159123137,
+          "wikidataId": "Q1369002"
+        }
+      ]
+    },
+    "gh": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 15,
+      "candidateFocusRiverSystems": 15,
+      "candidateFocusPaths": 1882,
+      "retainedFocusRiverSystems": 15,
+      "retainedFocusPaths": 1882,
+      "namedRiverSystems": 4,
+      "renderedLength": 3704.6,
+      "renderedSpan": 405.7,
+      "countryRiverLength": 3641.6,
+      "focusRectangles": [
+        {
+          "x": 257.3,
+          "y": 52,
+          "width": 285.4,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "White Volta",
+          "nameRu": "Белая Вольта",
+          "naturalEarthId": 1159115595,
+          "wikidataId": "Q1259188"
+        },
+        {
+          "name": "Volta",
+          "nameRu": "Вольта",
+          "naturalEarthId": 1159113273,
+          "wikidataId": "Q192415"
+        },
+        {
+          "name": "Oti",
+          "nameRu": "Оти",
+          "naturalEarthId": 1159126001,
+          "wikidataId": "Q252472"
+        }
+      ]
+    },
+    "gl": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 333,
+      "candidateFocusRiverSystems": 333,
+      "candidateFocusPaths": 13852,
+      "retainedFocusRiverSystems": 333,
+      "retainedFocusPaths": 13852,
+      "namedRiverSystems": 0,
+      "renderedLength": 7679.3,
+      "renderedSpan": 409.5,
+      "countryRiverLength": 7999.1,
+      "focusRectangles": [
+        {
+          "x": 230.6,
+          "y": 52,
+          "width": 338.7,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "gm": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 3,
+      "candidateFocusRiverSystems": 3,
+      "candidateFocusPaths": 90,
+      "retainedFocusRiverSystems": 3,
+      "retainedFocusPaths": 90,
+      "namedRiverSystems": 1,
+      "renderedLength": 840,
+      "renderedSpan": 420.7,
+      "countryRiverLength": 782.3,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 177.5,
+          "width": 640,
+          "height": 165
+        }
+      ],
+      "labelledRivers": []
+    },
+    "gn": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 48,
+      "candidateFocusRiverSystems": 48,
+      "candidateFocusPaths": 2940,
+      "retainedFocusRiverSystems": 48,
+      "retainedFocusPaths": 2940,
+      "namedRiverSystems": 6,
+      "renderedLength": 5401.4,
+      "renderedSpan": 530.6,
+      "countryRiverLength": 5382.2,
+      "focusRectangles": [
+        {
+          "x": 122.8,
+          "y": 52,
+          "width": 554.4,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Niger",
+          "nameRu": "Нигер",
+          "naturalEarthId": 1159123305,
+          "wikidataId": "Q3542"
+        },
+        {
+          "name": "Bafing",
+          "nameRu": "Бафинг",
+          "naturalEarthId": 1159112029,
+          "wikidataId": "Q180558"
+        },
+        {
+          "name": "Geba",
+          "nameRu": "Геба",
+          "naturalEarthId": 1159121631,
+          "wikidataId": "Q201520"
+        }
+      ]
+    },
+    "gq": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 15,
+      "candidateFocusRiverSystems": 15,
+      "candidateFocusPaths": 395,
+      "retainedFocusRiverSystems": 15,
+      "retainedFocusPaths": 395,
+      "namedRiverSystems": 1,
+      "renderedLength": 583.1,
+      "renderedSpan": 219.6,
+      "countryRiverLength": 569.9,
+      "focusRectangles": [
+        {
+          "x": 395.9,
+          "y": 52,
+          "width": 231,
+          "height": 225.7
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Benito",
+          "nameRu": "Бенито",
+          "naturalEarthId": 1159123121,
+          "wikidataId": "Q2634342"
+        }
+      ]
+    },
+    "gr": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 29,
+      "candidateFocusRiverSystems": 29,
+      "candidateFocusPaths": 500,
+      "retainedFocusRiverSystems": 29,
+      "retainedFocusPaths": 500,
+      "namedRiverSystems": 3,
+      "renderedLength": 952.9,
+      "renderedSpan": 309.4,
+      "countryRiverLength": 917.3,
+      "focusRectangles": [
+        {
+          "x": 193.9,
+          "y": 52,
+          "width": 412.1,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Haliacmon",
+          "nameRu": "Альякмон",
+          "naturalEarthId": 1159128239,
+          "wikidataId": "Q640366"
+        },
+        {
+          "name": "Maritsa",
+          "nameRu": "Марица",
+          "naturalEarthId": 1159120523,
+          "wikidataId": "Q204347"
+        },
+        {
+          "name": "Struma",
+          "nameRu": "Струма",
+          "naturalEarthId": 1159110511,
+          "wikidataId": "Q204127"
+        }
+      ]
+    },
+    "gt": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 41,
+      "candidateFocusRiverSystems": 41,
+      "candidateFocusPaths": 1609,
+      "retainedFocusRiverSystems": 41,
+      "retainedFocusPaths": 1609,
+      "namedRiverSystems": 5,
+      "renderedLength": 3758.6,
+      "renderedSpan": 418.8,
+      "countryRiverLength": 3689.7,
+      "focusRectangles": [
+        {
+          "x": 202.7,
+          "y": 52,
+          "width": 394.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Motagua",
+          "nameRu": "Мотагуа",
+          "naturalEarthId": 1159126297,
+          "wikidataId": "Q1346148"
+        },
+        {
+          "name": "Chixoy",
+          "nameRu": "река Чиксой",
+          "naturalEarthId": 1159113579,
+          "wikidataId": "Q1726738"
+        },
+        {
+          "name": "Cuilco",
+          "nameRu": "река Куилько",
+          "naturalEarthId": 1159121525,
+          "wikidataId": "Q8055142"
+        }
+      ]
+    },
+    "gw": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 9,
+      "candidateFocusRiverSystems": 9,
+      "candidateFocusPaths": 345,
+      "retainedFocusRiverSystems": 9,
+      "retainedFocusPaths": 345,
+      "namedRiverSystems": 1,
+      "renderedLength": 1871.8,
+      "renderedSpan": 509.4,
+      "countryRiverLength": 1833.4,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 73.3,
+          "width": 640,
+          "height": 373.4
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Geba",
+          "nameRu": "Геба",
+          "naturalEarthId": 1159121631,
+          "wikidataId": "Q201520"
+        }
+      ]
+    },
+    "gy": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 30,
+      "candidateFocusRiverSystems": 30,
+      "candidateFocusPaths": 3605,
+      "retainedFocusRiverSystems": 30,
+      "retainedFocusPaths": 3605,
+      "namedRiverSystems": 4,
+      "renderedLength": 4000.6,
+      "renderedSpan": 398.5,
+      "countryRiverLength": 3968.5,
+      "focusRectangles": [
+        {
+          "x": 261.8,
+          "y": 52,
+          "width": 276.3,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Essequibo",
+          "nameRu": "Эссекибо",
+          "naturalEarthId": 1159121913,
+          "wikidataId": "Q589911"
+        },
+        {
+          "name": "Courantyne",
+          "nameRu": "Корантейн",
+          "naturalEarthId": 1159121197,
+          "wikidataId": "Q508582"
+        },
+        {
+          "name": "Cuyuni",
+          "nameRu": "Куюни",
+          "naturalEarthId": 1159121801,
+          "wikidataId": "Q1146770"
+        }
+      ]
+    },
+    "hn": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 37,
+      "candidateFocusRiverSystems": 37,
+      "candidateFocusPaths": 1519,
+      "retainedFocusRiverSystems": 37,
+      "retainedFocusPaths": 1519,
+      "namedRiverSystems": 4,
+      "renderedLength": 3872.3,
+      "renderedSpan": 595.5,
+      "countryRiverLength": 3781.5,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 72.2,
+          "width": 640,
+          "height": 375.6
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Coco",
+          "nameRu": "Коко",
+          "naturalEarthId": 1159117081,
+          "wikidataId": "Q1468689"
+        },
+        {
+          "name": "Ula",
+          "nameRu": null,
+          "naturalEarthId": 1159122135,
+          "wikidataId": null
+        },
+        {
+          "name": "Lempa",
+          "nameRu": "Лемпа",
+          "naturalEarthId": 1159118799,
+          "wikidataId": "Q1511554"
+        }
+      ]
+    },
+    "hr": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 9,
+      "candidateFocusRiverSystems": 9,
+      "candidateFocusPaths": 329,
+      "retainedFocusRiverSystems": 9,
+      "retainedFocusPaths": 329,
+      "namedRiverSystems": 5,
+      "renderedLength": 1319.8,
+      "renderedSpan": 354.6,
+      "countryRiverLength": 1147.6,
+      "focusRectangles": [
+        {
+          "x": 187.8,
+          "y": 52,
+          "width": 424.4,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Sava",
+          "nameRu": "Сава",
+          "naturalEarthId": 1159121461,
+          "wikidataId": "Q14383"
+        },
+        {
+          "name": "Mur",
+          "nameRu": "Мура",
+          "naturalEarthId": 1159113895,
+          "wikidataId": "Q204040"
+        },
+        {
+          "name": "Drava",
+          "nameRu": "Драва",
+          "naturalEarthId": 1159129685,
+          "wikidataId": "Q171009"
+        }
+      ]
+    },
+    "ht": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 5,
+      "candidateFocusRiverSystems": 5,
+      "candidateFocusPaths": 85,
+      "retainedFocusRiverSystems": 5,
+      "retainedFocusPaths": 85,
+      "namedRiverSystems": 0,
+      "renderedLength": 514.5,
+      "renderedSpan": 296.5,
+      "countryRiverLength": 473,
+      "focusRectangles": [
+        {
+          "x": 128.5,
+          "y": 52,
+          "width": 543,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "hu": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 4,
+      "candidateFocusRiverSystems": 4,
+      "candidateFocusPaths": 698,
+      "retainedFocusRiverSystems": 4,
+      "retainedFocusPaths": 698,
+      "namedRiverSystems": 7,
+      "renderedLength": 3794.5,
+      "renderedSpan": 622.3,
+      "countryRiverLength": 3545.8,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 63.8,
+          "width": 640,
+          "height": 392.3
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Tisza",
+          "nameRu": "Тиса",
+          "naturalEarthId": 1159117275,
+          "wikidataId": "Q134350"
+        },
+        {
+          "name": "Danube",
+          "nameRu": "Дунай",
+          "naturalEarthId": 1159115307,
+          "wikidataId": "Q1653"
+        },
+        {
+          "name": "Sió",
+          "nameRu": "Шио",
+          "naturalEarthId": 1159123377,
+          "wikidataId": "Q1076530"
+        }
+      ]
+    },
+    "id": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 765,
+      "candidateFocusRiverSystems": 765,
+      "candidateFocusPaths": 30772,
+      "retainedFocusRiverSystems": 765,
+      "retainedFocusPaths": 30772,
+      "namedRiverSystems": 14,
+      "renderedLength": 7073.8,
+      "renderedSpan": 638.8,
+      "countryRiverLength": 8066.9,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 144,
+          "width": 640,
+          "height": 232
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Barito",
+          "nameRu": "Барито",
+          "naturalEarthId": 1159114011,
+          "wikidataId": "Q979518"
+        },
+        {
+          "name": "Digul",
+          "nameRu": "Дигул",
+          "naturalEarthId": 1159117311,
+          "wikidataId": "Q575695"
+        },
+        {
+          "name": "Masi",
+          "nameRu": "река Муси",
+          "naturalEarthId": 1159111015,
+          "wikidataId": null
+        }
+      ]
+    },
+    "ie": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 33,
+      "candidateFocusRiverSystems": 33,
+      "candidateFocusPaths": 618,
+      "retainedFocusRiverSystems": 33,
+      "retainedFocusPaths": 618,
+      "namedRiverSystems": 1,
+      "renderedLength": 1441.3,
+      "renderedSpan": 343.1,
+      "countryRiverLength": 1445.5,
+      "focusRectangles": [
+        {
+          "x": 258.9,
+          "y": 52,
+          "width": 282.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Shannon",
+          "nameRu": "Шаннон",
+          "naturalEarthId": 1159124887,
+          "wikidataId": "Q192820"
+        }
+      ]
+    },
+    "in": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 280,
+      "candidateFocusRiverSystems": 280,
+      "candidateFocusPaths": 34781,
+      "retainedFocusRiverSystems": 280,
+      "retainedFocusPaths": 34781,
+      "namedRiverSystems": 40,
+      "renderedLength": 12176,
+      "renderedSpan": 411.2,
+      "countryRiverLength": 13235.1,
+      "focusRectangles": [
+        {
+          "x": 194.2,
+          "y": 52,
+          "width": 411.6,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Ganges",
+          "nameRu": "Ганг",
+          "naturalEarthId": 1159122643,
+          "wikidataId": "Q5089"
+        },
+        {
+          "name": "Brahmaputra",
+          "nameRu": "Брахмапутра",
+          "naturalEarthId": 1159121213,
+          "wikidataId": "Q45403"
+        },
+        {
+          "name": "Godavari",
+          "nameRu": "Годавари",
+          "naturalEarthId": 1159113319,
+          "wikidataId": "Q191314"
+        }
+      ]
+    },
+    "iq": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 34,
+      "candidateFocusRiverSystems": 34,
+      "candidateFocusPaths": 3011,
+      "retainedFocusRiverSystems": 34,
+      "retainedFocusPaths": 3011,
+      "namedRiverSystems": 8,
+      "renderedLength": 5578.4,
+      "renderedSpan": 412.3,
+      "countryRiverLength": 5632.4,
+      "focusRectangles": [
+        {
+          "x": 195.2,
+          "y": 52,
+          "width": 409.7,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Euphrates",
+          "nameRu": "Евфрат",
+          "naturalEarthId": 1159123947,
+          "wikidataId": "Q34589"
+        },
+        {
+          "name": "Tigris",
+          "nameRu": "Тигр",
+          "naturalEarthId": 1159112275,
+          "wikidataId": "Q35591"
+        },
+        {
+          "name": "Shatt al-Arab",
+          "nameRu": "Шатт-эль-Араб",
+          "naturalEarthId": 1159128827,
+          "wikidataId": "Q166966"
+        }
+      ]
+    },
+    "ir": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 245,
+      "candidateFocusRiverSystems": 245,
+      "candidateFocusPaths": 9844,
+      "retainedFocusRiverSystems": 245,
+      "retainedFocusPaths": 9844,
+      "namedRiverSystems": 9,
+      "renderedLength": 8654.3,
+      "renderedSpan": 452.8,
+      "countryRiverLength": 8847.4,
+      "focusRectangles": [
+        {
+          "x": 169.6,
+          "y": 52,
+          "width": 460.8,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Karkheh",
+          "nameRu": "Керхе",
+          "naturalEarthId": 1159126585,
+          "wikidataId": "Q1472376"
+        },
+        {
+          "name": "Qezel Uzan",
+          "nameRu": "Кызылузен",
+          "naturalEarthId": 1159110365,
+          "wikidataId": "Q18520774"
+        },
+        {
+          "name": "Atrek",
+          "nameRu": "Атрек",
+          "naturalEarthId": 1159121397,
+          "wikidataId": "Q283622"
+        }
+      ]
+    },
+    "is": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 66,
+      "candidateFocusRiverSystems": 66,
+      "candidateFocusPaths": 1652,
+      "retainedFocusRiverSystems": 66,
+      "retainedFocusPaths": 1652,
+      "namedRiverSystems": 2,
+      "renderedLength": 3721.9,
+      "renderedSpan": 472.6,
+      "countryRiverLength": 3739.9,
+      "focusRectangles": [
+        {
+          "x": 90.6,
+          "y": 52,
+          "width": 618.8,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Drau",
+          "nameRu": "река Драва",
+          "naturalEarthId": 1159116727,
+          "wikidataId": null
+        },
+        {
+          "name": "Þjórsá",
+          "nameRu": "Тьоурсау",
+          "naturalEarthId": 1159126449,
+          "wikidataId": "Q207136"
+        }
+      ]
+    },
+    "it": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 71,
+      "candidateFocusRiverSystems": 71,
+      "candidateFocusPaths": 1852,
+      "retainedFocusRiverSystems": 71,
+      "retainedFocusPaths": 1852,
+      "namedRiverSystems": 8,
+      "renderedLength": 2096.4,
+      "renderedSpan": 391,
+      "countryRiverLength": 2168,
+      "focusRectangles": [
+        {
+          "x": 223.1,
+          "y": 52,
+          "width": 353.9,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Po",
+          "nameRu": "По",
+          "naturalEarthId": 1159129663,
+          "wikidataId": "Q643"
+        },
+        {
+          "name": "Adige",
+          "nameRu": "Адидже",
+          "naturalEarthId": 1159128205,
+          "wikidataId": "Q13696"
+        },
+        {
+          "name": "Tiber",
+          "nameRu": "Тибр",
+          "naturalEarthId": 1159120541,
+          "wikidataId": "Q13712"
+        }
+      ]
+    },
+    "jo": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 32,
+      "candidateFocusRiverSystems": 32,
+      "candidateFocusPaths": 446,
+      "retainedFocusRiverSystems": 32,
+      "retainedFocusPaths": 446,
+      "namedRiverSystems": 1,
+      "renderedLength": 1658.9,
+      "renderedSpan": 395,
+      "countryRiverLength": 1515.6,
+      "focusRectangles": [
+        {
+          "x": 215.4,
+          "y": 52,
+          "width": 369.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "jp": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 195,
+      "candidateFocusRiverSystems": 195,
+      "candidateFocusPaths": 3902,
+      "retainedFocusRiverSystems": 195,
+      "retainedFocusPaths": 3902,
+      "namedRiverSystems": 3,
+      "renderedLength": 1552.3,
+      "renderedSpan": 269.4,
+      "countryRiverLength": 1677.5,
+      "focusRectangles": [
+        {
+          "x": 301.4,
+          "y": 52,
+          "width": 276.4,
+          "height": 299.2
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Tone",
+          "nameRu": "Тоне",
+          "naturalEarthId": 1159126711,
+          "wikidataId": "Q177452"
+        },
+        {
+          "name": "Ishikari",
+          "nameRu": "Исикари",
+          "naturalEarthId": 1159113981,
+          "wikidataId": "Q1061515"
+        },
+        {
+          "name": "Mogami",
+          "nameRu": "Могами",
+          "naturalEarthId": 1159127925,
+          "wikidataId": "Q596120"
+        }
+      ]
+    },
+    "ke": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 56,
+      "candidateFocusRiverSystems": 56,
+      "candidateFocusPaths": 3453,
+      "retainedFocusRiverSystems": 56,
+      "retainedFocusPaths": 3453,
+      "namedRiverSystems": 1,
+      "renderedLength": 5184.8,
+      "renderedSpan": 414.8,
+      "countryRiverLength": 5240,
+      "focusRectangles": [
+        {
+          "x": 228.7,
+          "y": 52,
+          "width": 342.6,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Tana",
+          "nameRu": "Тана",
+          "naturalEarthId": 1159119197,
+          "wikidataId": "Q331162"
+        }
+      ]
+    },
+    "kg": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 16,
+      "candidateFocusRiverSystems": 16,
+      "candidateFocusPaths": 1151,
+      "retainedFocusRiverSystems": 16,
+      "retainedFocusPaths": 1151,
+      "namedRiverSystems": 2,
+      "renderedLength": 2512,
+      "renderedSpan": 600.5,
+      "countryRiverLength": 2451.2,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 102.9,
+          "width": 640,
+          "height": 314.1
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Naryn",
+          "nameRu": "Нарын",
+          "naturalEarthId": 1159113113,
+          "wikidataId": "Q651195"
+        },
+        {
+          "name": "Toxkan He",
+          "nameRu": "Таушкандарья",
+          "naturalEarthId": 1159128389,
+          "wikidataId": "Q2641599"
+        }
+      ]
+    },
+    "kh": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 22,
+      "candidateFocusRiverSystems": 22,
+      "candidateFocusPaths": 2390,
+      "retainedFocusRiverSystems": 22,
+      "retainedFocusPaths": 2390,
+      "namedRiverSystems": 6,
+      "renderedLength": 5448.6,
+      "renderedSpan": 492.3,
+      "countryRiverLength": 5498,
+      "focusRectangles": [
+        {
+          "x": 149.2,
+          "y": 52,
+          "width": 501.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Mekong",
+          "nameRu": "Меконг",
+          "naturalEarthId": 1159121023,
+          "wikidataId": "Q41179"
+        },
+        {
+          "name": "Tonlé Sap",
+          "nameRu": "Сап",
+          "naturalEarthId": 1159109429,
+          "wikidataId": "Q939958"
+        },
+        {
+          "name": "Srepok",
+          "nameRu": "река Срепок",
+          "naturalEarthId": 1159123475,
+          "wikidataId": null
+        }
+      ]
+    },
+    "kp": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 28,
+      "candidateFocusRiverSystems": 28,
+      "candidateFocusPaths": 941,
+      "retainedFocusRiverSystems": 28,
+      "retainedFocusPaths": 941,
+      "namedRiverSystems": 2,
+      "renderedLength": 2364.7,
+      "renderedSpan": 399.3,
+      "countryRiverLength": 2168,
+      "focusRectangles": [
+        {
+          "x": 210.4,
+          "y": 52,
+          "width": 379.1,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Tumen",
+          "nameRu": "Туманная",
+          "naturalEarthId": 1159111267,
+          "wikidataId": "Q55499"
+        },
+        {
+          "name": "Yalu",
+          "nameRu": "Ялуцзян",
+          "naturalEarthId": 1159125347,
+          "wikidataId": "Q55498"
+        }
+      ]
+    },
+    "kr": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 25,
+      "candidateFocusRiverSystems": 25,
+      "candidateFocusPaths": 794,
+      "retainedFocusRiverSystems": 25,
+      "retainedFocusPaths": 794,
+      "namedRiverSystems": 3,
+      "renderedLength": 1675.9,
+      "renderedSpan": 283.2,
+      "countryRiverLength": 1708.7,
+      "focusRectangles": [
+        {
+          "x": 292.8,
+          "y": 52,
+          "width": 221.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Nakdong",
+          "nameRu": "Нактонган",
+          "naturalEarthId": 1159127153,
+          "wikidataId": "Q55501"
+        },
+        {
+          "name": "Namhan",
+          "nameRu": "река Намхан",
+          "naturalEarthId": 1159122563,
+          "wikidataId": "Q10856094"
+        },
+        {
+          "name": "Han",
+          "nameRu": "Ханган",
+          "naturalEarthId": 1159123863,
+          "wikidataId": "Q55500"
+        }
+      ]
+    },
+    "kw": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 6,
+      "candidateFocusRiverSystems": 6,
+      "candidateFocusPaths": 100,
+      "retainedFocusRiverSystems": 6,
+      "retainedFocusPaths": 100,
+      "namedRiverSystems": 0,
+      "renderedLength": 1170.2,
+      "renderedSpan": 399.9,
+      "countryRiverLength": 1138.4,
+      "focusRectangles": [
+        {
+          "x": 179.7,
+          "y": 52,
+          "width": 440.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "kz": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 363,
+      "candidateFocusRiverSystems": 363,
+      "candidateFocusPaths": 15698,
+      "retainedFocusRiverSystems": 363,
+      "retainedFocusPaths": 15698,
+      "namedRiverSystems": 6,
+      "renderedLength": 11958,
+      "renderedSpan": 632.2,
+      "countryRiverLength": 12396.7,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 86.1,
+          "width": 640,
+          "height": 347.8
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Irtysh",
+          "nameRu": "Иртыш",
+          "naturalEarthId": 1159116591,
+          "wikidataId": "Q128102"
+        },
+        {
+          "name": "Syr Dar",
+          "nameRu": "Сырдарья",
+          "naturalEarthId": 1159113079,
+          "wikidataId": "Q483159"
+        },
+        {
+          "name": "Ishim",
+          "nameRu": "Ишим",
+          "naturalEarthId": 1159121477,
+          "wikidataId": "Q191524"
+        }
+      ]
+    },
+    "la": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 11,
+      "candidateFocusRiverSystems": 11,
+      "candidateFocusPaths": 3339,
+      "retainedFocusRiverSystems": 11,
+      "retainedFocusPaths": 3339,
+      "namedRiverSystems": 6,
+      "renderedLength": 3601.2,
+      "renderedSpan": 408.3,
+      "countryRiverLength": 3603.1,
+      "focusRectangles": [
+        {
+          "x": 225.7,
+          "y": 52,
+          "width": 348.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Mekong",
+          "nameRu": "Меконг",
+          "naturalEarthId": 1159119517,
+          "wikidataId": "Q41179"
+        },
+        {
+          "name": "Nam Ou",
+          "nameRu": "Намоу",
+          "naturalEarthId": 1159121319,
+          "wikidataId": "Q973135"
+        },
+        {
+          "name": "Kong",
+          "nameRu": "Конг",
+          "naturalEarthId": 1159122251,
+          "wikidataId": "Q2228176"
+        }
+      ]
+    },
+    "li": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 2,
+      "candidateFocusRiverSystems": 2,
+      "candidateFocusPaths": 16,
+      "retainedFocusRiverSystems": 2,
+      "retainedFocusPaths": 16,
+      "namedRiverSystems": 0,
+      "renderedLength": 497.7,
+      "renderedSpan": 403.7,
+      "countryRiverLength": 429.4,
+      "focusRectangles": [
+        {
+          "x": 306,
+          "y": 52,
+          "width": 188,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "lk": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 30,
+      "candidateFocusRiverSystems": 30,
+      "candidateFocusPaths": 587,
+      "retainedFocusRiverSystems": 30,
+      "retainedFocusPaths": 587,
+      "namedRiverSystems": 1,
+      "renderedLength": 1496.7,
+      "renderedSpan": 325.7,
+      "countryRiverLength": 1522.2,
+      "focusRectangles": [
+        {
+          "x": 282.1,
+          "y": 52,
+          "width": 235.7,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Mahaweli",
+          "nameRu": "Махавели-Ганга",
+          "naturalEarthId": 1159125053,
+          "wikidataId": "Q1518007"
+        }
+      ]
+    },
+    "lr": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 43,
+      "candidateFocusRiverSystems": 43,
+      "candidateFocusPaths": 2323,
+      "retainedFocusRiverSystems": 43,
+      "retainedFocusPaths": 2323,
+      "namedRiverSystems": 2,
+      "renderedLength": 3876.4,
+      "renderedSpan": 406,
+      "countryRiverLength": 3851.7,
+      "focusRectangles": [
+        {
+          "x": 199.5,
+          "y": 52,
+          "width": 401,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Cess",
+          "nameRu": "река Цесс",
+          "naturalEarthId": 1159110017,
+          "wikidataId": null
+        },
+        {
+          "name": "Saint Paul",
+          "nameRu": "Сент-Пол",
+          "naturalEarthId": 1159127967,
+          "wikidataId": "Q1167772"
+        }
+      ]
+    },
+    "ls": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 3,
+      "candidateFocusRiverSystems": 3,
+      "candidateFocusPaths": 204,
+      "retainedFocusRiverSystems": 3,
+      "retainedFocusPaths": 204,
+      "namedRiverSystems": 2,
+      "renderedLength": 1651.8,
+      "renderedSpan": 381,
+      "countryRiverLength": 1548.3,
+      "focusRectangles": [
+        {
+          "x": 189.2,
+          "y": 52,
+          "width": 421.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Orange",
+          "nameRu": "Оранжевая",
+          "naturalEarthId": 1159114147,
+          "wikidataId": "Q181475"
+        },
+        {
+          "name": "Caledon",
+          "nameRu": "Каледон",
+          "naturalEarthId": 1159122611,
+          "wikidataId": "Q509983"
+        }
+      ]
+    },
+    "lt": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 11,
+      "candidateFocusRiverSystems": 11,
+      "candidateFocusPaths": 431,
+      "retainedFocusRiverSystems": 11,
+      "retainedFocusPaths": 431,
+      "namedRiverSystems": 2,
+      "renderedLength": 2817.5,
+      "renderedSpan": 516.4,
+      "countryRiverLength": 2675.4,
+      "focusRectangles": [
+        {
+          "x": 126.8,
+          "y": 52,
+          "width": 546.3,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Neris",
+          "nameRu": "Вилия",
+          "naturalEarthId": 1159121037,
+          "wikidataId": "Q207903"
+        },
+        {
+          "name": "Neman",
+          "nameRu": "Неман",
+          "naturalEarthId": 1159123553,
+          "wikidataId": "Q5622"
+        }
+      ]
+    },
+    "lv": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 18,
+      "candidateFocusRiverSystems": 18,
+      "candidateFocusPaths": 356,
+      "retainedFocusRiverSystems": 18,
+      "retainedFocusPaths": 356,
+      "namedRiverSystems": 1,
+      "renderedLength": 2268.5,
+      "renderedSpan": 632.4,
+      "countryRiverLength": 2235.1,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 65.5,
+          "width": 640,
+          "height": 389
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Daugava",
+          "nameRu": "Западная Двина",
+          "naturalEarthId": 1159113381,
+          "wikidataId": "Q8197"
+        }
+      ]
+    },
+    "ly": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 317,
+      "candidateFocusRiverSystems": 317,
+      "candidateFocusPaths": 7802,
+      "retainedFocusRiverSystems": 317,
+      "retainedFocusPaths": 7802,
+      "namedRiverSystems": 0,
+      "renderedLength": 9496.3,
+      "renderedSpan": 429.4,
+      "countryRiverLength": 9760.1,
+      "focusRectangles": [
+        {
+          "x": 183.8,
+          "y": 52,
+          "width": 432.3,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "ma": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 102,
+      "candidateFocusRiverSystems": 102,
+      "candidateFocusPaths": 3288,
+      "retainedFocusRiverSystems": 102,
+      "retainedFocusPaths": 3288,
+      "namedRiverSystems": 4,
+      "renderedLength": 3006.4,
+      "renderedSpan": 407.3,
+      "countryRiverLength": 3102.9,
+      "focusRectangles": [
+        {
+          "x": 198.9,
+          "y": 52,
+          "width": 402.1,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Moulouya",
+          "nameRu": "Мулуя",
+          "naturalEarthId": 1159110213,
+          "wikidataId": "Q1146608"
+        },
+        {
+          "name": "Sous",
+          "nameRu": "Сус",
+          "naturalEarthId": 1159129007,
+          "wikidataId": "Q2883844"
+        }
+      ]
+    },
+    "md": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 4,
+      "candidateFocusRiverSystems": 4,
+      "candidateFocusPaths": 248,
+      "retainedFocusRiverSystems": 4,
+      "retainedFocusPaths": 248,
+      "namedRiverSystems": 2,
+      "renderedLength": 1510,
+      "renderedSpan": 415.5,
+      "countryRiverLength": 1199.9,
+      "focusRectangles": [
+        {
+          "x": 235.1,
+          "y": 52,
+          "width": 329.8,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Dniester",
+          "nameRu": "Днестр",
+          "naturalEarthId": 1159114451,
+          "wikidataId": "Q131210"
+        },
+        {
+          "name": "Prut",
+          "nameRu": "Прут",
+          "naturalEarthId": 1159122545,
+          "wikidataId": "Q182445"
+        }
+      ]
+    },
+    "me": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 7,
+      "candidateFocusRiverSystems": 7,
+      "candidateFocusPaths": 125,
+      "retainedFocusRiverSystems": 7,
+      "retainedFocusPaths": 125,
+      "namedRiverSystems": 2,
+      "renderedLength": 792.2,
+      "renderedSpan": 384.4,
+      "countryRiverLength": 724.2,
+      "focusRectangles": [
+        {
+          "x": 226.8,
+          "y": 52,
+          "width": 346.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Drina",
+          "nameRu": "Дрина",
+          "naturalEarthId": 1159128273,
+          "wikidataId": "Q186901"
+        },
+        {
+          "name": "Bojana",
+          "nameRu": "Буна",
+          "naturalEarthId": 1159111667,
+          "wikidataId": "Q372490"
+        }
+      ]
+    },
+    "mg": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 170,
+      "candidateFocusRiverSystems": 170,
+      "candidateFocusPaths": 6658,
+      "retainedFocusRiverSystems": 170,
+      "retainedFocusPaths": 6658,
+      "namedRiverSystems": 7,
+      "renderedLength": 4428.7,
+      "renderedSpan": 399.3,
+      "countryRiverLength": 4745.5,
+      "focusRectangles": [
+        {
+          "x": 295,
+          "y": 52,
+          "width": 210,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Betsiboka",
+          "nameRu": "Бецибука",
+          "naturalEarthId": 1159121175,
+          "wikidataId": "Q425"
+        },
+        {
+          "name": "Onilahy",
+          "nameRu": "Унилахи",
+          "naturalEarthId": 1159128199,
+          "wikidataId": "Q2465863"
+        },
+        {
+          "name": "Mangoky",
+          "nameRu": "Мангоки",
+          "naturalEarthId": 1159117429,
+          "wikidataId": "Q1288223"
+        }
+      ]
+    },
+    "mk": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 7,
+      "candidateFocusRiverSystems": 7,
+      "candidateFocusPaths": 258,
+      "retainedFocusRiverSystems": 7,
+      "retainedFocusPaths": 258,
+      "namedRiverSystems": 1,
+      "renderedLength": 2058.7,
+      "renderedSpan": 524.9,
+      "countryRiverLength": 2043.8,
+      "focusRectangles": [
+        {
+          "x": 137.7,
+          "y": 52,
+          "width": 524.6,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Drin",
+          "nameRu": "Дрин",
+          "naturalEarthId": 1159111635,
+          "wikidataId": "Q213975"
+        }
+      ]
+    },
+    "ml": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 142,
+      "candidateFocusRiverSystems": 142,
+      "candidateFocusPaths": 6861,
+      "retainedFocusRiverSystems": 142,
+      "retainedFocusPaths": 6861,
+      "namedRiverSystems": 9,
+      "renderedLength": 6504.3,
+      "renderedSpan": 443.7,
+      "countryRiverLength": 6681.8,
+      "focusRectangles": [
+        {
+          "x": 179.7,
+          "y": 52,
+          "width": 440.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Niger",
+          "nameRu": "Нигер",
+          "naturalEarthId": 1159123305,
+          "wikidataId": "Q3542"
+        },
+        {
+          "name": "Baoulé",
+          "nameRu": "Бауле",
+          "naturalEarthId": 1159127821,
+          "wikidataId": "Q635292"
+        },
+        {
+          "name": "Bani",
+          "nameRu": "Бани",
+          "naturalEarthId": 1159123601,
+          "wikidataId": "Q289460"
+        }
+      ]
+    },
+    "mm": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 126,
+      "candidateFocusRiverSystems": 126,
+      "candidateFocusPaths": 13635,
+      "retainedFocusRiverSystems": 126,
+      "retainedFocusPaths": 13635,
+      "namedRiverSystems": 10,
+      "renderedLength": 5044.8,
+      "renderedSpan": 407.3,
+      "countryRiverLength": 5472.3,
+      "focusRectangles": [
+        {
+          "x": 304.8,
+          "y": 52,
+          "width": 190.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Irrawaddy",
+          "nameRu": "Иравади",
+          "naturalEarthId": 1159112315,
+          "wikidataId": "Q26076"
+        },
+        {
+          "name": "Salween",
+          "nameRu": "Салуин",
+          "naturalEarthId": 1159112449,
+          "wikidataId": "Q26422"
+        },
+        {
+          "name": "Chindwin",
+          "nameRu": "Чиндуин",
+          "naturalEarthId": 1159120751,
+          "wikidataId": "Q870069"
+        }
+      ]
+    },
+    "mn": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 278,
+      "candidateFocusRiverSystems": 278,
+      "candidateFocusPaths": 8547,
+      "retainedFocusRiverSystems": 278,
+      "retainedFocusPaths": 8547,
+      "namedRiverSystems": 6,
+      "renderedLength": 7006.2,
+      "renderedSpan": 624.4,
+      "countryRiverLength": 7190.9,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 106.6,
+          "width": 640,
+          "height": 306.7
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Kherlen",
+          "nameRu": "Керулен",
+          "naturalEarthId": 1159110651,
+          "wikidataId": "Q641020"
+        },
+        {
+          "name": "Orkhon",
+          "nameRu": "Орхон",
+          "naturalEarthId": 1159128435,
+          "wikidataId": "Q237099"
+        },
+        {
+          "name": "Selenga",
+          "nameRu": "Селенга",
+          "naturalEarthId": 1159116113,
+          "wikidataId": "Q75745"
+        }
+      ]
+    },
+    "mr": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 241,
+      "candidateFocusRiverSystems": 241,
+      "candidateFocusPaths": 4777,
+      "retainedFocusRiverSystems": 241,
+      "retainedFocusPaths": 4777,
+      "namedRiverSystems": 1,
+      "renderedLength": 5624.7,
+      "renderedSpan": 417.1,
+      "countryRiverLength": 5643.8,
+      "focusRectangles": [
+        {
+          "x": 210.3,
+          "y": 52,
+          "width": 379.3,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Senegal",
+          "nameRu": "Сенегал",
+          "naturalEarthId": 1159112231,
+          "wikidataId": "Q3569"
+        }
+      ]
+    },
+    "mw": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 10,
+      "candidateFocusRiverSystems": 10,
+      "candidateFocusPaths": 732,
+      "retainedFocusRiverSystems": 10,
+      "retainedFocusPaths": 732,
+      "namedRiverSystems": 1,
+      "renderedLength": 1407.1,
+      "renderedSpan": 410.6,
+      "countryRiverLength": 1349.3,
+      "focusRectangles": [
+        {
+          "x": 315.4,
+          "y": 52,
+          "width": 169.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Shire",
+          "nameRu": "Шире",
+          "naturalEarthId": 1159126365,
+          "wikidataId": "Q2279579"
+        }
+      ]
+    },
+    "mx": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 358,
+      "candidateFocusRiverSystems": 358,
+      "candidateFocusPaths": 13821,
+      "retainedFocusRiverSystems": 358,
+      "retainedFocusPaths": 13821,
+      "namedRiverSystems": 28,
+      "renderedLength": 8469.3,
+      "renderedSpan": 627.3,
+      "countryRiverLength": 8910.3,
+      "focusRectangles": [
+        {
+          "x": 81.3,
+          "y": 52,
+          "width": 637.4,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Grande",
+          "nameRu": "Рио-Гранде",
+          "naturalEarthId": 1159111297,
+          "wikidataId": "Q160636"
+        },
+        {
+          "name": "Balsas",
+          "nameRu": "Бальсас",
+          "naturalEarthId": 1159127723,
+          "wikidataId": "Q1129218"
+        },
+        {
+          "name": "Conchos",
+          "nameRu": "Кончос",
+          "naturalEarthId": 1159118845,
+          "wikidataId": "Q1970278"
+        }
+      ]
+    },
+    "my": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 161,
+      "candidateFocusRiverSystems": 161,
+      "candidateFocusPaths": 6583,
+      "retainedFocusRiverSystems": 161,
+      "retainedFocusPaths": 6583,
+      "namedRiverSystems": 4,
+      "renderedLength": 3563.8,
+      "renderedSpan": 606.7,
+      "countryRiverLength": 3850.5,
+      "focusRectangles": [
+        {
+          "x": 402.2,
+          "y": 153.7,
+          "width": 317.8,
+          "height": 212.6
+        },
+        {
+          "x": 80,
+          "y": 174.9,
+          "width": 151.6,
+          "height": 177.7
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Bajang",
+          "nameRu": "Баджанг",
+          "naturalEarthId": 1159122369,
+          "wikidataId": null
+        },
+        {
+          "name": "Pahang",
+          "nameRu": "Паханг",
+          "naturalEarthId": 1159122439,
+          "wikidataId": "Q1783725"
+        },
+        {
+          "name": "Baram",
+          "nameRu": "Барам",
+          "naturalEarthId": 1159110847,
+          "wikidataId": "Q651903"
+        }
+      ]
+    },
+    "mz": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 91,
+      "candidateFocusRiverSystems": 91,
+      "candidateFocusPaths": 5328,
+      "retainedFocusRiverSystems": 91,
+      "retainedFocusPaths": 5328,
+      "namedRiverSystems": 11,
+      "renderedLength": 4095.9,
+      "renderedSpan": 414.7,
+      "countryRiverLength": 4238.3,
+      "focusRectangles": [
+        {
+          "x": 272.2,
+          "y": 52,
+          "width": 255.7,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Zambezi",
+          "nameRu": "Замбези",
+          "naturalEarthId": 1159126201,
+          "wikidataId": "Q43106"
+        },
+        {
+          "name": "Lúrio",
+          "nameRu": "река Лурио",
+          "naturalEarthId": 1159121093,
+          "wikidataId": "Q11047093"
+        },
+        {
+          "name": "Limpopo",
+          "nameRu": "Лимпопо",
+          "naturalEarthId": 1159117383,
+          "wikidataId": "Q173017"
+        }
+      ]
+    },
+    "na": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 83,
+      "candidateFocusRiverSystems": 83,
+      "candidateFocusPaths": 4617,
+      "retainedFocusRiverSystems": 83,
+      "retainedFocusPaths": 4617,
+      "namedRiverSystems": 7,
+      "renderedLength": 5339.2,
+      "renderedSpan": 431.3,
+      "countryRiverLength": 5381,
+      "focusRectangles": [
+        {
+          "x": 184,
+          "y": 52,
+          "width": 432,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Auob",
+          "nameRu": "Ауоб",
+          "naturalEarthId": 1159128195,
+          "wikidataId": null
+        },
+        {
+          "name": "Orange",
+          "nameRu": "Оранжевая",
+          "naturalEarthId": 1159129067,
+          "wikidataId": "Q181475"
+        },
+        {
+          "name": "Cuando",
+          "nameRu": "Квандо",
+          "naturalEarthId": 1159120655,
+          "wikidataId": "Q182942"
+        }
+      ]
+    },
+    "ne": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 114,
+      "candidateFocusRiverSystems": 114,
+      "candidateFocusPaths": 6907,
+      "retainedFocusRiverSystems": 114,
+      "retainedFocusPaths": 6907,
+      "namedRiverSystems": 2,
+      "renderedLength": 9070.9,
+      "renderedSpan": 530.5,
+      "countryRiverLength": 9197.8,
+      "focusRectangles": [
+        {
+          "x": 134.7,
+          "y": 52,
+          "width": 530.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Yobe",
+          "nameRu": "Комадугу-Йобе",
+          "naturalEarthId": 1159128715,
+          "wikidataId": "Q1199792"
+        }
+      ]
+    },
+    "ng": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 62,
+      "candidateFocusRiverSystems": 62,
+      "candidateFocusPaths": 8466,
+      "retainedFocusRiverSystems": 62,
+      "retainedFocusPaths": 8466,
+      "namedRiverSystems": 11,
+      "renderedLength": 9706.3,
+      "renderedSpan": 514.3,
+      "countryRiverLength": 9950.2,
+      "focusRectangles": [
+        {
+          "x": 143.5,
+          "y": 52,
+          "width": 513,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Benue",
+          "nameRu": "Бенуэ",
+          "naturalEarthId": 1159112033,
+          "wikidataId": "Q204806"
+        },
+        {
+          "name": "Sokoto",
+          "nameRu": "Сокото",
+          "naturalEarthId": 1159121693,
+          "wikidataId": "Q2092438"
+        },
+        {
+          "name": "Gongola",
+          "nameRu": "река Гонгола",
+          "naturalEarthId": 1159128175,
+          "wikidataId": "Q4786963"
+        }
+      ]
+    },
+    "ni": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 42,
+      "candidateFocusRiverSystems": 42,
+      "candidateFocusPaths": 2100,
+      "retainedFocusRiverSystems": 42,
+      "retainedFocusPaths": 2100,
+      "namedRiverSystems": 4,
+      "renderedLength": 4263.7,
+      "renderedSpan": 415.5,
+      "countryRiverLength": 4241.8,
+      "focusRectangles": [
+        {
+          "x": 186.1,
+          "y": 52,
+          "width": 427.9,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Grande de Matagalpa",
+          "nameRu": "Гранде-де-Матагальпа",
+          "naturalEarthId": 1159121985,
+          "wikidataId": "Q2568291"
+        },
+        {
+          "name": "San Juan",
+          "nameRu": "Сан-Хуан",
+          "naturalEarthId": 1159112699,
+          "wikidataId": "Q1161204"
+        },
+        {
+          "name": "Coco",
+          "nameRu": "Коко",
+          "naturalEarthId": 1159117081,
+          "wikidataId": "Q1468689"
+        }
+      ]
+    },
+    "nl": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 12,
+      "candidateFocusRiverSystems": 12,
+      "candidateFocusPaths": 225,
+      "retainedFocusRiverSystems": 12,
+      "retainedFocusPaths": 225,
+      "namedRiverSystems": 6,
+      "renderedLength": 1211.9,
+      "renderedSpan": 399.1,
+      "countryRiverLength": 1157.7,
+      "focusRectangles": [
+        {
+          "x": 222.4,
+          "y": 52,
+          "width": 355.3,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Meuse",
+          "nameRu": "Маас",
+          "naturalEarthId": 1159129229,
+          "wikidataId": "Q41986"
+        },
+        {
+          "name": "IJssel",
+          "nameRu": "Эйссел",
+          "naturalEarthId": 1159111907,
+          "wikidataId": "Q217818"
+        },
+        {
+          "name": "Lek",
+          "nameRu": "Лек",
+          "naturalEarthId": 1159112387,
+          "wikidataId": "Q1143852"
+        }
+      ]
+    },
+    "no": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 135,
+      "candidateFocusRiverSystems": 135,
+      "candidateFocusPaths": 2888,
+      "retainedFocusRiverSystems": 135,
+      "retainedFocusPaths": 2888,
+      "namedRiverSystems": 6,
+      "renderedLength": 1920.4,
+      "renderedSpan": 394.8,
+      "countryRiverLength": 1970.2,
+      "focusRectangles": [
+        {
+          "x": 318.1,
+          "y": 52.5,
+          "width": 354,
+          "height": 415.5
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Vorma",
+          "nameRu": "Ворма",
+          "naturalEarthId": 1159109475,
+          "wikidataId": "Q576337"
+        },
+        {
+          "name": "Paatsjoki",
+          "nameRu": "Паз",
+          "naturalEarthId": 1159128505,
+          "wikidataId": "Q524612"
+        },
+        {
+          "name": "Indalsälven",
+          "nameRu": "Индальсэльвен",
+          "naturalEarthId": 1159129133,
+          "wikidataId": "Q426516"
+        }
+      ]
+    },
+    "np": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 4,
+      "candidateFocusRiverSystems": 4,
+      "candidateFocusPaths": 2507,
+      "retainedFocusRiverSystems": 4,
+      "retainedFocusPaths": 2507,
+      "namedRiverSystems": 3,
+      "renderedLength": 4554,
+      "renderedSpan": 623.2,
+      "countryRiverLength": 4564.6,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 78,
+          "width": 640,
+          "height": 364
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Ghaghara",
+          "nameRu": "Гхагхра",
+          "naturalEarthId": 1159120735,
+          "wikidataId": "Q390232"
+        },
+        {
+          "name": "Gandaki",
+          "nameRu": "Гандак",
+          "naturalEarthId": 1159111747,
+          "wikidataId": "Q849494"
+        },
+        {
+          "name": "Sapt",
+          "nameRu": "река Сапт-Коси",
+          "naturalEarthId": 1159120977,
+          "wikidataId": null
+        }
+      ]
+    },
+    "nz": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 136,
+      "candidateFocusRiverSystems": 136,
+      "candidateFocusPaths": 3161,
+      "retainedFocusRiverSystems": 136,
+      "retainedFocusPaths": 3161,
+      "namedRiverSystems": 55,
+      "renderedLength": 1425.9,
+      "renderedSpan": 259,
+      "countryRiverLength": 1512.8,
+      "focusRectangles": [
+        {
+          "x": 260.9,
+          "y": 52,
+          "width": 200.6,
+          "height": 294.4
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Waikato",
+          "nameRu": "Уаикато",
+          "naturalEarthId": 1159129609,
+          "wikidataId": "Q1048219"
+        },
+        {
+          "name": "Clutha / Mata-Au",
+          "nameRu": "Клута",
+          "naturalEarthId": 1159129297,
+          "wikidataId": "Q613522"
+        },
+        {
+          "name": "Waiau",
+          "nameRu": "река Уаиау",
+          "naturalEarthId": 1159129275,
+          "wikidataId": "Q2485103"
+        }
+      ]
+    },
+    "om": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 56,
+      "candidateFocusRiverSystems": 56,
+      "candidateFocusPaths": 1247,
+      "retainedFocusRiverSystems": 56,
+      "retainedFocusPaths": 1247,
+      "namedRiverSystems": 0,
+      "renderedLength": 2359.1,
+      "renderedSpan": 312,
+      "countryRiverLength": 2342.6,
+      "focusRectangles": [
+        {
+          "x": 243.8,
+          "y": 52,
+          "width": 312.4,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "pa": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 49,
+      "candidateFocusRiverSystems": 49,
+      "candidateFocusPaths": 849,
+      "retainedFocusRiverSystems": 49,
+      "retainedFocusPaths": 849,
+      "namedRiverSystems": 2,
+      "renderedLength": 1931.1,
+      "renderedSpan": 599,
+      "countryRiverLength": 1916.9,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 126.9,
+          "width": 640,
+          "height": 266.2
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Santa Maria",
+          "nameRu": "река Санта-Мария",
+          "naturalEarthId": 1159127691,
+          "wikidataId": "Q7419702"
+        }
+      ]
+    },
+    "pe": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 78,
+      "candidateFocusRiverSystems": 78,
+      "candidateFocusPaths": 23438,
+      "retainedFocusRiverSystems": 78,
+      "retainedFocusPaths": 23438,
+      "namedRiverSystems": 16,
+      "renderedLength": 9525,
+      "renderedSpan": 415,
+      "countryRiverLength": 10240.9,
+      "focusRectangles": [
+        {
+          "x": 258.1,
+          "y": 52,
+          "width": 283.8,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Ucayali",
+          "nameRu": "Укаяли",
+          "naturalEarthId": 1159111139,
+          "wikidataId": "Q200952"
+        },
+        {
+          "name": "Marañón",
+          "nameRu": "Мараньон",
+          "naturalEarthId": 1159113397,
+          "wikidataId": "Q200174"
+        },
+        {
+          "name": "Amazon",
+          "nameRu": "Амазонка",
+          "naturalEarthId": 1159116655,
+          "wikidataId": "Q3783"
+        }
+      ]
+    },
+    "pg": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 200,
+      "candidateFocusRiverSystems": 200,
+      "candidateFocusPaths": 8778,
+      "retainedFocusRiverSystems": 200,
+      "retainedFocusPaths": 8778,
+      "namedRiverSystems": 4,
+      "renderedLength": 6132.2,
+      "renderedSpan": 586.3,
+      "countryRiverLength": 6493.2,
+      "focusRectangles": [
+        {
+          "x": 96.4,
+          "y": 52,
+          "width": 607.3,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Sepik",
+          "nameRu": "Сепик",
+          "naturalEarthId": 1159123369,
+          "wikidataId": "Q848308"
+        },
+        {
+          "name": "Fly",
+          "nameRu": "Флай",
+          "naturalEarthId": 1159121335,
+          "wikidataId": "Q739751"
+        },
+        {
+          "name": "Purari",
+          "nameRu": "Пурари",
+          "naturalEarthId": 1159114027,
+          "wikidataId": "Q1724008"
+        }
+      ]
+    },
+    "ph": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 153,
+      "candidateFocusRiverSystems": 153,
+      "candidateFocusPaths": 3060,
+      "retainedFocusRiverSystems": 153,
+      "retainedFocusPaths": 3060,
+      "namedRiverSystems": 1,
+      "renderedLength": 1400.5,
+      "renderedSpan": 321.7,
+      "countryRiverLength": 1513.1,
+      "focusRectangles": [
+        {
+          "x": 278.9,
+          "y": 52,
+          "width": 242.3,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Cagayan",
+          "nameRu": "Кагаян",
+          "naturalEarthId": 1159128443,
+          "wikidataId": "Q545808"
+        }
+      ]
+    },
+    "pk": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 60,
+      "candidateFocusRiverSystems": 60,
+      "candidateFocusPaths": 6429,
+      "retainedFocusRiverSystems": 60,
+      "retainedFocusPaths": 6429,
+      "namedRiverSystems": 5,
+      "renderedLength": 6690.8,
+      "renderedSpan": 425,
+      "countryRiverLength": 6828.6,
+      "focusRectangles": [
+        {
+          "x": 182.3,
+          "y": 52,
+          "width": 435.3,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Indus",
+          "nameRu": "Инд",
+          "naturalEarthId": 1159122839,
+          "wikidataId": "Q7348"
+        },
+        {
+          "name": "Chenab",
+          "nameRu": "Чинаб",
+          "naturalEarthId": 1159116961,
+          "wikidataId": "Q216875"
+        },
+        {
+          "name": "Sutlej",
+          "nameRu": "Сатледж",
+          "naturalEarthId": 1159115241,
+          "wikidataId": "Q171675"
+        }
+      ]
+    },
+    "pl": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 20,
+      "candidateFocusRiverSystems": 20,
+      "candidateFocusPaths": 2009,
+      "retainedFocusRiverSystems": 20,
+      "retainedFocusPaths": 2009,
+      "namedRiverSystems": 6,
+      "renderedLength": 4897.8,
+      "renderedSpan": 440,
+      "countryRiverLength": 4839,
+      "focusRectangles": [
+        {
+          "x": 180.1,
+          "y": 52,
+          "width": 439.9,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Vistula",
+          "nameRu": "Висла",
+          "naturalEarthId": 1159112937,
+          "wikidataId": "Q548"
+        },
+        {
+          "name": "Warta",
+          "nameRu": "Варта",
+          "naturalEarthId": 1159126393,
+          "wikidataId": "Q201823"
+        },
+        {
+          "name": "Oder",
+          "nameRu": "Одра",
+          "naturalEarthId": 1159112201,
+          "wikidataId": "Q552"
+        }
+      ]
+    },
+    "pt": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 25,
+      "candidateFocusRiverSystems": 25,
+      "candidateFocusPaths": 628,
+      "retainedFocusRiverSystems": 25,
+      "retainedFocusPaths": 628,
+      "namedRiverSystems": 3,
+      "renderedLength": 572,
+      "renderedSpan": 161.4,
+      "countryRiverLength": 570.9,
+      "focusRectangles": [
+        {
+          "x": 636,
+          "y": 107.2,
+          "width": 84,
+          "height": 166
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Douro",
+          "nameRu": "Дуэро",
+          "naturalEarthId": 1159116751,
+          "wikidataId": "Q14299"
+        },
+        {
+          "name": "Guadiana",
+          "nameRu": "Гвадиана",
+          "naturalEarthId": 1159118963,
+          "wikidataId": "Q14305"
+        },
+        {
+          "name": "Tagus",
+          "nameRu": "Тахо",
+          "naturalEarthId": 1159112927,
+          "wikidataId": "Q14294"
+        }
+      ]
+    },
+    "py": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 5,
+      "candidateFocusRiverSystems": 5,
+      "candidateFocusPaths": 2768,
+      "retainedFocusRiverSystems": 5,
+      "retainedFocusPaths": 2768,
+      "namedRiverSystems": 5,
+      "renderedLength": 5400.8,
+      "renderedSpan": 414.5,
+      "countryRiverLength": 5177,
+      "focusRectangles": [
+        {
+          "x": 206.7,
+          "y": 52,
+          "width": 386.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Paraná River",
+          "nameRu": "река Парана",
+          "naturalEarthId": 1159118169,
+          "wikidataId": "Q21847787"
+        },
+        {
+          "name": "Río Verde",
+          "nameRu": "река Риу-Верде",
+          "naturalEarthId": 1159109965,
+          "wikidataId": "Q21791781"
+        },
+        {
+          "name": "Jejuí Guazú",
+          "nameRu": "река Хехуи-Гуасу",
+          "naturalEarthId": 1159111501,
+          "wikidataId": "Q6176576"
+        }
+      ]
+    },
+    "ro": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 5,
+      "candidateFocusRiverSystems": 5,
+      "candidateFocusPaths": 1599,
+      "retainedFocusRiverSystems": 5,
+      "retainedFocusPaths": 1599,
+      "namedRiverSystems": 10,
+      "renderedLength": 4872.5,
+      "renderedSpan": 572.6,
+      "countryRiverLength": 4627.9,
+      "focusRectangles": [
+        {
+          "x": 104.3,
+          "y": 52,
+          "width": 591.3,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Danube",
+          "nameRu": "Дунай",
+          "naturalEarthId": 1159115307,
+          "wikidataId": "Q1653"
+        },
+        {
+          "name": "Olt",
+          "nameRu": "Олт",
+          "naturalEarthId": 1159126325,
+          "wikidataId": "Q126822"
+        },
+        {
+          "name": "Mureș",
+          "nameRu": "Марош",
+          "naturalEarthId": 1159128267,
+          "wikidataId": "Q207493"
+        }
+      ]
+    },
+    "rs": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 6,
+      "candidateFocusRiverSystems": 6,
+      "candidateFocusPaths": 712,
+      "retainedFocusRiverSystems": 6,
+      "retainedFocusPaths": 712,
+      "namedRiverSystems": 7,
+      "renderedLength": 2497.7,
+      "renderedSpan": 408.4,
+      "countryRiverLength": 2346.6,
+      "focusRectangles": [
+        {
+          "x": 243.3,
+          "y": 52,
+          "width": 313.4,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Danube",
+          "nameRu": "Дунай",
+          "naturalEarthId": 1159115307,
+          "wikidataId": "Q1653"
+        },
+        {
+          "name": "Great Morava",
+          "nameRu": "Морава",
+          "naturalEarthId": 1159120511,
+          "wikidataId": "Q211328"
+        },
+        {
+          "name": "Sava",
+          "nameRu": "Сава",
+          "naturalEarthId": 1159121461,
+          "wikidataId": "Q14383"
+        }
+      ]
+    },
+    "ru": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 855,
+      "candidateFocusRiverSystems": 855,
+      "candidateFocusPaths": 118428,
+      "retainedFocusRiverSystems": 855,
+      "retainedFocusPaths": 118428,
+      "namedRiverSystems": 144,
+      "renderedLength": 25756.2,
+      "renderedSpan": 634.8,
+      "countryRiverLength": 28566.8,
+      "focusRectangles": [
+        {
+          "x": 108.9,
+          "y": 103.8,
+          "width": 611.1,
+          "height": 312.4
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Lena",
+          "nameRu": "Лена",
+          "naturalEarthId": 1159112191,
+          "wikidataId": "Q46841"
+        },
+        {
+          "name": "Ob",
+          "nameRu": "Обь",
+          "naturalEarthId": 1159111937,
+          "wikidataId": "Q973"
+        },
+        {
+          "name": "Volga",
+          "nameRu": "Волга",
+          "naturalEarthId": 1159125617,
+          "wikidataId": "Q626"
+        }
+      ]
+    },
+    "rw": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 5,
+      "candidateFocusRiverSystems": 5,
+      "candidateFocusPaths": 177,
+      "retainedFocusRiverSystems": 5,
+      "retainedFocusPaths": 177,
+      "namedRiverSystems": 2,
+      "renderedLength": 1608,
+      "renderedSpan": 477.1,
+      "countryRiverLength": 1380.5,
+      "focusRectangles": [
+        {
+          "x": 161.3,
+          "y": 52,
+          "width": 477.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Kagera",
+          "nameRu": "Кагера",
+          "naturalEarthId": 1159125959,
+          "wikidataId": "Q2750140"
+        },
+        {
+          "name": "Ruzizi",
+          "nameRu": "Рузизи",
+          "naturalEarthId": 1159119249,
+          "wikidataId": "Q748195"
+        }
+      ]
+    },
+    "sa": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 309,
+      "candidateFocusRiverSystems": 309,
+      "candidateFocusPaths": 8459,
+      "retainedFocusRiverSystems": 309,
+      "retainedFocusPaths": 8459,
+      "namedRiverSystems": 0,
+      "renderedLength": 9405.3,
+      "renderedSpan": 500.6,
+      "countryRiverLength": 9604.7,
+      "focusRectangles": [
+        {
+          "x": 146.4,
+          "y": 52,
+          "width": 507.3,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "sd": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 93,
+      "candidateFocusRiverSystems": 93,
+      "candidateFocusPaths": 10752,
+      "retainedFocusRiverSystems": 93,
+      "retainedFocusPaths": 10752,
+      "namedRiverSystems": 5,
+      "renderedLength": 11430.6,
+      "renderedSpan": 478.6,
+      "countryRiverLength": 11721,
+      "focusRectangles": [
+        {
+          "x": 151.4,
+          "y": 52,
+          "width": 497.1,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Nile",
+          "nameRu": "Нил",
+          "naturalEarthId": 1159121589,
+          "wikidataId": "Q3392"
+        },
+        {
+          "name": "Blue Nile",
+          "nameRu": "Голубой Нил",
+          "naturalEarthId": 1159126685,
+          "wikidataId": "Q882739"
+        },
+        {
+          "name": "White Nile",
+          "nameRu": "Белый Нил",
+          "naturalEarthId": 1159113335,
+          "wikidataId": "Q4814791"
+        }
+      ]
+    },
+    "se": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 74,
+      "candidateFocusRiverSystems": 74,
+      "candidateFocusPaths": 3315,
+      "retainedFocusRiverSystems": 74,
+      "retainedFocusPaths": 3315,
+      "namedRiverSystems": 13,
+      "renderedLength": 3365,
+      "renderedSpan": 396.8,
+      "countryRiverLength": 3422.2,
+      "focusRectangles": [
+        {
+          "x": 307.5,
+          "y": 52,
+          "width": 185,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Dalälven",
+          "nameRu": "Далэльвен",
+          "naturalEarthId": 1159114331,
+          "wikidataId": "Q216627"
+        },
+        {
+          "name": "Skellefte",
+          "nameRu": "Шеллефте-Эльв",
+          "naturalEarthId": 1159122767,
+          "wikidataId": "Q1410160"
+        },
+        {
+          "name": "Kalix",
+          "nameRu": "Каликсэльвен",
+          "naturalEarthId": 1159129015,
+          "wikidataId": "Q845520"
+        }
+      ]
+    },
+    "si": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 5,
+      "candidateFocusRiverSystems": 5,
+      "candidateFocusPaths": 169,
+      "retainedFocusRiverSystems": 5,
+      "retainedFocusPaths": 169,
+      "namedRiverSystems": 3,
+      "renderedLength": 1550.7,
+      "renderedSpan": 617.8,
+      "countryRiverLength": 1504.4,
+      "focusRectangles": [
+        {
+          "x": 84.8,
+          "y": 52,
+          "width": 630.4,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Drava",
+          "nameRu": "Драва",
+          "naturalEarthId": 1159129685,
+          "wikidataId": "Q171009"
+        },
+        {
+          "name": "Mur",
+          "nameRu": "Мура",
+          "naturalEarthId": 1159113895,
+          "wikidataId": "Q204040"
+        },
+        {
+          "name": "Sava",
+          "nameRu": "Сава",
+          "naturalEarthId": 1159121461,
+          "wikidataId": "Q14383"
+        }
+      ]
+    },
+    "sk": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 5,
+      "candidateFocusRiverSystems": 5,
+      "candidateFocusPaths": 340,
+      "retainedFocusRiverSystems": 5,
+      "retainedFocusPaths": 340,
+      "namedRiverSystems": 2,
+      "renderedLength": 2114.7,
+      "renderedSpan": 620.4,
+      "countryRiverLength": 1953.2,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 102.4,
+          "width": 640,
+          "height": 315.1
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Danube",
+          "nameRu": "Дунай",
+          "naturalEarthId": 1159115307,
+          "wikidataId": "Q1653"
+        },
+        {
+          "name": "Morava",
+          "nameRu": "Морава",
+          "naturalEarthId": 1159126351,
+          "wikidataId": "Q179251"
+        }
+      ]
+    },
+    "sl": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 27,
+      "candidateFocusRiverSystems": 27,
+      "candidateFocusPaths": 1919,
+      "retainedFocusRiverSystems": 27,
+      "retainedFocusPaths": 1919,
+      "namedRiverSystems": 1,
+      "renderedLength": 4310.5,
+      "renderedSpan": 417.5,
+      "countryRiverLength": 4334.1,
+      "focusRectangles": [
+        {
+          "x": 198.1,
+          "y": 52,
+          "width": 403.8,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Rokel",
+          "nameRu": "река Рокел",
+          "naturalEarthId": 1159110025,
+          "wikidataId": "Q1781219"
+        }
+      ]
+    },
+    "sn": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 15,
+      "candidateFocusRiverSystems": 15,
+      "candidateFocusPaths": 1235,
+      "retainedFocusRiverSystems": 15,
+      "retainedFocusPaths": 1235,
+      "namedRiverSystems": 2,
+      "renderedLength": 4229,
+      "renderedSpan": 494,
+      "countryRiverLength": 3999.1,
+      "focusRectangles": [
+        {
+          "x": 117.2,
+          "y": 52,
+          "width": 565.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Gambia",
+          "nameRu": "Гамбия",
+          "naturalEarthId": 1159120325,
+          "wikidataId": "Q160819"
+        }
+      ]
+    },
+    "so": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 60,
+      "candidateFocusRiverSystems": 60,
+      "candidateFocusPaths": 2581,
+      "retainedFocusRiverSystems": 60,
+      "retainedFocusPaths": 2581,
+      "namedRiverSystems": 2,
+      "renderedLength": 3157.2,
+      "renderedSpan": 404.9,
+      "countryRiverLength": 3235.9,
+      "focusRectangles": [
+        {
+          "x": 241.8,
+          "y": 52,
+          "width": 316.4,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Jubba",
+          "nameRu": "Джуба",
+          "naturalEarthId": 1159117963,
+          "wikidataId": "Q138491"
+        },
+        {
+          "name": "Shebelle",
+          "nameRu": "Уэби-Шабелле",
+          "naturalEarthId": 1159122631,
+          "wikidataId": "Q141915"
+        }
+      ]
+    },
+    "sr": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 24,
+      "candidateFocusRiverSystems": 24,
+      "candidateFocusPaths": 2311,
+      "retainedFocusRiverSystems": 24,
+      "retainedFocusPaths": 2311,
+      "namedRiverSystems": 5,
+      "renderedLength": 5174.7,
+      "renderedSpan": 404.8,
+      "countryRiverLength": 5077.2,
+      "focusRectangles": [
+        {
+          "x": 197.3,
+          "y": 52,
+          "width": 405.4,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Maroni",
+          "nameRu": "Марони",
+          "naturalEarthId": 1159123137,
+          "wikidataId": "Q1369002"
+        },
+        {
+          "name": "Litani",
+          "nameRu": "река Литани",
+          "naturalEarthId": 1159121863,
+          "wikidataId": "Q2645279"
+        },
+        {
+          "name": "Kabalebo",
+          "nameRu": "река Кабалебо",
+          "naturalEarthId": 1159118295,
+          "wikidataId": "Q2752709"
+        }
+      ]
+    },
+    "ss": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 11,
+      "candidateFocusRiverSystems": 11,
+      "candidateFocusPaths": 4207,
+      "retainedFocusRiverSystems": 11,
+      "retainedFocusPaths": 4207,
+      "namedRiverSystems": 6,
+      "renderedLength": 7455.9,
+      "renderedSpan": 544.7,
+      "countryRiverLength": 7487.5,
+      "focusRectangles": [
+        {
+          "x": 121.4,
+          "y": 52,
+          "width": 557.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "White Nile",
+          "nameRu": "Белый Нил",
+          "naturalEarthId": 1159129211,
+          "wikidataId": "Q4814791"
+        },
+        {
+          "name": "Sobat",
+          "nameRu": "Собат",
+          "naturalEarthId": 1159123459,
+          "wikidataId": "Q821911"
+        },
+        {
+          "name": "Kangen",
+          "nameRu": "река Канген",
+          "naturalEarthId": 1159110199,
+          "wikidataId": "Q4788899"
+        }
+      ]
+    },
+    "sv": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 9,
+      "candidateFocusRiverSystems": 9,
+      "candidateFocusPaths": 217,
+      "retainedFocusRiverSystems": 9,
+      "retainedFocusPaths": 217,
+      "namedRiverSystems": 1,
+      "renderedLength": 1608.1,
+      "renderedSpan": 639.8,
+      "countryRiverLength": 1468.6,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 84.9,
+          "width": 640,
+          "height": 350.2
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Lempa",
+          "nameRu": "Лемпа",
+          "naturalEarthId": 1159118787,
+          "wikidataId": "Q1511554"
+        }
+      ]
+    },
+    "sy": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 34,
+      "candidateFocusRiverSystems": 34,
+      "candidateFocusPaths": 1255,
+      "retainedFocusRiverSystems": 34,
+      "retainedFocusPaths": 1255,
+      "namedRiverSystems": 2,
+      "renderedLength": 3347.3,
+      "renderedSpan": 455.4,
+      "countryRiverLength": 3344,
+      "focusRectangles": [
+        {
+          "x": 173.3,
+          "y": 52,
+          "width": 453.4,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Euphrates",
+          "nameRu": "Евфрат",
+          "naturalEarthId": 1159125935,
+          "wikidataId": "Q34589"
+        },
+        {
+          "name": "Tigris",
+          "nameRu": "Тигр",
+          "naturalEarthId": 1159112059,
+          "wikidataId": "Q35591"
+        }
+      ]
+    },
+    "sz": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 4,
+      "candidateFocusRiverSystems": 4,
+      "candidateFocusPaths": 134,
+      "retainedFocusRiverSystems": 4,
+      "retainedFocusPaths": 134,
+      "namedRiverSystems": 0,
+      "renderedLength": 1526.2,
+      "renderedSpan": 324.8,
+      "countryRiverLength": 1493.5,
+      "focusRectangles": [
+        {
+          "x": 242.8,
+          "y": 52,
+          "width": 314.3,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "td": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 108,
+      "candidateFocusRiverSystems": 108,
+      "candidateFocusPaths": 7435,
+      "retainedFocusRiverSystems": 108,
+      "retainedFocusPaths": 7435,
+      "namedRiverSystems": 6,
+      "renderedLength": 7267.3,
+      "renderedSpan": 416,
+      "countryRiverLength": 7425,
+      "focusRectangles": [
+        {
+          "x": 267.9,
+          "y": 52,
+          "width": 264.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Chari",
+          "nameRu": "Шари",
+          "naturalEarthId": 1159114243,
+          "wikidataId": "Q135477"
+        },
+        {
+          "name": "Logone",
+          "nameRu": "Логон",
+          "naturalEarthId": 1159123105,
+          "wikidataId": "Q645191"
+        },
+        {
+          "name": "Aoukalé",
+          "nameRu": "Аукале",
+          "naturalEarthId": 1159127373,
+          "wikidataId": null
+        }
+      ]
+    },
+    "tg": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 6,
+      "candidateFocusRiverSystems": 6,
+      "candidateFocusPaths": 421,
+      "retainedFocusRiverSystems": 6,
+      "retainedFocusPaths": 421,
+      "namedRiverSystems": 1,
+      "renderedLength": 1161.9,
+      "renderedSpan": 396.6,
+      "countryRiverLength": 1109.3,
+      "focusRectangles": [
+        {
+          "x": 320.4,
+          "y": 52,
+          "width": 159.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Oti",
+          "nameRu": "Оти",
+          "naturalEarthId": 1159126015,
+          "wikidataId": "Q252472"
+        }
+      ]
+    },
+    "th": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 88,
+      "candidateFocusRiverSystems": 88,
+      "candidateFocusPaths": 5274,
+      "retainedFocusRiverSystems": 88,
+      "retainedFocusPaths": 5274,
+      "namedRiverSystems": 8,
+      "renderedLength": 3504.2,
+      "renderedSpan": 410.7,
+      "countryRiverLength": 3643.1,
+      "focusRectangles": [
+        {
+          "x": 286.5,
+          "y": 52,
+          "width": 227,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Mekong",
+          "nameRu": "Меконг",
+          "naturalEarthId": 1159119517,
+          "wikidataId": "Q41179"
+        },
+        {
+          "name": "Yom",
+          "nameRu": "Йом",
+          "naturalEarthId": 1159118661,
+          "wikidataId": "Q586733"
+        },
+        {
+          "name": "Ping",
+          "nameRu": "Пинг",
+          "naturalEarthId": 1159119921,
+          "wikidataId": "Q592383"
+        }
+      ]
+    },
+    "tj": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 8,
+      "candidateFocusRiverSystems": 8,
+      "candidateFocusPaths": 1282,
+      "retainedFocusRiverSystems": 8,
+      "retainedFocusPaths": 1282,
+      "namedRiverSystems": 6,
+      "renderedLength": 3355,
+      "renderedSpan": 545,
+      "countryRiverLength": 3121.7,
+      "focusRectangles": [
+        {
+          "x": 109.5,
+          "y": 52,
+          "width": 580.9,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Panj",
+          "nameRu": "Пяндж",
+          "naturalEarthId": 1159113607,
+          "wikidataId": "Q8542"
+        },
+        {
+          "name": "Zeravshan",
+          "nameRu": "Зеравшан",
+          "naturalEarthId": 1159128335,
+          "wikidataId": "Q501027"
+        },
+        {
+          "name": "Syr Dar",
+          "nameRu": "Сырдарья",
+          "naturalEarthId": 1159113079,
+          "wikidataId": "Q483159"
+        }
+      ]
+    },
+    "tm": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 60,
+      "candidateFocusRiverSystems": 60,
+      "candidateFocusPaths": 2374,
+      "retainedFocusRiverSystems": 60,
+      "retainedFocusPaths": 2374,
+      "namedRiverSystems": 4,
+      "renderedLength": 5224.8,
+      "renderedSpan": 574.3,
+      "countryRiverLength": 5194,
+      "focusRectangles": [
+        {
+          "x": 99.7,
+          "y": 52,
+          "width": 600.7,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Amu Darya",
+          "nameRu": "Амударья",
+          "naturalEarthId": 1159113673,
+          "wikidataId": "Q8493"
+        },
+        {
+          "name": "Hari",
+          "nameRu": "Теджен",
+          "naturalEarthId": 1159128313,
+          "wikidataId": "Q8505"
+        },
+        {
+          "name": "Atrek",
+          "nameRu": "Атрек",
+          "naturalEarthId": 1159121397,
+          "wikidataId": "Q283622"
+        }
+      ]
+    },
+    "tn": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 36,
+      "candidateFocusRiverSystems": 36,
+      "candidateFocusPaths": 705,
+      "retainedFocusRiverSystems": 36,
+      "retainedFocusPaths": 705,
+      "namedRiverSystems": 0,
+      "renderedLength": 1568.9,
+      "renderedSpan": 388.5,
+      "countryRiverLength": 1556.4,
+      "focusRectangles": [
+        {
+          "x": 300.8,
+          "y": 52,
+          "width": 198.4,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "tr": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 104,
+      "candidateFocusRiverSystems": 104,
+      "candidateFocusPaths": 5153,
+      "retainedFocusRiverSystems": 104,
+      "retainedFocusPaths": 5153,
+      "namedRiverSystems": 12,
+      "renderedLength": 6558.2,
+      "renderedSpan": 639.3,
+      "countryRiverLength": 6675,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 122.4,
+          "width": 640,
+          "height": 275.3
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Euphrates",
+          "nameRu": "Евфрат",
+          "naturalEarthId": 1159124657,
+          "wikidataId": "Q34589"
+        },
+        {
+          "name": "Kızılırmak",
+          "nameRu": "Кызылырмак",
+          "naturalEarthId": 1159121239,
+          "wikidataId": "Q257785"
+        },
+        {
+          "name": "Murat",
+          "nameRu": "Мурат",
+          "naturalEarthId": 1159129095,
+          "wikidataId": "Q913193"
+        }
+      ]
+    },
+    "tw": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 30,
+      "candidateFocusRiverSystems": 30,
+      "candidateFocusPaths": 499,
+      "retainedFocusRiverSystems": 30,
+      "retainedFocusPaths": 499,
+      "namedRiverSystems": 0,
+      "renderedLength": 1369.4,
+      "renderedSpan": 336.1,
+      "countryRiverLength": 1386,
+      "focusRectangles": [
+        {
+          "x": 190.1,
+          "y": 52,
+          "width": 419.9,
+          "height": 416
+        }
+      ],
+      "labelledRivers": []
+    },
+    "tz": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 83,
+      "candidateFocusRiverSystems": 83,
+      "candidateFocusPaths": 6066,
+      "retainedFocusRiverSystems": 83,
+      "retainedFocusPaths": 6066,
+      "namedRiverSystems": 15,
+      "renderedLength": 7449.8,
+      "renderedSpan": 425.5,
+      "countryRiverLength": 7540.5,
+      "focusRectangles": [
+        {
+          "x": 185.9,
+          "y": 52,
+          "width": 428.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Ruvuma",
+          "nameRu": "Рувума",
+          "naturalEarthId": 1159116689,
+          "wikidataId": "Q746779"
+        },
+        {
+          "name": "Great Ruaha",
+          "nameRu": "Большая Руаха",
+          "naturalEarthId": 1159126557,
+          "wikidataId": "Q1861088"
+        },
+        {
+          "name": "Wami",
+          "nameRu": null,
+          "naturalEarthId": 1159110097,
+          "wikidataId": "Q1106820"
+        }
+      ]
+    },
+    "ua": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 38,
+      "candidateFocusRiverSystems": 38,
+      "candidateFocusPaths": 3805,
+      "retainedFocusRiverSystems": 38,
+      "retainedFocusPaths": 3805,
+      "namedRiverSystems": 13,
+      "renderedLength": 6978.5,
+      "renderedSpan": 634.8,
+      "countryRiverLength": 6958.2,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 67.2,
+          "width": 640,
+          "height": 385.6
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Dnieper",
+          "nameRu": "Днепр",
+          "naturalEarthId": 1159111985,
+          "wikidataId": "Q40855"
+        },
+        {
+          "name": "Dniester",
+          "nameRu": "Днестр",
+          "naturalEarthId": 1159114439,
+          "wikidataId": "Q131210"
+        },
+        {
+          "name": "Southern Bug",
+          "nameRu": "Южный Буг",
+          "naturalEarthId": 1159124973,
+          "wikidataId": "Q188940"
+        }
+      ]
+    },
+    "ug": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 4,
+      "candidateFocusRiverSystems": 4,
+      "candidateFocusPaths": 1635,
+      "retainedFocusRiverSystems": 4,
+      "retainedFocusPaths": 1635,
+      "namedRiverSystems": 3,
+      "renderedLength": 3838.6,
+      "renderedSpan": 372.8,
+      "countryRiverLength": 3806.3,
+      "focusRectangles": [
+        {
+          "x": 200.7,
+          "y": 52,
+          "width": 398.6,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "White Nile",
+          "nameRu": "Белый Нил",
+          "naturalEarthId": 1159123321,
+          "wikidataId": "Q4814791"
+        },
+        {
+          "name": "Semliki",
+          "nameRu": "Семлики",
+          "naturalEarthId": 1159114169,
+          "wikidataId": "Q205428"
+        },
+        {
+          "name": "Kagera",
+          "nameRu": "Кагера",
+          "naturalEarthId": 1159125959,
+          "wikidataId": "Q2750140"
+        }
+      ]
+    },
+    "us": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 836,
+      "candidateFocusRiverSystems": 836,
+      "candidateFocusPaths": 72609,
+      "retainedFocusRiverSystems": 836,
+      "retainedFocusPaths": 72609,
+      "namedRiverSystems": 129,
+      "renderedLength": 15374.7,
+      "renderedSpan": 554.1,
+      "countryRiverLength": 17033.6,
+      "focusRectangles": [
+        {
+          "x": 370.3,
+          "y": 226.6,
+          "width": 322.7,
+          "height": 192.1
+        },
+        {
+          "x": 107,
+          "y": 52,
+          "width": 233.9,
+          "height": 134.9
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Mississippi",
+          "nameRu": "Миссисипи",
+          "naturalEarthId": 1159112609,
+          "wikidataId": "Q1497"
+        },
+        {
+          "name": "Yukon",
+          "nameRu": "Юкон",
+          "naturalEarthId": 1159122327,
+          "wikidataId": "Q104437"
+        },
+        {
+          "name": "Missouri",
+          "nameRu": "Миссури",
+          "naturalEarthId": 1159128475,
+          "wikidataId": "Q5419"
+        }
+      ]
+    },
+    "uy": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 21,
+      "candidateFocusRiverSystems": 21,
+      "candidateFocusPaths": 1721,
+      "retainedFocusRiverSystems": 21,
+      "retainedFocusPaths": 1721,
+      "namedRiverSystems": 2,
+      "renderedLength": 3926.3,
+      "renderedSpan": 410.9,
+      "countryRiverLength": 3865.3,
+      "focusRectangles": [
+        {
+          "x": 208.4,
+          "y": 52,
+          "width": 383.2,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Negro",
+          "nameRu": "Рио-Негро",
+          "naturalEarthId": 1159118735,
+          "wikidataId": "Q859548"
+        }
+      ]
+    },
+    "uz": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 82,
+      "candidateFocusRiverSystems": 82,
+      "candidateFocusPaths": 2366,
+      "retainedFocusRiverSystems": 82,
+      "retainedFocusPaths": 2366,
+      "namedRiverSystems": 4,
+      "renderedLength": 4354.3,
+      "renderedSpan": 642.1,
+      "countryRiverLength": 4268.5,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 52.1,
+          "width": 640,
+          "height": 415.8
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Amu Darya",
+          "nameRu": "Амударья",
+          "naturalEarthId": 1159113673,
+          "wikidataId": "Q8493"
+        },
+        {
+          "name": "Zeravshan",
+          "nameRu": "Зеравшан",
+          "naturalEarthId": 1159128335,
+          "wikidataId": "Q501027"
+        },
+        {
+          "name": "Naryn",
+          "nameRu": "Нарын",
+          "naturalEarthId": 1159113129,
+          "wikidataId": "Q651195"
+        }
+      ]
+    },
+    "ve": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 79,
+      "candidateFocusRiverSystems": 79,
+      "candidateFocusPaths": 13856,
+      "retainedFocusRiverSystems": 79,
+      "retainedFocusPaths": 13856,
+      "namedRiverSystems": 10,
+      "renderedLength": 10252.3,
+      "renderedSpan": 467.1,
+      "countryRiverLength": 10651.4,
+      "focusRectangles": [
+        {
+          "x": 157,
+          "y": 52,
+          "width": 485.9,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Orinoco",
+          "nameRu": "Ориноко",
+          "naturalEarthId": 1159127013,
+          "wikidataId": "Q131792"
+        },
+        {
+          "name": "Caroní",
+          "nameRu": "Карони",
+          "naturalEarthId": 1159119753,
+          "wikidataId": "Q590533"
+        },
+        {
+          "name": "Apure",
+          "nameRu": "Апуре",
+          "naturalEarthId": 1159120345,
+          "wikidataId": "Q853315"
+        }
+      ]
+    },
+    "vn": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 102,
+      "candidateFocusRiverSystems": 102,
+      "candidateFocusPaths": 5295,
+      "retainedFocusRiverSystems": 102,
+      "retainedFocusPaths": 5295,
+      "namedRiverSystems": 8,
+      "renderedLength": 2877,
+      "renderedSpan": 408.6,
+      "countryRiverLength": 3055.4,
+      "focusRectangles": [
+        {
+          "x": 300.6,
+          "y": 52,
+          "width": 198.7,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Mekong",
+          "nameRu": "Меконг",
+          "naturalEarthId": 1159121023,
+          "wikidataId": "Q41179"
+        },
+        {
+          "name": "Red",
+          "nameRu": "Хонгха",
+          "naturalEarthId": 1159116785,
+          "wikidataId": "Q206850"
+        },
+        {
+          "name": "Ba",
+          "nameRu": "Ба",
+          "naturalEarthId": 1159111003,
+          "wikidataId": null
+        }
+      ]
+    },
+    "xk": {
+      "variants": [
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 4,
+      "candidateFocusRiverSystems": 4,
+      "candidateFocusPaths": 67,
+      "retainedFocusRiverSystems": 4,
+      "retainedFocusPaths": 67,
+      "namedRiverSystems": 1,
+      "renderedLength": 512,
+      "renderedSpan": 317.6,
+      "countryRiverLength": 507.4,
+      "focusRectangles": [
+        {
+          "x": 211.3,
+          "y": 52,
+          "width": 377.5,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Great Morava",
+          "nameRu": "Морава",
+          "naturalEarthId": 1159120511,
+          "wikidataId": "Q211328"
+        }
+      ]
+    },
+    "ye": {
+      "variants": [
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 54,
+      "candidateFocusRiverSystems": 54,
+      "candidateFocusPaths": 1959,
+      "retainedFocusRiverSystems": 54,
+      "retainedFocusPaths": 1959,
+      "namedRiverSystems": 0,
+      "renderedLength": 4661.2,
+      "renderedSpan": 523.7,
+      "countryRiverLength": 4627.3,
+      "focusRectangles": [
+        {
+          "x": 80,
+          "y": 73.5,
+          "width": 640,
+          "height": 373
+        }
+      ],
+      "labelledRivers": []
+    },
+    "za": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 89,
+      "candidateFocusRiverSystems": 89,
+      "candidateFocusPaths": 8097,
+      "retainedFocusRiverSystems": 89,
+      "retainedFocusPaths": 8097,
+      "namedRiverSystems": 16,
+      "renderedLength": 7925.9,
+      "renderedSpan": 466.1,
+      "countryRiverLength": 8159.7,
+      "focusRectangles": [
+        {
+          "x": 163.5,
+          "y": 52,
+          "width": 473,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Orange",
+          "nameRu": "Оранжевая",
+          "naturalEarthId": 1159114127,
+          "wikidataId": "Q181475"
+        },
+        {
+          "name": "Vaal",
+          "nameRu": "Вааль",
+          "naturalEarthId": 1159109769,
+          "wikidataId": "Q209530"
+        },
+        {
+          "name": "Molopo",
+          "nameRu": "Молопо",
+          "naturalEarthId": 1159128187,
+          "wikidataId": "Q546793"
+        }
+      ]
+    },
+    "zm": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 10,
+      "candidateFocusRiverSystems": 10,
+      "candidateFocusPaths": 5188,
+      "retainedFocusRiverSystems": 10,
+      "retainedFocusPaths": 5188,
+      "namedRiverSystems": 11,
+      "renderedLength": 6913.1,
+      "renderedSpan": 474.2,
+      "countryRiverLength": 6912,
+      "focusRectangles": [
+        {
+          "x": 160.1,
+          "y": 52,
+          "width": 479.8,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Zambezi",
+          "nameRu": "Замбези",
+          "naturalEarthId": 1159126201,
+          "wikidataId": "Q43106"
+        },
+        {
+          "name": "Kafue",
+          "nameRu": "Кафуэ",
+          "naturalEarthId": 1159116211,
+          "wikidataId": "Q846063"
+        },
+        {
+          "name": "Luangwa",
+          "nameRu": "Луангва",
+          "naturalEarthId": 1159126511,
+          "wikidataId": "Q1321671"
+        }
+      ]
+    },
+    "zw": {
+      "variants": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "geometrySource": "HYDRORIVERS",
+      "minimumRenderedStrahlerOrder": 4,
+      "riverSystems": 17,
+      "candidateFocusRiverSystems": 17,
+      "candidateFocusPaths": 2574,
+      "retainedFocusRiverSystems": 17,
+      "retainedFocusPaths": 2574,
+      "namedRiverSystems": 7,
+      "renderedLength": 4897.6,
+      "renderedSpan": 448,
+      "countryRiverLength": 4880.5,
+      "focusRectangles": [
+        {
+          "x": 173.2,
+          "y": 52,
+          "width": 453.7,
+          "height": 416
+        }
+      ],
+      "labelledRivers": [
+        {
+          "name": "Save",
+          "nameRu": "Саве",
+          "naturalEarthId": 1159121677,
+          "wikidataId": "Q293988"
+        },
+        {
+          "name": "Shangani",
+          "nameRu": "Шангани",
+          "naturalEarthId": 1159110163,
+          "wikidataId": "Q2276894"
+        },
+        {
+          "name": "Mzingwane",
+          "nameRu": "река Умзингвани",
+          "naturalEarthId": 1159110137,
+          "wikidataId": "Q952046"
+        }
+      ]
+    }
+  }
+}

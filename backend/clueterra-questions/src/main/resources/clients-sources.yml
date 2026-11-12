@@ -1,0 +1,127 @@
+data:
+  sources:
+    world-bank:
+      base-url: https://api.worldbank.org/v2
+      timeout-seconds: 60
+      rate-limit-per-second: 10
+      age-range: 10
+      enabled: true
+
+    cia-factbook:
+      base-url: https://raw.githubusercontent.com/factbook/factbook.json/master
+      github-token: ${GITHUB_TOKEN}
+      timeout-seconds: 30
+      rate-limit-per-second: 10
+      enabled: true
+      cache-duration-days: 180
+      github-tree-url: https://api.github.com/repos/factbook/factbook.json/git/trees/master?recursive=1
+
+    geonames:
+      base-url: http://api.geonames.org
+      timeout-seconds: 30
+      rate-limit-per-second: 5
+      username: ${GEONAMES_USERNAME:}
+      enabled: true
+
+    curated-country-facts:
+      base-url: classpath:/data/curated-country-facts
+      timeout-seconds: 1
+      rate-limit-per-second: 1
+      enabled: true
+
+    wikidata:
+      base-url: https://www.wikidata.org/w/rest.php/wikibase/v1
+      query-url: https://query.wikidata.org/sparql
+      action-api-url: https://www.wikidata.org/w/api.php
+      timeout-seconds: 45
+      rate-limit-per-second: 4
+      enabled: true
+
+    open-street-map:
+      base-url: "../osm/"
+      enabled: false
+
+    nager-date:
+      base-url: https://date.nager.at/api/v3
+      timeout-seconds: 15
+      rate-limit-per-second: 5
+      enabled: true
+
+    bigmacindex:
+      base-url: https://raw.githubusercontent.com/TheEconomist/big-mac-data/master/output-data
+      timeout-seconds: 30
+      rate-limit-per-second: 1
+      enabled: true
+
+    fast-food:
+      enabled: true
+
+    global-brands:
+      enabled: true
+
+    wikimedia-commons:
+      base-url: https://commons.wikimedia.org/w/api.php
+      timeout-seconds: 30
+      rate-limit-per-second: 1
+      enabled: true
+
+    citybikes:
+      base-url: https://api.citybik.es/v2
+      timeout-seconds: 30
+      rate-limit-per-second: 1
+      batch-size: 3
+      enabled: true
+
+    mapillary:
+      base-url: https://graph.mapillary.com
+      api-key: ${MAPILLARY_CLIENT_TOKEN}
+      timeout-seconds: 30
+      rate-limit-per-second: 2
+      enabled: true
+
+    budget-projects:
+      enabled: true
+
+    our-world-in-data:
+      base-url: https://ourworldindata.org
+      timeout-seconds: 60
+      rate-limit-per-second: 2
+      cache-duration-days: 14
+      enabled: true
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+data:
+  sources:
+    world-bank:
+      enabled: false
+    cia-factbook:
+      enabled: false
+    geonames:
+      enabled: false
+    curated-country-facts:
+      enabled: false
+    wikidata:
+      enabled: true
+    open-street-map:
+      enabled: false
+    nager-date:
+      enabled: false
+    bigmacindex:
+      enabled: false
+    fast-food:
+      enabled: false
+    global-brands:
+      enabled: false
+    wikimedia-commons:
+      enabled: true
+    citybikes:
+      enabled: false
+    mapillary:
+      enabled: false
+    our-world-in-data:
+      enabled: false

@@ -1,0 +1,31 @@
+Clueterra Source-Available License
+
+Copyright (c) 2026 Clueterra Project Owner.
+All rights reserved.
+
+This repository is made publicly available only for technical review and
+educational inspection.
+
+You may view and fork this repository through GitHub's standard functionality.
+
+You may not, without prior written permission from the copyright owner:
+
+- copy, modify, merge, publish, distribute, sublicense, sell, or otherwise
+  exploit the project source code;
+- use the project source code or any substantial part of it in another product,
+  service, repository, application, game, or commercial project;
+- deploy, host, operate, or offer a public or private instance of this project;
+- remove or alter copyright, license, or attribution notices;
+- use the Clueterra name, branding, domain names, visual identity, or project
+  assets in a way that suggests ownership, affiliation, or endorsement.
+
+Permission requests should be sent to the repository owner through GitHub.
+
+Third-party assets, libraries, and dependencies remain governed by their own
+licenses. See NOTICE.md for third-party asset notices.
+
+THE PROJECT SOURCE CODE IS PROVIDED FOR REVIEW ONLY AND "AS IS", WITHOUT
+WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT OWNER BE LIABLE FOR ANY CLAIM,
+DAMAGES, OR OTHER LIABILITY ARISING FROM OR RELATED TO THIS PROJECT.

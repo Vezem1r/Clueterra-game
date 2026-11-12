@@ -1,0 +1,14 @@
+brands:
+  # === UNITED STATES ===
+  - { name: "Apple", industry: "tech", country: "US", founded: 1976, recognition: 10 }
+  - { name: "Google", industry: "tech", country: "US", founded: 1998, recognition: 10 }
+  - { name: "YouTube", industry: "tech", country: "US", founded: 2005, recognition: 10 }
+  - { name: "Amazon", industry: "tech", country: "US", founded: 1994, recognition: 10 }
+  - { name: "Microsoft", industry: "tech", country: "US", founded: 1975, recognition: 10 }
+  - { name: "Meta", industry: "tech", country: "US", founded: 2004, recognition: 9 }
+  - { name: "Tesla", industry: "automotive", country: "US", founded: 2003, recognition: 9 }
+  - { name: "Nvidia", industry: "tech", country: "US", founded: 1993, recognition: 9 }
+  - { name: "Intel", industry: "tech", country: "US", founded: 1968, recognition: 9 }
+  - { name: "IBM", industry: "tech", country: "US", founded: 1911, recognition: 9 }
+  - { name: "Adobe", industry: "tech", country: "US", founded: 1982, recognition: 9 }
+  - { name: "Oracle", industry: "tech", country: "US", founded: 1977, recognition: 8 }

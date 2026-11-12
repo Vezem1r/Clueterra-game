@@ -1,0 +1,89 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: clueterra-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: clueterra
+      POSTGRES_USER: clueterra
+      POSTGRES_PASSWORD: clueterra_secret
+      TZ: UTC
+    command:
+      - "postgres"
+      - "-c"
+      - "timezone=UTC"
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U clueterra"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  minio:
+    image: minio/minio:RELEASE.2025-09-07T16-13-09Z
+    container_name: clueterra-minio
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ACCESS_KEY:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY:-minioadmin}
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+      - ./minio:/opt/clueterra/minio:ro
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: clueterra-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  embeddings:
+    image: ghcr.io/huggingface/text-embeddings-inference:cpu-1.9
+    container_name: clueterra-embeddings
+    restart: unless-stopped
+    command:
+      - --model-id
+      - BAAI/bge-small-en-v1.5
+      - --revision
+      - 5c38ec7c405ec4b44b94cc5a9bb96e735b38267a
+      - --max-client-batch-size
+      - "32"
+    environment:
+      HF_HUB_DISABLE_TELEMETRY: "1"
+    ports:
+      - "127.0.0.1:18080:80"
+    volumes:
+      - embeddings_model_cache:/data
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "http://127.0.0.1:80/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 20
+      start_period: 90s
+    deploy:
+      resources:
+        limits:
+          cpus: "4"
+          memory: 2G
+
+volumes:
+  postgres_data:
+  redis_data:
+  minio_data:
+  embeddings_model_cache:
+    name: clueterra_tei_cache

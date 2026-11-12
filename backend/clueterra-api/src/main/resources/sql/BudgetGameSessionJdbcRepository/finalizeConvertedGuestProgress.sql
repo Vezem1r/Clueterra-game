@@ -1,0 +1,1 @@
+SELECT cl_api_schema.finalize_converted_budget_progress(:userId)

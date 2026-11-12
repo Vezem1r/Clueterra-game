@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Allow: /api/legal/current$
+Allow: /api/legal/data-sources$
+Allow: /api/budget/challenges/today$
+Allow: /api/budget/sessions/today$
+Allow: /api/assets/budget/projects/
+Allow: /api/rivers/session$
+Allow: /api/silhouettes/session$
+Allow: /api/flag-game/session$
+Allow: /api/quiz-game/session$
+Disallow: /api/
+Disallow: /storage/
+
+User-agent: SemrushBot
+User-agent: AhrefsBot
+User-agent: MJ12bot
+User-agent: DotBot
+User-agent: DataForSeoBot
+User-agent: Barkrowler
+User-agent: BLEXBot
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: meta-externalagent
+Disallow: /
+
+Sitemap: https://clueterra.com/sitemap.xml

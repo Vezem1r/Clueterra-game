@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+  <defs>
+    <radialGradient id="background" cx="50%" cy="45%" r="70%">
+      <stop offset="0" stop-color="#152238"/>
+      <stop offset="1" stop-color="#070a12"/>
+    </radialGradient>
+    <linearGradient id="land" x1="12%" y1="8%" x2="88%" y2="92%">
+      <stop offset="0" stop-color="#4ade80"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="28" fill="url(#background)"/>
+  <ellipse cx="400" cy="260" rx="310" ry="196" fill="none" stroke="#fff" stroke-opacity=".035"/>
+  <ellipse cx="400" cy="260" rx="224" ry="142" fill="none" stroke="#fff" stroke-opacity=".03"/>
+  <path d="M497.3 156.7L501.3 188.1L501.2 216.1L488.7 298.4L491.7 345.5L478.9 397.7L476.1 405.1L460 410.1L455.6 413L450.8 423.3L441.4 464.1L435 470.3L431.7 472L426.6 472L407.6 446L330.1 415.8L303.2 382.3L299.1 374.2L306.3 357.5L307.5 346.6L306.3 325.6L304.7 318.8L299.1 306.6L298.7 295.7L301.4 284.5L310.7 264.6L312.8 255.7L318.4 240.8L343.2 204.9L352.5 180.9L377.7 142.7L383.1 138.4L393.2 132.7L398.4 127.6L400.8 121L404.8 102.1L409 94.7L434.3 58.3L449 48L469 54.6L464.4 73L471.3 82.6L482.6 89.1L490.9 98.4L493.8 111.7L497.3 156.7Z" fill="url(#land)" fill-rule="evenodd" stroke="#fff" stroke-opacity=".42" stroke-width="2" stroke-linejoin="round" filter="url(#glow)"/>
+</svg>

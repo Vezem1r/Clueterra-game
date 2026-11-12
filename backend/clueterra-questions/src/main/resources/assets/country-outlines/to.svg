@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+  <defs>
+    <radialGradient id="background" cx="50%" cy="45%" r="70%">
+      <stop offset="0" stop-color="#152238"/>
+      <stop offset="1" stop-color="#070a12"/>
+    </radialGradient>
+    <linearGradient id="land" x1="12%" y1="8%" x2="88%" y2="92%">
+      <stop offset="0" stop-color="#4ade80"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="28" fill="url(#background)"/>
+  <ellipse cx="400" cy="260" rx="310" ry="196" fill="none" stroke="#fff" stroke-opacity=".035"/>
+  <ellipse cx="400" cy="260" rx="224" ry="142" fill="none" stroke="#fff" stroke-opacity=".03"/>
+  <path d="M465.3 236.1L467.7 237.9L467.7 239.8L467.2 240.5L466.1 239.2L465.5 239.5L465.7 240.9L463.5 242.6L463.3 244.7L461.7 242.1L462.6 241.8L462.1 240L460.9 242.1L459.2 242.1L458.4 240.3L461.2 238.5L462.5 236.3L465.3 236.1ZM408.9 406.5L408.6 416.7L404.9 412.7L405.7 412.3L405.6 410L408.9 406.5ZM400.1 396L400.9 398L397 401L397 404.3L395.2 405L393.3 404.2L391.6 401.7L384.8 399.1L382.5 395.4L383 393.9L386 392.2L383.9 394.7L385.4 395.9L389.8 395.4L391.1 396.4L389.9 398.2L390.8 399.1L392.6 398.2L395.7 398.8L397.2 396.4L400.1 396ZM441.5 313.3L442.9 312.5L443.6 310.7L444.7 311.2L443.9 314.4L442.8 314.6L441.5 313.3ZM399.9 307.7L401.2 310.2L400.4 313.3L398.8 312.4L398.1 310.1L398.6 307.8L399.9 307.7ZM444.7 309L447.6 306L446.7 310L444.7 309ZM447.4 302.6L448 304.1L446.5 302.9L445.5 300.3L446.4 300.4L447.4 302.6ZM366.8 48L367.9 48.9L367.6 50.6L366.4 52.1L364.6 51.9L363.6 50.7L363.8 49.4L366.8 48ZM332.6 471.1L333.5 471.6L332.8 472L332.6 471.1ZM424.3 251.8L423.7 250.8L424.5 249.4L425.9 250.5L424.3 251.8Z" fill="url(#land)" fill-rule="evenodd" stroke="#fff" stroke-opacity=".42" stroke-width="2" stroke-linejoin="round" filter="url(#glow)"/>
+</svg>

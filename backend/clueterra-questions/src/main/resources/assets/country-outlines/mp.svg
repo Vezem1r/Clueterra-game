@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+  <defs>
+    <radialGradient id="background" cx="50%" cy="45%" r="70%">
+      <stop offset="0" stop-color="#152238"/>
+      <stop offset="1" stop-color="#070a12"/>
+    </radialGradient>
+    <linearGradient id="land" x1="12%" y1="8%" x2="88%" y2="92%">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="28" fill="url(#background)"/>
+  <ellipse cx="400" cy="260" rx="310" ry="196" fill="none" stroke="#fff" stroke-opacity=".035"/>
+  <ellipse cx="400" cy="260" rx="224" ry="142" fill="none" stroke="#fff" stroke-opacity=".03"/>
+  <path d="M388.7 467.3L393.4 465.9L394 467.3L393.5 468.7L391.5 469.4L388.9 472L383.2 470.8L385.6 468.5L388.7 467.3ZM416.5 408.7L416.5 412.3L417.8 414.6L416.4 418.1L415.1 419.1L413.9 418.2L412.2 412.3L414.2 409.1L415.6 408.1L416.5 408.7ZM425.3 395.9L427.6 396.2L425.6 398.2L424.6 401L424.8 403L423.4 402.9L422.2 404.5L423.1 407.2L418.9 406.7L419.7 400.1L421.7 398.8L422.1 397.5L425.3 395.9ZM420.4 323.5L420.5 325L417.9 325.4L416.3 325L415.3 323.7L416.9 322.6L420.4 323.5ZM424.3 204.6L427.7 205.1L428.3 207.7L423.5 212.1L421 212.6L420.6 211L422.3 210.1L423.4 205.5L424.3 204.6ZM417.4 168.5L415.7 167L415.6 164.3L416.7 162.9L419.1 163L420.3 164.8L420.4 166.9L419.4 168.2L417.4 168.5ZM425.4 303.3L424.2 302L425.2 301.6L426.4 302.1L425.4 303.3ZM429.6 263.1L428.4 261.8L429.3 261.6L430.4 262.1L429.6 263.1ZM429.5 244.6L428.1 243.9L428.3 242.1L430.1 242.5L430.3 244.1L429.5 244.6ZM401.3 107.4L399.8 105.3L401.5 105.3L401.3 107.4ZM391.5 83.9L390 82.6L390.8 81.2L391.2 82.5L392.9 82.4L391.5 83.9ZM370.4 50.5L369.6 49L370.7 48L371.5 49.2L370.4 50.5Z" fill="url(#land)" fill-rule="evenodd" stroke="#fff" stroke-opacity=".42" stroke-width="2" stroke-linejoin="round" filter="url(#glow)"/>
+</svg>

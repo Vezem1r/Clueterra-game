@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+  <defs>
+    <radialGradient id="background" cx="50%" cy="45%" r="70%">
+      <stop offset="0" stop-color="#152238"/>
+      <stop offset="1" stop-color="#070a12"/>
+    </radialGradient>
+    <linearGradient id="land" x1="12%" y1="8%" x2="88%" y2="92%">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="28" fill="url(#background)"/>
+  <ellipse cx="400" cy="260" rx="310" ry="196" fill="none" stroke="#fff" stroke-opacity=".035"/>
+  <ellipse cx="400" cy="260" rx="224" ry="142" fill="none" stroke="#fff" stroke-opacity=".03"/>
+  <path d="M507 163.6L507.9 164.9L507.9 169.8L509 171.1L512.9 174.1L522.5 177.8L629.9 177.8L630.6 180.9L631.1 272.1L525.6 271.7L521.6 272.2L520.9 276.8L518.7 278.1L515.8 277.2L511.1 272.9L507.4 272.1L507 267.3L510.9 266.1L503.4 263.4L499.3 263.9L499.3 262.2L500.4 261.2L497.1 263.5L494.3 267L489.6 268.5L487 262.7L484.8 261.2L483.4 260.9L476.4 263.2L474.5 263L471.5 260.1L470.5 257.3L472.7 255.8L475.4 249.1L478.7 246.2L479.9 242.9L480 238.5L485.4 234.6L488 231.3L490.4 225.8L492.1 224.5L495.7 226.3L497.8 226L502.6 223.5L500.9 223.6L497.6 225.8L496.2 225.5L491.5 219.9L492.3 217.7L500.4 209.6L502.8 204.1L507 199.2L507.8 196.4L507.5 193.1L504.2 183.4L505.3 181.2L506 171.1L504.4 166.1L507 163.6ZM170 470.4L169.4 468.6L170.6 467.2L171.7 469L171.4 471L170.3 472L168.9 471L170 470.4ZM436.2 49.8L439.2 53.8L438.5 59.7L434.9 63.4L431.2 69.1L427.4 77.1L425.1 78.5L424.3 84.8L417.1 94.5L410.1 91.2L406.9 91.8L404.3 90.3L399.6 89.6L398.1 88.4L395.8 83L397.4 76.4L400 73L408.5 73L409 71.7L408 69.1L411.9 65.5L412.4 58L415.6 51.7L418.4 48.9L421.7 48L421.2 49.1L423.7 49.7L425.6 49.1L432.8 50L435.1 49.1L436.2 49.8Z" fill="url(#land)" fill-rule="evenodd" stroke="#fff" stroke-opacity=".42" stroke-width="2" stroke-linejoin="round" filter="url(#glow)"/>
+</svg>

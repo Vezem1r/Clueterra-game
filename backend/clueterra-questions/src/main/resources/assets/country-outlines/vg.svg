@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+  <defs>
+    <radialGradient id="background" cx="50%" cy="45%" r="70%">
+      <stop offset="0" stop-color="#152238"/>
+      <stop offset="1" stop-color="#070a12"/>
+    </radialGradient>
+    <linearGradient id="land" x1="12%" y1="8%" x2="88%" y2="92%">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="28" fill="url(#background)"/>
+  <ellipse cx="400" cy="260" rx="310" ry="196" fill="none" stroke="#fff" stroke-opacity=".035"/>
+  <ellipse cx="400" cy="260" rx="224" ry="142" fill="none" stroke="#fff" stroke-opacity=".03"/>
+  <path d="M289.8 399L281.5 410.9L265.8 422.1L212.6 418.9L225.9 406.7L243.5 405.2L260 379.6L263.7 363.1L283.4 352L297.5 356.2L320.6 351.5L331.3 354.7L363.1 349L395.3 354.1L405.4 364.2L402.2 369.5L391 367.9L374.4 363.2L362.1 370.1L357 378.2L349.5 385L340.4 387.9L332.8 386.4L320.8 381L311.1 381.5L311.6 384.6L303.9 392.8L294.5 399.7L289.8 399ZM538.5 321.3L530.3 331.4L511.6 346.3L490.9 358.4L477.2 360.3L501.5 327.1L508.1 310.6L504.5 289.4L508.9 289.4L517.2 295.7L571.5 294.6L591.8 289.4L583.8 304.7L565.4 314.9L547 320.3L538.5 321.3ZM581.6 70.6L538.6 68.7L520.9 62.6L511.2 49.6L597.4 48L631.9 60.5L645.9 94.9L637.3 94.4L581.6 70.6ZM354 448L355.2 455.3L355.5 469.2L352.6 472L348.9 463.4L338.5 457.6L323.4 454.5L321.2 450.4L329.9 448.1L336.9 448L345.3 445.3L354 448ZM197.3 349.6L202.7 360.7L196.8 365.7L168.4 361.6L154.1 361.1L159.6 353.5L184.5 348L197.3 349.6ZM389.9 307.7L393 309.3L393.4 326L391 335.6L386.2 340.4L384.5 337.6L385.4 330.7L383.3 319.3L385 311.3L389.9 307.7Z" fill="url(#land)" fill-rule="evenodd" stroke="#fff" stroke-opacity=".42" stroke-width="2" stroke-linejoin="round" filter="url(#glow)"/>
+</svg>

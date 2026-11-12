@@ -1,0 +1,29 @@
+{
+  "properties": [
+    {
+      "name": "clueterra.internal.secret",
+      "type": "java.lang.String",
+      "description": "Shared secret expected in the X-Internal-Token header for internal admin endpoints."
+    },
+    {
+      "name": "clueterra.storage.compress-raster-images",
+      "type": "java.lang.Boolean",
+      "description": "Whether downloaded raster hint images should be resized and recompressed before storing in MinIO."
+    },
+    {
+      "name": "clueterra.storage.max-width",
+      "type": "java.lang.Integer",
+      "description": "Maximum stored image width in pixels for raster hint assets."
+    },
+    {
+      "name": "clueterra.storage.max-height",
+      "type": "java.lang.Integer",
+      "description": "Maximum stored image height in pixels for raster hint assets."
+    },
+    {
+      "name": "clueterra.storage.jpeg-quality",
+      "type": "java.lang.Float",
+      "description": "JPEG compression quality used when recompressing opaque raster hint images."
+    }
+  ]
+}

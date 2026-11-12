@@ -1,0 +1,31 @@
+SELECT updated.id,
+       updated.country_id,
+       c.iso_alpha2 AS country_code,
+       c.name_en    AS country_name,
+       updated.category,
+       updated.hint_type,
+       updated.hint_text,
+       COALESCE(image.object_key, image.download_url) AS image_url,
+       image.original_url AS original_image_url,
+       image.source_page_url AS image_source_page_url,
+       image.author_name AS image_author_name,
+       image.attribution_text AS image_attribution_text,
+       image.license_label AS image_license_label,
+       image.license_url AS image_license_url,
+       updated.difficulty,
+       updated.quality_score,
+       updated.source,
+       updated.source_indicator,
+       updated.source_year,
+       updated.ambiguity_count,
+       updated.times_used,
+       updated.times_correct,
+       updated.is_active,
+       updated.created_at,
+       updated.updated_at,
+       updated.review_retry_after_at,
+       updated.editorial_text_locked
+FROM updated
+JOIN countries c ON c.id = updated.country_id
+LEFT JOIN cl_media_schema.image_delivery image
+       ON image.image_resource_id = updated.image_resource_id

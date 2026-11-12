@@ -1,0 +1,188 @@
+---
+spring:
+  application:
+    name: "clueterra-budget"
+  lifecycle:
+    timeout-per-shutdown-phase: "30s"
+  profiles:
+    active: "dev"
+  data:
+    redis:
+      host: "${REDIS_HOST:localhost}"
+      port: "${REDIS_PORT:6379}"
+      password: "${REDIS_PASSWORD:}"
+      timeout: "10s"
+  datasource:
+    url: "jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:clueterra}?currentSchema=cl_budget_schema"
+    username: "${BUDGET_DB_USER}"
+    password: "${BUDGET_DB_PASSWORD}"
+    driver-class-name: "org.postgresql.Driver"
+    hikari:
+      minimum-idle: 1
+      maximum-pool-size: 8
+      idle-timeout: 300000
+      pool-name: "ClueterraBudgetPool"
+      max-lifetime: 1800000
+      connection-timeout: 20000
+      connection-init-sql: "SET search_path TO cl_budget_schema, cl_budget_staging,\
+        \ cl_budget_sch_schema"
+  flyway:
+    enabled: false
+    baseline-on-migrate: true
+    locations: "classpath:db/migration"
+    schemas: "cl_budget_schema, cl_budget_staging, cl_budget_sch_schema"
+    default-schema: "cl_budget_schema"
+    create-schemas: true
+    table: "flyway_schema_history"
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+      indent-output: false
+    deserialization:
+      fail-on-unknown-properties: false
+    default-property-inclusion: "non_null"
+    date-format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+server:
+  port: "${SERVER_PORT:8082}"
+  shutdown: "graceful"
+  tomcat:
+    mbeanregistry:
+      enabled: true
+  compression:
+    enabled: true
+    mime-types: "application/json,text/html,text/plain"
+management:
+  metrics:
+    distribution:
+      percentiles-histogram:
+        http.server.requests: true
+      minimum-expected-value:
+        http.server.requests: 1ms
+      maximum-expected-value:
+        http.server.requests: 10s
+      slo:
+        "[http.server.requests]": 50ms,100ms,250ms,500ms,1s,2s,5s
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,metrics,prometheus"
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      group:
+        readiness:
+          include: "readinessState,db,redis"
+      show-details: "when_authorized"
+  info:
+    env:
+      enabled: true
+springdoc:
+  api-docs:
+    path: "/api-docs"
+  swagger-ui:
+    path: "/swagger-ui.html"
+org:
+  jobrunr:
+    background-job-server:
+      enabled: true
+    dashboard:
+      enabled: false
+    database:
+      table-prefix: "cl_budget_sch_schema."
+      skip-create: false
+clueterra:
+  budget:
+    internal:
+      secret: "${BUDGET_SERVICE_SECRET:}"
+    http:
+      user-agent: "ClueTerra-Budget/1.0 (https://clueterra.com; support@clueterra.com)"
+      max-attempts: 3
+      retry-base-delay: "500ms"
+      retry-max-delay: "5m"
+      connect-timeout: "10s"
+      read-timeout: "60s"
+      call-timeout: "70s"
+    source:
+      wikidata:
+        enabled: true
+        sparql-url: "https://query.wikidata.org/sparql"
+        entity-api-url: "https://www.wikidata.org/w/api.php"
+        wikipedia-api-url: "https://en.wikipedia.org/w/api.php"
+        wikipedia-fallback-languages:
+        - "de"
+        - "fr"
+        - "es"
+        - "pt"
+        - "ru"
+        - "it"
+        - "nl"
+        - "pl"
+        - "tr"
+        query-page-size: 250
+        maximum-country-share-percent: 18
+        maximum-region-share-percent: 45
+        easy-share-percent: 25
+        medium-share-percent: 45
+        minimum-sitelinks: 3
+        minimum-quality-score: 45
+        entity-batch-size: 20
+        minimum-recovery-batch-size: 5
+        wikipedia-article-batch-size: 10
+        pageview-days: 30
+        max-lag-seconds: 60
+        batch-max-attempts: 5
+        batch-recovery-delay: "30s"
+        batch-recovery-max-delay: "5m"
+        minimum-project-cost-usd: 1000000
+        maximum-project-cost-usd: 1000000000000
+        request-delay: "1s"
+      exchange-rates:
+        enabled: true
+        api-url: "https://api.frankfurter.dev"
+        cache-duration: "12h"
+      wikimedia:
+        enabled: true
+        api-url: "https://commons.wikimedia.org/w/api.php"
+        metadata-batch-size: 50
+        thumbnail-width: 1200
+        minimum-width: 800
+        minimum-height: 450
+        maximum-download-bytes: 10000000
+        max-lag-seconds: 60
+        request-delay: "350ms"
+    sync:
+      stale-run-timeout: "2h"
+    enrichment:
+      candidate-image-batch-size: 50
+      processing-timeout: "1h"
+    generation:
+      recent-project-exclusion-days: 14
+      scheduler-enabled: true
+      daily-cron: "0 30 4 * * *"
+  storage:
+    enabled: "${MINIO_ENABLED:true}"
+    endpoint: "${MINIO_ENDPOINT:http://localhost:9000}"
+    access-key: "clueterra-budget"
+    secret-key: "${MINIO_BUDGET_SECRET_KEY}"
+---
+spring:
+  config:
+    activate:
+      on-profile: "dev"
+    import:
+    - "optional:file:../../.env[.properties]"
+clueterra:
+  budget:
+    internal:
+      secret: "${BUDGET_SERVICE_SECRET:local-budget-secret}"
+---
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false

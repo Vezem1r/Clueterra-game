@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+  <defs>
+    <radialGradient id="background" cx="50%" cy="45%" r="70%">
+      <stop offset="0" stop-color="#152238"/>
+      <stop offset="1" stop-color="#070a12"/>
+    </radialGradient>
+    <linearGradient id="land" x1="12%" y1="8%" x2="88%" y2="92%">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="520" rx="28" fill="url(#background)"/>
+  <ellipse cx="400" cy="260" rx="310" ry="196" fill="none" stroke="#fff" stroke-opacity=".035"/>
+  <ellipse cx="400" cy="260" rx="224" ry="142" fill="none" stroke="#fff" stroke-opacity=".03"/>
+  <path d="M463.2 409.6L465.5 403.5L463.7 398.3L463.8 393.8L472.1 389.5L457.9 382.2L463.5 376.9L472.5 373L484.2 369.5L480.1 362.4L481 356.1L485.6 350.6L492.9 345.8L509.2 347.9L515.6 357.3L519.5 368.3L528 374.9L528.5 370.2L529.8 367.1L534.6 360.3L537.5 364.9L541.5 367.5L546.5 368.4L552.3 367.6L548.4 372.4L546.2 373.9L541.6 374.9L543.9 382.6L549.1 386.1L555.8 386L562.7 382.2L566.5 382.2L570.9 387.5L573.2 393.4L559.2 393.4L564 399.4L568.3 402.2L570.8 405.1L569.7 411.3L563.9 420.5L558.2 420.9L551.6 417.5L543.3 415.2L539.4 417.2L539.2 422L541.6 435.1L537.8 441.5L529.4 437.4L517.6 425.9L514.1 426.7L503.7 431.9L496.7 433.1L486.1 433.2L479.5 431.7L463.2 421.8L459.8 416.9L463.2 409.6ZM228.2 468.2L229.5 467.2L229.5 470.4L228.8 471.7L227.4 472L226.8 471.1L228.2 468.2ZM486 119.6L479.4 123.2L476.6 115.5L475.6 93.8L468.2 67.5L468.6 57.1L470.5 58.8L472.1 64.7L475.2 71.2L483.3 80.9L486 86.5L485.8 94L483.8 100.3L483.8 105.3L489.8 108.7L492.3 98.7L493.1 85.2L489.9 73.2L480.8 68L477.1 62.2L479.5 51.9L486.6 48L496.7 61.1L489.8 64.7L496.5 67.1L507.2 63.4L513.8 64.7L522 70.9L529.1 79.4L534.7 88.7L538.4 97.4L542 113.4L542.5 122.2L541.6 130.5L538.2 140.5L534.7 142.4L529.4 141.9L520.7 145L517.5 135.5L508.5 128.8L486 119.6Z" fill="url(#land)" fill-rule="evenodd" stroke="#fff" stroke-opacity=".42" stroke-width="2" stroke-linejoin="round" filter="url(#glow)"/>
+</svg>

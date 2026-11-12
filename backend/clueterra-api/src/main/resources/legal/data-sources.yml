@@ -1,0 +1,18 @@
+registry_version: "2026-11-05-public-data-sources-v23"
+
+sources:
+  natural-earth:
+    review_status: READY_LOW_MAINTENANCE
+    display_name: "Natural Earth"
+    summary: "Public-domain country boundaries and river geometry used for silhouettes, river clues, the Rivers game and the Country silhouettes globe."
+    fetched_data: "No runtime data is fetched. Clueterra bundles generated SVG assets derived from pinned Natural Earth v5.1.2 1:10m map-units, admin-0 country and named river/lake-centerline datasets, plus simplified river courses and 1:50m land boundary lines drawn on the Rivers game globe. The Rivers game selects only mapped rivers with separately documented fact claims. The Country silhouettes game uses the 1:10m admin-0 countries in the German point-of-view edition, with Israel, Palestine and Syria taken from the Palestinian point-of-view edition, so that its borders follow the position of the European Union."
+    storage_policy: "Generated SVG files and provenance records are bundled with the Questions service. Country silhouettes and versioned Rivers game maps are copied to the hint-images MinIO bucket when generated."
+    image_policy: "River game maps show a single mapped river; a second map variant reveals country boundaries. They contain no country names, city labels, flags, seals or third-party photographs."
+    commercial_policy: "Natural Earth map data is in the public domain and may be used, modified, and redistributed commercially."
+    website_notice: "Country boundaries and river maps are made with public-domain Natural Earth map data."
+    restrictions: "Natural Earth depicts de facto boundaries by default and provides generalized small-scale labels. Clueterra uses the boundaries only to create and clip neutral gameplay graphics. The Country silhouettes game follows the position of the European Union on disputed territories and shows Western Sahara as a separate territory that is not part of the game."
+    source_label: "Natural Earth v5.1.2"
+    terms_url: "https://www.naturalearthdata.com/about/terms-of-use/"
+    license_label: "Public domain"
+    license_url: "https://www.naturalearthdata.com/about/terms-of-use/"
+    public_note: "Made with Natural Earth."

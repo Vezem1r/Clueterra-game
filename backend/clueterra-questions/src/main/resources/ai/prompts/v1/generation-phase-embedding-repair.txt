@@ -1,0 +1,3 @@
+Placeholder for the Clueterra "generation phase embedding repair" prompt.
+
+The production prompt is kept out of the public repository. Replace this file with your own instructions; the AI services load it by file name and send it to the model unchanged.

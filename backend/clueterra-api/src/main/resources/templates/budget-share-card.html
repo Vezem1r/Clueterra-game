@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 1200px; height: 630px; overflow: hidden; background: #05070d; }
+    body { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #f7f8fb; }
+    .card {
+      position: relative;
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background:
+        radial-gradient(700px 420px at 78% 24%, rgba(250, 204, 21, .12), transparent 68%),
+        radial-gradient(620px 400px at 10% 96%, rgba(16, 185, 129, .13), transparent 66%),
+        linear-gradient(140deg, #07140f 0%, #070914 48%, #0d0a17 100%);
+      isolation: isolate;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      opacity: .24;
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 38px 38px;
+      mask-image: linear-gradient(to bottom, black, transparent 88%);
+    }
+    .header { position: absolute; top: 34px; left: 48px; right: 48px; display: flex; justify-content: space-between; align-items: center; }
+    .brand { display: flex; align-items: center; gap: 12px; font-size: 18px; font-weight: 800; color: rgba(255,255,255,.48); }
+    .brand-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 11px; color: #facc15; border: 1px solid rgba(250,204,21,.24); background: rgba(250,204,21,.09); }
+    .date { padding: 9px 17px; border: 1px solid rgba(255,255,255,.1); border-radius: 999px; color: rgba(255,255,255,.5); font-size: 13px; font-weight: 800; letter-spacing: .12em; }
+    .summary { position: absolute; top: 92px; left: 48px; right: 48px; height: 116px; display: grid; grid-template-columns: 305px 245px minmax(0,1fr); align-items: center; overflow: hidden; border: 1px solid rgba(255,255,255,.09); border-radius: 25px; background: linear-gradient(115deg,rgba(255,255,255,.055),rgba(255,255,255,.018)); box-shadow: inset 0 1px rgba(255,255,255,.035),0 18px 50px rgba(0,0,0,.16); }
+    .score { align-self: stretch; display: flex; flex-direction: column; justify-content: center; padding: 16px 26px; }
+    .eyebrow { color: rgba(250,204,21,.72); font-size: 11px; font-weight: 900; letter-spacing: .19em; text-transform: uppercase; }
+    .xp { margin-top: 7px; font-size: 54px; line-height: .9; font-weight: 950; letter-spacing: -.055em; color: #f7f8fb; }
+    .xp span { color: rgba(110,231,183,.72); font-size: 24px; letter-spacing: -.01em; }
+    .accuracy { align-self: stretch; display: flex; flex-direction: column; justify-content: center; border-left: 1px solid rgba(255,255,255,.075); padding: 16px 28px; }
+    .accuracy span { color: rgba(255,255,255,.34); font-size: 11px; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
+    .accuracy strong { margin-top: 7px; color: #6ee7b7; font-size: 32px; line-height: 1; font-weight: 950; letter-spacing: -.035em; }
+    .hook { align-self: stretch; display: flex; flex-direction: column; justify-content: center; border-left: 1px solid rgba(255,255,255,.075); padding: 16px 30px; }
+    .hook span { color: rgba(255,255,255,.32); font-size: 11px; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
+    .hook strong { margin-top: 7px; font-size: 25px; line-height: 1.15; font-weight: 850; color: rgba(255,255,255,.86); }
+    .city-wrap { position: absolute; left: 48px; right: 48px; bottom: 55px; height: 344px; }
+    .city-glow { position: absolute; inset: 36px 0 0; background: radial-gradient(ellipse at 50% 78%, rgba(250,204,21,.18), transparent 67%); filter: blur(26px); }
+    .city { position: absolute; inset: 0 0 30px; display: flex; align-items: flex-end; justify-content: space-evenly; gap: 14px; padding: 0 18px; border-bottom: 2px solid rgba(255,255,255,.14); }
+    .building-wrap { position: relative; width: 164px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
+    .building { position: relative; width: 100%; min-height: 42px; border-radius: 9px 9px 2px 2px; border: 1px solid var(--edge); background: linear-gradient(155deg, var(--top), var(--bottom)); box-shadow: 0 0 34px var(--glow), inset 0 1px rgba(255,255,255,.23); }
+    .building::after { content: ""; position: absolute; inset: 6px; border-radius: 5px; border: 1px solid rgba(255,255,255,.05); pointer-events: none; }
+    .building.zero { --top:#7f2634; --bottom:#3a111d; --edge:rgba(255,82,105,.55); --glow:rgba(255,52,81,.24); }
+    .building.low { --top:#b4532b; --bottom:#502015; --edge:rgba(251,146,60,.52); --glow:rgba(249,115,22,.22); }
+    .building.mid { --top:#a47a23; --bottom:#493410; --edge:rgba(250,204,21,.48); --glow:rgba(250,204,21,.20); }
+    .building.good { --top:#257e66; --bottom:#0f3e34; --edge:rgba(52,211,153,.5); --glow:rgba(16,185,129,.23); }
+    .building.great { --top:#33b98a; --bottom:#0d5946; --edge:rgba(110,231,183,.7); --glow:rgba(52,211,153,.34); }
+    .building.style-0 { width:72%; border-radius:3px 3px 2px 2px; }
+    .building.style-1 { width:88%; border-radius:0; clip-path:polygon(14% 0,86% 0,100% 100%,0 100%); }
+    .building.style-2 { width:100%; border-radius:22px 22px 2px 2px; box-shadow:0 0 34px var(--glow), -18px 0 0 -7px color-mix(in srgb,var(--bottom) 78%,transparent), 18px 0 0 -7px color-mix(in srgb,var(--bottom) 78%,transparent); }
+    .building.style-3 { width:62%; border-radius:0; clip-path:polygon(50% 0,100% 18%,100% 100%,0 100%,0 18%); }
+    .building.style-4 { width:96%; border-radius:7px 7px 2px 2px; background:linear-gradient(90deg,var(--top) 0 29%,var(--bottom) 29% 35%,var(--top) 35% 67%,var(--bottom) 67% 73%,var(--top) 73% 100%); }
+    .building.style-5 { width:82%; border-radius:0; clip-path:polygon(0 9%,72% 0,100% 15%,100% 100%,0 100%); }
+    .building.style-6 { width:90%; border-radius:42% 42% 2px 2px; }
+    .building.style-7 { width:76%; border-radius:0; clip-path:polygon(22% 0,78% 0,78% 10%,90% 10%,90% 22%,100% 22%,100% 100%,0 100%,0 22%,10% 22%,10% 10%,22% 10%); }
+    .windows { position: absolute; inset: 16px 13px 11px; display: grid; grid-template-columns: repeat(3, 1fr); align-content: space-around; gap: 8px 10px; overflow: hidden; }
+    .window { height: 5px; border-radius: 2px; background: rgba(255,245,178,.62); box-shadow: 0 0 6px rgba(255,226,98,.28); }
+    .window.off { background:rgba(0,0,0,.25); box-shadow:none; }
+    .zero .window { background: rgba(255,155,166,.42); box-shadow: none; }
+    .zero .window.off { background:rgba(35,3,8,.42); }
+    .roof { position: absolute; left: 0; right: 0; top: 0; height: 0; color: var(--edge); }
+    .antenna { position: absolute; left: 50%; bottom: 0; width: 2px; height: 28px; background: currentColor; transform: translateX(-50%); }
+    .antenna::before { content:""; position:absolute; left:50%; top:-5px; width:7px; height:7px; border-radius:50%; background:#facc15; transform:translateX(-50%); box-shadow:0 0 10px rgba(250,204,21,.7); }
+    .spire { position: absolute; left: 50%; bottom: 0; width: 0; height: 0; border-left: 18px solid transparent; border-right: 18px solid transparent; border-bottom: 30px solid currentColor; transform: translateX(-50%); }
+    .pipe { position: absolute; bottom: 0; width: 13px; height: 22px; border: 2px solid currentColor; border-bottom: 0; border-radius: 4px 4px 0 0; }
+    .pipe.left { left: 22px; } .pipe.right { right: 22px; height: 31px; }
+    .dome { position:absolute; left:50%; bottom:0; width:42px; height:19px; border:2px solid currentColor; border-bottom:0; border-radius:42px 42px 0 0; transform:translateX(-50%); }
+    .label { position: absolute; top: 100%; margin-top: 10px; text-align: center; white-space: nowrap; }
+    .label b { display: block; font-size: 17px; color: rgba(255,255,255,.88); }
+    .label span { display: block; margin-top: 2px; font-size: 10px; font-weight: 800; letter-spacing: .12em; color: rgba(255,255,255,.32); text-transform: uppercase; }
+    .ground { position: absolute; left: 0; right: 0; bottom: 0; height: 30px; background: linear-gradient(to bottom, rgba(255,255,255,.04), transparent); clip-path: polygon(0 0,100% 0,94% 38%,82% 22%,69% 48%,54% 21%,39% 55%,22% 28%,8% 45%); opacity:.6; }
+    .footer { position: absolute; top: 44px; right: 220px; color: rgba(255,255,255,.24); font-size: 12px; font-weight: 800; letter-spacing: .08em; }
+    .footer strong { color: rgba(110,231,183,.56); }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <header class="header">
+      <div class="brand"><span class="brand-mark">$</span><span>Clueterra / BudgetGuessr</span></div>
+      <div class="date">{{DATE}}</div>
+    </header>
+    <section class="summary">
+      <div class="score">
+        <p class="eyebrow">Daily cost skyline</p>
+        <div class="xp">{{XP}} <span>XP</span></div>
+      </div>
+      <p class="accuracy"><span>Average accuracy</span><strong>{{ACCURACY}}%</strong></p>
+      <p class="hook"><span>Today&rsquo;s challenge</span><strong>Can you build a better skyline?</strong></p>
+    </section>
+    <section class="city-wrap">
+      <div class="city-glow"></div>
+      <div class="city">{{BUILDINGS_HTML}}</div>
+      <div class="ground"></div>
+    </section>
+    <footer class="footer"><strong>clueterra.com/budget</strong></footer>
+  </main>
+</body>
+</html>

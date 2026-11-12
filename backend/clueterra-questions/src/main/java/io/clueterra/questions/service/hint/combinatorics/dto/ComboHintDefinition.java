@@ -1,0 +1,22 @@
+package io.clueterra.questions.service.hint.combinatorics.dto;
+
+import io.clueterra.questions.entity.enums.Category;
+import io.clueterra.questions.entity.enums.HintType;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+public record ComboHintDefinition(
+        String indicatorCode,
+        String displayName,
+        Category category,
+        HintType hintType,
+        String familyType,
+        int baseDifficulty,
+        BigDecimal baseQuality,
+        Integer maxAmbiguityCount,
+        List<ComboHintComponent> components,
+        List<ComboHintPredicate> predicates,
+        List<ComboTextVariant> variants
+) {
+}

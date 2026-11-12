@@ -1,0 +1,20 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deployment placeholder
+        run: |
+          echo "This workflow is intentionally a placeholder."
+          echo "Add project-specific deployment steps here when publishing from this repository."
+          echo "Recommended contents:"
+          echo "- Checkout the repository"
+          echo "- Build and test the backend services"
+          echo "- Build the frontend"
+          echo "- Authenticate to the deployment target using GitHub Secrets"
+          echo "- Run database migrations"
+          echo "- Deploy Docker Compose services or container images"

@@ -1,0 +1,95 @@
+# Fast Food Regional Data
+# Tracked chains: McDonald's, starbucks, kfc, burger_king, subway, pizza_hut,
+#   dominos, taco_bell, Wendy's, popeyes, chick_fil_a, dunkin, papa_johns,
+#   five_guys, chipotle
+# Location counts are approximate as of 2025. Years indicate first opening in-country.
+
+countries:
+
+  # ============================================================
+  # TIER 1 — Detailed
+  # ============================================================
+
+  US:
+    chains:
+      mcdonalds:    { locations: 13400, first_year: 1955 }
+      starbucks:    { locations: 16300, first_year: 1971 }
+      kfc:          { locations: 3900,  first_year: 1952 }
+      burger_king:  { locations: 7000,  first_year: 1954 }
+      subway:       { locations: 20500, first_year: 1965 }
+      pizza_hut:    { locations: 6500,  first_year: 1958 }
+      dominos:      { locations: 6700,  first_year: 1960 }
+      taco_bell:    { locations: 8200,  first_year: 1962 }
+      wendys:       { locations: 5700,  first_year: 1969 }
+      popeyes:      { locations: 3700,  first_year: 1972 }
+      chick_fil_a:  { locations: 3000,  first_year: 1967 }
+      dunkin:       { locations: 9500,  first_year: 1950 }
+      papa_johns:   { locations: 3100,  first_year: 1984 }
+      five_guys:    { locations: 1700,  first_year: 1986 }
+      chipotle:     { locations: 3500,  first_year: 1993 }
+    signature_items:
+      - { chain: "McDonald's", item: "Big Mac", note: "The world benchmark burger, invented 1967 in this region" }
+      - { chain: "In-N-Out", item: "Double-Double Animal Style", note: "Unofficial local treasure" }
+      - { chain: "Chick-fil-A", item: "Original Chicken Sandwich", note: "Pressure-cooked, pickled, Sunday-closed loyalty" }
+      - { chain: "Taco Bell", item: "Crunchwrap Supreme", note: "A hexagonal engineering marvel unique to this country" }
+    local_champion: { name: "In-N-Out Burger", type: "burger", note: "Regional cult chain, ~400 locations, 'secret menu' phenomenon" }
+    cultural_facts:
+      - "This country has more fast food restaurants per capita than any other nation — roughly 1 for every 500 people"
+      - "Drive-through sales account for about 70% of fast food revenue"
+      - "The original McDonald's opened in this region in 1940 as a barbecue restaurant"
+    absent_chains: []
+    special_facts:
+      CHAIN_PARADISE: "The only nation where all 15 tracked chains have a major presence"
+      24H_CULTURE: "24-hour drive-throughs are standard across suburban and highway locations"
+      OLDEST_FRANCHISE: "Home to the oldest KFC (1952), McDonald's (1955), and Burger King (1954) locations in the world"
+
+  CA:
+    chains:
+      mcdonalds:    { locations: 1450, first_year: 1967 }
+      starbucks:    { locations: 1900, first_year: 1987 }
+      kfc:          { locations: 60,  first_year: 1955 }
+      burger_king:  { locations: 300,  first_year: 1969 }
+      subway:       { locations: 3100, first_year: 1988 }
+      pizza_hut:    { locations: 340,  first_year: 1968 }
+      dominos:      { locations: 550,  first_year: 1983 }
+      taco_bell:    { locations: 200,  first_year: 1981 }
+      wendys:       { locations: 400,  first_year: 1975 }
+      popeyes:      { locations: 200,  first_year: 1984 }
+      chick_fil_a:  { locations: 40,   first_year: 2019 }
+      dunkin:       { locations: 50,   first_year: 2018 }
+      papa_johns:   { locations: 130,  first_year: 2000 }
+      five_guys:    { locations: 130,  first_year: 2012 }
+      chipotle:     { locations: 50,   first_year: 2008 }
+    signature_items:
+      - { chain: "McDonald's", item: "McLobster", note: "Seasonal lobster roll available only here" }
+      - { chain: "Tim Hortons", item: "Double-Double Coffee", note: "Iconic local coffee order: two cream, two sugar" }
+      - { chain: "McDonald's", item: "Poutine", note: "Fries, cheese curds, and gravy — the national dish, fast-food style" }
+    local_champion: { name: "Tim Hortons", type: "coffee_donut", note: "~5,700 locations, a cultural institution named after a hockey player" }
+    cultural_facts:
+      - "Tim Hortons has more locations here than McDonald's and Starbucks combined"
+      - "Residents consume more doughnuts per capita than any other country"
+      - "McDonald's here was the first international franchise, opened locally in 1967"
+    absent_chains: []
+
+  MX:
+    chains:
+      mcdonalds:    { locations: 580,  first_year: 1985 }
+      starbucks:    { locations: 800,  first_year: 2002 }
+      kfc:          { locations: 350,  first_year: 1963 }
+      burger_king:  { locations: 500,  first_year: 1991 }
+      subway:       { locations: 450,  first_year: 2002 }
+      pizza_hut:    { locations: 280,  first_year: 1989 }
+      dominos:      { locations: 950,  first_year: 1989 }
+      taco_bell:    { locations: 30,   first_year: 2007 }
+      wendys:       { locations: 10,   first_year: 2021 }
+      popeyes:      { locations: 5,    first_year: 2022 }
+      papa_johns:   { locations: 80,   first_year: 2007 }
+    signature_items:
+      - { chain: "McDonald's", item: "McMolletes", note: "Refried beans and cheese on a bolillo roll for breakfast" }
+      - { chain: "KFC", item: "Biscuit with Jalapeño Salsa", note: "A spicy local twist on the Southern classic" }
+      - { chain: "Domino's", item: "Mexicana Pizza", note: "Topped with jalapeño, chorizo, and chipotle sauce" }
+    local_champion: { name: "El Pollo Loco", type: "chicken", note: "Flame-grilled chicken chain born locally, ~200 locations here" }
+    cultural_facts:
+      - "Domino's is the largest pizza chain here by far with nearly 1,000 locations"
+      - "The capital has one of the highest densities of Starbucks in the region"
+    absent_chains: [chick_fil_a, dunkin, five_guys, chipotle]

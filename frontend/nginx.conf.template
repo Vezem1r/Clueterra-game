@@ -1,0 +1,430 @@
+proxy_cache_path /var/cache/map-tiles levels=1:2 keys_zone=map_tiles:8m max_size=4g inactive=180d use_temp_path=off;
+
+map $uri $spa_entrypoint {
+    default /__route_not_found__.html;
+    "/" /index.html;
+    "/games" /games/index.html;
+    "/games/rivers" /games/rivers/index.html;
+    "/games/rivers/how-to" /games/rivers/how-to/index.html;
+    "/games/country-silhouettes" /games/country-silhouettes/index.html;
+    "/games/country-silhouettes/how-to" /games/country-silhouettes/how-to/index.html;
+    "/games/country-flags" /games/country-flags/index.html;
+    "/games/country-flags/how-to" /games/country-flags/how-to/index.html;
+    "/games/countries-quiz" /games/countries-quiz/index.html;
+    "/games/countries-quiz/how-to" /games/countries-quiz/how-to/index.html;
+    ~^/(?<locale>ru|cs)(?<localized>/games(?:/rivers(?:/how-to)?|/country-silhouettes(?:/how-to)?|/country-flags(?:/how-to)?|/countries-quiz(?:/how-to)?)?)$ /$locale$localized/index.html;
+    "/about" /about/index.html;
+    "/how-to" /how-to/index.html;
+    "/budget" /budget/index.html;
+    "/budget/how-to" /budget/how-to/index.html;
+    "/terms" /terms/index.html;
+    "/privacy" /privacy/index.html;
+    "/data-sources" /data-sources/index.html;
+    ~^/(?:play|results|login|register|oauth/callback|leaderboard|legal/update|profile|guest/profile|friends)/?$ /app.html;
+    ~^/profile/[^/]+/?$ /app.html;
+    ~^/projects/preview/Q[1-9][0-9]*$ /app.html;
+    ~^/admin(?:/.*)?/?$ /app.html;
+}
+
+map $request_uri $spa_robots {
+    default "noindex, nofollow";
+    ~^/(?:\?.*)?$ "";
+    ~^/games(?:\?.*)?$ "";
+    ~^/games/rivers(?:\?.*)?$ "";
+    ~^/games/rivers/how-to(?:\?.*)?$ "";
+    ~^/games/country-silhouettes(?:\?.*)?$ "";
+    ~^/games/country-silhouettes/how-to(?:\?.*)?$ "";
+    ~^/games/country-flags(?:\?.*)?$ "";
+    ~^/games/country-flags/how-to(?:\?.*)?$ "";
+    ~^/games/countries-quiz(?:\?.*)?$ "";
+    ~^/games/countries-quiz/how-to(?:\?.*)?$ "";
+    ~^/(?:ru|cs)/games(?:/rivers(?:/how-to)?|/country-silhouettes(?:/how-to)?|/country-flags(?:/how-to)?|/countries-quiz(?:/how-to)?)?(?:\?.*)?$ "";
+    ~^/about(?:\?.*)?$ "";
+    ~^/how-to(?:\?.*)?$ "";
+    ~^/budget(?:\?.*)?$ "";
+    ~^/budget/how-to(?:\?.*)?$ "";
+    ~^/terms(?:\?.*)?$ "";
+    ~^/privacy(?:\?.*)?$ "";
+    ~^/data-sources(?:\?.*)?$ "";
+}
+
+map $status $immutable_asset_cache_control {
+    ~^(?:200|206|304)$ "public, max-age=31536000, immutable";
+    default "no-store";
+}
+
+map $status $avatar_cache_control {
+    ~^(?:200|206|304)$ "public, max-age=2592000, immutable";
+    default "no-store";
+}
+
+map $uri $clueterra_access_loggable {
+    default 1;
+    /health 0;
+}
+
+map $request_uri $clueterra_access_path {
+    "~^([^?]*)" $1;
+}
+
+map $http_referer $clueterra_access_referer {
+    "~^([^?]*)" $1;
+}
+
+log_format clueterra_access escape=json '{'
+    '"time":"$time_iso8601",'
+    '"client_ip":"$http_cf_connecting_ip",'
+    '"country":"$http_cf_ipcountry",'
+    '"method":"$request_method",'
+    '"path":"$clueterra_access_path",'
+    '"status":$status,'
+    '"bytes":$body_bytes_sent,'
+    '"request_time":$request_time,'
+    '"upstream_status":"$upstream_status",'
+    '"upstream_time":"$upstream_response_time",'
+    '"cache":"$upstream_cache_status",'
+    '"referer":"$clueterra_access_referer",'
+    '"user_agent":"$http_user_agent",'
+    '"cf_ray":"$http_cf_ray",'
+    '"proxy_ip":"$remote_addr"'
+'}';
+
+server {
+    listen 80;
+    server_name _;
+    root /usr/share/nginx/html;
+    index index.html;
+    absolute_redirect off;
+    access_log /var/log/clueterra/access.log clueterra_access if=$clueterra_access_loggable;
+
+    error_page 404 /404.html;
+
+    add_header X-Frame-Options "DENY" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+    add_header Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()" always;
+
+    location ^~ /api/ {
+        proxy_pass http://${API_HOST}:${API_PORT};
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        client_max_body_size 5m;
+        add_header X-Robots-Tag "noindex, nofollow" always;
+    }
+
+    location ^~ /s/ {
+        proxy_pass http://${API_HOST}:${API_PORT}/api/s/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        add_header X-Robots-Tag "noindex, nofollow" always;
+        add_header X-Frame-Options "DENY" always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+        add_header Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()" always;
+        add_header Content-Security-Policy "default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'" always;
+    }
+
+    location ^~ /tiles/ {
+        resolver 127.0.0.11 valid=300s ipv6=off;
+        resolver_timeout 5s;
+        proxy_http_version 1.1;
+        proxy_ssl_server_name on;
+        proxy_ssl_name $tile_host;
+        proxy_set_header Host $tile_host;
+        proxy_set_header Cookie "";
+        proxy_set_header User-Agent "Clueterra map tiles (+https://clueterra.com)";
+        proxy_connect_timeout 5s;
+        proxy_read_timeout 15s;
+        proxy_cache map_tiles;
+        proxy_cache_key $uri;
+        proxy_cache_valid 200 180d;
+        proxy_cache_valid 404 30d;
+        proxy_cache_lock on;
+        proxy_cache_background_update on;
+        proxy_cache_use_stale error timeout updating http_500 http_502 http_503 http_504;
+        proxy_ignore_headers Cache-Control Expires Set-Cookie Vary;
+        proxy_hide_header Set-Cookie;
+        proxy_hide_header Cache-Control;
+        proxy_hide_header Expires;
+        proxy_hide_header Access-Control-Allow-Origin;
+        proxy_hide_header Strict-Transport-Security;
+        proxy_hide_header X-Cache;
+        proxy_hide_header Via;
+        proxy_hide_header X-Amz-Cf-Id;
+        proxy_hide_header X-Amz-Cf-Pop;
+        proxy_hide_header CF-Cache-Status;
+        proxy_hide_header CF-Ray;
+        proxy_hide_header Report-To;
+        proxy_hide_header NEL;
+        proxy_hide_header Vary;
+        proxy_hide_header Age;
+        add_header Cache-Control "public, max-age=2592000, immutable";
+        add_header X-Cache-Status $upstream_cache_status always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header Content-Security-Policy "default-src 'none'; sandbox" always;
+        add_header Cross-Origin-Resource-Policy "same-origin" always;
+        add_header X-Robots-Tag "noindex, nofollow" always;
+
+        location ~ "^/tiles/relief/(?<tile_z>[0-8])/(?<tile_y>[0-9]{1,3})/(?<tile_x>[0-9]{1,3})\.jpeg$" {
+            set $tile_host gibs.earthdata.nasa.gov;
+            proxy_pass https://$tile_host/wmts/epsg3857/best/BlueMarble_ShadedRelief_Bathymetry/default/GoogleMapsCompatible_Level8/$tile_z/$tile_y/$tile_x.jpeg;
+        }
+
+        location ~ "^/tiles/terrain/(?<tile_z>[0-9]|1[0-2])/(?<tile_x>[0-9]{1,4})/(?<tile_y>[0-9]{1,4})\.webp$" {
+            set $tile_host tiles.mapterhorn.com;
+            proxy_intercept_errors on;
+            error_page 404 =200 @sea_level_terrain;
+            proxy_pass https://$tile_host/$tile_z/$tile_x/$tile_y.webp;
+        }
+
+        return 404;
+    }
+
+    location @sea_level_terrain {
+        try_files /maps/terrain-sea-level.webp =404;
+        add_header Cache-Control "public, max-age=2592000, immutable";
+        add_header X-Cache-Status $upstream_cache_status always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header Cross-Origin-Resource-Policy "same-origin" always;
+        add_header X-Robots-Tag "noindex, nofollow" always;
+    }
+
+    location ^~ /maps/ {
+        try_files $uri =404;
+        expires 7d;
+        add_header Cache-Control "public";
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header Content-Security-Policy "default-src 'none'; sandbox" always;
+        add_header Cross-Origin-Resource-Policy "same-origin" always;
+        add_header X-Robots-Tag "noindex, nofollow" always;
+
+        location ~ "\.[0-9a-f]{12}\.json$" {
+            try_files $uri =404;
+            expires 365d;
+            add_header Cache-Control "public, immutable";
+            add_header X-Content-Type-Options "nosniff" always;
+            add_header Content-Security-Policy "default-src 'none'; sandbox" always;
+            add_header Cross-Origin-Resource-Policy "same-origin" always;
+            add_header X-Robots-Tag "noindex, nofollow" always;
+        }
+    }
+
+    location = /storage/avatars/ {
+        return 404;
+    }
+
+    location ^~ /assets/rivers/ {
+        proxy_pass http://${API_HOST}:${API_PORT}/api/assets/rivers/;
+        proxy_set_header Host $host;
+        proxy_hide_header Cache-Control;
+        proxy_hide_header Expires;
+        proxy_hide_header x-amz-request-id;
+        proxy_hide_header x-amz-id-2;
+        add_header Cache-Control $immutable_asset_cache_control always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header Content-Security-Policy "default-src 'none'; sandbox" always;
+        add_header Cross-Origin-Resource-Policy "same-origin" always;
+    }
+
+    location ^~ /storage/avatars/ {
+        proxy_pass http://${MINIO_HOST}:${MINIO_PORT}/avatars/;
+        proxy_set_header Host $host;
+        proxy_intercept_errors on;
+        error_page 400 403 404 =404 /404.html;
+        proxy_hide_header Cache-Control;
+        proxy_hide_header Expires;
+        proxy_hide_header x-amz-request-id;
+        proxy_hide_header x-amz-id-2;
+        add_header Cache-Control $avatar_cache_control always;
+        add_header X-Frame-Options "DENY" always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+        add_header Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()" always;
+        add_header Content-Security-Policy "default-src 'none'; sandbox" always;
+        add_header Cross-Origin-Resource-Policy "same-origin" always;
+    }
+
+    location ^~ /storage/ {
+        return 404;
+    }
+
+    location = /guide {
+        return 308 /?guide=1;
+    }
+
+    location = /guide/ {
+        return 308 /?guide=1;
+    }
+
+    location = /about/ {
+        return 308 /about;
+    }
+
+    location = /games/ {
+        return 308 /games;
+    }
+
+    location = /games/rivers/ {
+        return 308 /games/rivers;
+    }
+
+    location = /games/rivers/how-to/ {
+        return 308 /games/rivers/how-to;
+    }
+
+    location = /games/country-silhouettes/ {
+        return 308 /games/country-silhouettes;
+    }
+
+    location = /games/country-silhouettes/how-to/ {
+        return 308 /games/country-silhouettes/how-to;
+    }
+
+    location = /games/country-flags/ {
+        return 308 /games/country-flags;
+    }
+
+    location = /games/country-flags/how-to/ {
+        return 308 /games/country-flags/how-to;
+    }
+
+    location = /games/countries-quiz/ {
+        return 308 /games/countries-quiz;
+    }
+
+    location = /games/countries-quiz/how-to/ {
+        return 308 /games/countries-quiz/how-to;
+    }
+
+    location ~ ^/(?<locale>ru|cs)(?<localized>/games(?:/rivers(?:/how-to)?|/country-silhouettes(?:/how-to)?|/country-flags(?:/how-to)?|/countries-quiz(?:/how-to)?)?)/$ {
+        return 308 /$locale$localized;
+    }
+
+    location = /how-to/ {
+        return 308 /how-to;
+    }
+
+    location = /budget/ {
+        return 308 /budget;
+    }
+
+    location = /budget/how-to/ {
+        return 308 /budget/how-to;
+    }
+
+    location = /terms/ {
+        return 308 /terms;
+    }
+
+    location = /privacy/ {
+        return 308 /privacy;
+    }
+
+    location = /data-sources/ {
+        return 308 /data-sources;
+    }
+
+    location = /projects/ {
+        return 308 /projects;
+    }
+    location ~ ^/projects/countries/?$ {
+        return 301 /projects/most-expensive#by-country;
+    }
+
+    location ~ ^(/projects/(?:[a-z0-9]+(?:-[a-z0-9]+)*|page/[1-9][0-9]*|preview/Q[1-9][0-9]*|most-expensive/[a-z0-9]+(?:-[a-z0-9]+)*|countries/[a-z0-9]+(?:-[a-z0-9]+)*))/$ {
+        return 308 $1$is_args$args;
+    }
+
+    location ~ ^/projects(?:$|/(?:[a-z0-9]+(?:-[a-z0-9]+)*|page/[1-9][0-9]*|most-expensive/[a-z0-9]+(?:-[a-z0-9]+)*|countries/[a-z0-9]+(?:-[a-z0-9]+)*))$ {
+        proxy_pass http://${SSR_HOST}:${SSR_PORT};
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Cookie $http_cookie;
+        add_header X-Frame-Options "DENY" always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+        add_header Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()" always;
+        add_header Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-$request_id'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; connect-src 'self' blob:; worker-src 'self' blob:; media-src 'self' blob:; manifest-src 'self'" always;
+    }
+
+    location = /robots.txt {
+        try_files /robots.txt =404;
+        default_type text/plain;
+        add_header Cache-Control "public, max-age=3600" always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+    }
+
+    location = /sitemap.xml {
+        proxy_pass http://${API_HOST}:${API_PORT}/api/project-pages/sitemap.xml;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+    }
+
+    location = /404.html {
+        internal;
+        try_files /404.html =500;
+        add_header Cache-Control "no-cache, no-store, must-revalidate" always;
+        add_header X-Robots-Tag "noindex, nofollow" always;
+        add_header X-Frame-Options "DENY" always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+        add_header Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()" always;
+        add_header Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-$request_id'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; connect-src 'self' blob:; worker-src 'self' blob:; media-src 'self' blob:; manifest-src 'self'" always;
+    }
+
+    location / {
+        try_files $spa_entrypoint =404;
+        # The HTML shell contains no user data. Revalidate it without excluding the
+        # page from the browser back/forward cache.
+        add_header Cache-Control "no-cache, must-revalidate" always;
+        add_header X-Robots-Tag $spa_robots always;
+        add_header X-Frame-Options "DENY" always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+        add_header Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()" always;
+        add_header Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'nonce-$request_id'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; connect-src 'self' blob:; worker-src 'self' blob:; media-src 'self' blob:; manifest-src 'self'" always;
+    }
+
+    location ~* \.(js|css|png|jpg|jpeg|webp|gif|ico|svg|woff2?)$ {
+        try_files $uri =404;
+        expires 30d;
+        add_header Cache-Control "public, immutable";
+        add_header X-Frame-Options "DENY" always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+        add_header Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()" always;
+        add_header Content-Security-Policy "default-src 'none'; sandbox" always;
+        add_header Cross-Origin-Resource-Policy "same-origin" always;
+    }
+
+    location = /health {
+        default_type text/plain;
+        return 200 "OK";
+    }
+
+    gzip on;
+    gzip_vary on;
+    gzip_proxied any;
+    gzip_comp_level 6;
+    gzip_min_length 256;
+    gzip_types
+        text/plain
+        text/css
+        text/javascript
+        application/json
+        application/javascript
+        application/xml
+        image/svg+xml;
+}

@@ -1,0 +1,93 @@
+.catalog-project-art,
+.catalog-atlas-art {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.catalog-project-scene,
+.catalog-atlas-scene {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.catalog-project-roof-trace {
+  stroke-dashoffset: 17;
+  opacity: 0;
+  animation: catalog-project-roof-trace 8s ease-in-out infinite;
+}
+
+.catalog-project-price {
+  animation: catalog-project-price 5s ease-in-out infinite;
+}
+
+.catalog-atlas-current {
+  stroke-dashoffset: 19;
+  opacity: 0;
+  animation: catalog-atlas-current 8s ease-in-out infinite;
+}
+
+.catalog-atlas-ripple,
+.catalog-atlas-marker-halo {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.catalog-atlas-ripple {
+  opacity: 0;
+  animation: catalog-atlas-ripple 8s ease-out infinite;
+}
+
+.catalog-atlas-marker-halo {
+  animation: catalog-atlas-marker 5s ease-in-out infinite;
+}
+
+@keyframes catalog-project-roof-trace {
+  0%, 13% { stroke-dashoffset: 17; opacity: 0; }
+  18% { opacity: .95; }
+  71% { stroke-dashoffset: -100; opacity: .95; }
+  78%, 100% { stroke-dashoffset: -100; opacity: 0; }
+}
+
+@keyframes catalog-project-price {
+  0%, 62%, 100% { opacity: .85; filter: none; }
+  72%, 83% { opacity: 1; filter: drop-shadow(0 0 8px rgba(255, 228, 160, .55)); }
+}
+
+@keyframes catalog-atlas-current {
+  0%, 9% { stroke-dashoffset: 19; opacity: 0; }
+  15% { opacity: .95; }
+  70% { stroke-dashoffset: -100; opacity: .95; }
+  77%, 100% { stroke-dashoffset: -100; opacity: 0; }
+}
+
+@keyframes catalog-atlas-ripple {
+  0%, 66%, 100% { opacity: 0; transform: scale(.4); }
+  70% { opacity: .6; }
+  88% { opacity: 0; transform: scale(2.2); }
+}
+
+@keyframes catalog-atlas-marker {
+  0%, 100% { opacity: .1; transform: scale(.8); }
+  50% { opacity: .25; transform: scale(1.2); }
+}
+
+@media (max-width: 380px) {
+  .catalog-project-price-panel {
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: translate(40px, -50px) scale(.72);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .catalog-project-roof-trace,
+  .catalog-project-price,
+  .catalog-atlas-current,
+  .catalog-atlas-ripple,
+  .catalog-atlas-marker-halo {
+    animation: none;
+  }
+}

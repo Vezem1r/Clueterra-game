@@ -1,0 +1,4 @@
+clueterra:
+  dynamic:
+    global-brands:
+      cron: "0 0 5 1 1 *"

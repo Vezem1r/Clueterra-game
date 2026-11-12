@@ -1,0 +1,173 @@
+spring:
+  application:
+    name: "clueterra-api"
+  lifecycle:
+    timeout-per-shutdown-phase: "30s"
+  profiles:
+    active: "dev"
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+  datasource:
+    url: "jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:clueterra}?currentSchema=cl_api_schema"
+    username: "${DB_USER:clueterra}"
+    password: "${DB_PASSWORD}"
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      connection-init-sql: "SET search_path TO cl_api_schema, cl_schema, cl_ai_schema"
+  jpa:
+    hibernate:
+      ddl-auto: "none"
+    open-in-view: false
+  flyway:
+    enabled: false
+    locations: "classpath:db/migration"
+    schemas: "cl_api_schema"
+    table: "flyway_schema_history"
+    default-schema: "cl_api_schema"
+  data:
+    redis:
+      host: "${REDIS_HOST:localhost}"
+      port: "${REDIS_PORT:6379}"
+      password: "${REDIS_PASSWORD:}"
+  cache:
+    type: "caffeine"
+    caffeine:
+      spec: "maximumSize=10000,expireAfterWrite=10m"
+org:
+  jobrunr:
+    background-job-server:
+      enabled: true
+    dashboard:
+      enabled: false
+    database:
+      table-prefix: "cl_api_sch_schema."
+      skip-create: false
+server:
+  port: 8080
+  shutdown: graceful
+  tomcat:
+    mbeanregistry:
+      enabled: true
+clueterra:
+  totp:
+    enabled: "${TOTP_ENABLED:true}"
+    encryption-key: "${TOTP_ENCRYPTION_KEY}"
+  game:
+    activity:
+      max-idle-gap-seconds: 180
+  sessions:
+    abandon-cron: 5 0 * * *
+  jwt:
+    secret: "${JWT_SECRET}"
+    expiration: 900000
+    refresh-expiration: 604800000
+    refresh-reuse-grace-seconds: 30
+  admin:
+    console:
+      ttl: "3d"
+      max-entries: 3000
+  analytics:
+    cron: "0 30 0 * * *"
+  questions-service:
+    base-url: "${QUESTIONS_SERVICE_URL:http://localhost:8081}"
+    secret: "${QUESTIONS_SERVICE_SECRET}"
+    timeouts:
+      default: "30s"
+  budget-service:
+    base-url: "${BUDGET_SERVICE_URL:http://localhost:8082}"
+    secret: "${BUDGET_SERVICE_SECRET}"
+    timeout: "10s"
+  reports:
+    max-pending-per-user: 5
+  legal:
+    terms-version: "2026-09-03"
+    privacy-version: "2026-09-13"
+    effective-date: "September 13, 2026"
+  oauth:
+    frontend-redirect-url: "${FRONTEND_URL:http://localhost:3001}"
+    backend-base-url: "${BACKEND_BASE_URL:http://localhost:8080}"
+    github:
+      client-id: "${GITHUB_CLIENT_ID}"
+      client-secret: "${GITHUB_CLIENT_SECRET}"
+    google:
+      client-id: "${GOOGLE_CLIENT_ID}"
+      client-secret: "${GOOGLE_CLIENT_SECRET}"
+  storage:
+    endpoint: "${MINIO_ENDPOINT:http://localhost:9000}"
+    public-endpoint: "${MINIO_PUBLIC_ENDPOINT:${clueterra.storage.endpoint}}"
+    access-key: "clueterra-api"
+    secret-key: "${MINIO_API_SECRET_KEY}"
+    bucket: "avatars"
+    max-file-size: 2097152
+    max-hint-image-size: 10485760
+  rate-limiting:
+    game-requests-per-minute: 60
+    budget-requests-per-minute: 120
+    auth-requests-per-minute: 10
+    auth-login-requests-per-minute: 5
+    auth-login-attempts-per-account: 10
+    auth-login-account-window: "15m"
+    auth-register-requests-per-minute: 3
+    guest-session-create-requests-per-minute: 5
+    avatar-upload-requests-per-minute: 1
+    asset-requests-per-minute: 360
+    share-requests-per-minute: 20
+    friend-requests-per-minute: 10
+    admin-requests-per-minute: 120
+    default-requests-per-minute: 100
+    key-salt: "${RATE_LIMIT_KEY_SALT:${JWT_SECRET:}}"
+    trusted-proxies: "${TRUSTED_PROXIES:}"
+  cors:
+    allowed-origins: "${CORS_ORIGINS:http://localhost:3000,http://localhost:3001}"
+management:
+  metrics:
+    distribution:
+      percentiles-histogram:
+        http.server.requests: true
+      minimum-expected-value:
+        http.server.requests: 1ms
+      maximum-expected-value:
+        http.server.requests: 10s
+      slo:
+        "[http.server.requests]": 50ms,100ms,250ms,500ms,1s,2s,5s
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,prometheus"
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      group:
+        readiness:
+          include: "readinessState,db,redis"
+springdoc:
+  api-docs:
+    path: "/api-docs"
+  swagger-ui:
+    path: "/swagger-ui.html"
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+    import:
+      - "optional:file:../../.env[.properties]"
+clueterra:
+  totp:
+    enabled: false
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false

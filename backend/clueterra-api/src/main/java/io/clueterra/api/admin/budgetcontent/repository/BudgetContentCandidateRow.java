@@ -1,0 +1,62 @@
+package io.clueterra.api.admin.budgetcontent.repository;
+
+import java.math.BigDecimal;
+import java.time.Instant;
+import java.time.LocalDate;
+
+import com.fasterxml.jackson.databind.JsonNode;
+
+public record BudgetContentCandidateRow(
+        String wikidataId,
+        String category,
+        String name,
+        String description,
+        String countryCode,
+        String countryName,
+        String regionCode,
+        Integer projectYear,
+        String difficulty,
+        int sitelinkCount,
+        int monthlyPageviews,
+        int interestScore,
+        int qualityScore,
+        int sourceRank,
+        String qualityStatus,
+        String evidenceTier,
+        int costConfidenceScore,
+        JsonNode qualityFlags,
+        String sourceUrl,
+        String reviewStatus,
+        String reviewNote,
+        String reviewedBy,
+        Instant reviewedAt,
+        Instant fetchedAt,
+        int duplicateNameCount,
+        int duplicateImageCount,
+        String imageSourceSha1,
+        String imageObjectKey,
+        String imageOriginalUrl,
+        String imageSourcePageUrl,
+        String imageFileTitle,
+        String imageAuthorName,
+        String imageCredit,
+        String imageLicenseLabel,
+        String imageLicenseUrl,
+        String imageDescription,
+        String imageMimeType,
+        Long imageSourceBytes,
+        Integer imageWidth,
+        Integer imageHeight,
+        Integer imageQualityScore,
+        Long questionId,
+        BigDecimal answerCostUsd,
+        BigDecimal sourceAmount,
+        String sourceCurrency,
+        Integer costYear,
+        String normalizationNote,
+        String costSourceName,
+        String costSourceUrl,
+        String costReferenceUrl,
+        LocalDate costSnapshotAt,
+        JsonNode sourcePayload) {
+}
